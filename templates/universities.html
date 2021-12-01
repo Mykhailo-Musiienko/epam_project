@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+{{super()}}
+{% for cat,msg in get_flashed_messages(True) %}
+<div class="flash {{cat}}">{{msg}}</div>
+{% endfor %}
+<div class="content">
+    <h1>University Info</h1>
+</div>
+<table>
+    <tr>
+        <th>University</th>
+        <th>Location</th>
+        <th>Average salary</th>
+        <th>Actions</th>
+    </tr>
+    {% for university in list %}
+    <tr>
+        <th>
+            {{university.name}}
+        </th>
+        <th>
+            {{university.location}}
+        </th>
+        <th>
+            {{university.average_salary}}
+        </th>
+        <th>
+            <i class="fas fa-pen"></i>
+            <a href="{{url_for('get_update_university',university_id=university.id)}}" class="btn btn-success "
+               name="edit_button">Edit</a>
+            <i class="fas fa-eraser"></i>
+                        <button type="button" class="btn btn-danger" data-id="{{university.id}}" data-toggle="modal"
+                    data-target="#empModal{{university.id}}">Delete
+            </button>
+        </th>
+    </tr>
+
+<!--Modal-->
+    <div class="modal fade" id="empModal{{university.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete teacher</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Do you want to delete {{university.name}}?
+                </div>
+                <form action="/delete_university%{{university.id}}" method="POST">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Delete" class="delete_teacher btn btn-primary">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</table>
+
+{% endblock %}

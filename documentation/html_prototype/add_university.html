@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add university</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="mainmenu">
+    <a href="/teachers">Teacher</a>
+    <a href="/add_teacher">Add teacher</a>
+    <a href="/universities">University</a>
+    <a href="/add_university">Add university</a>
+    <a href="/departments">Departments</a>
+    <a href="/add_department">Add department</a>
+</div>
+<h1>Add University</h1>
+<form action="/contract" method="POST" class="add_teacher_form">
+    <p><label>University</label><input type="text" placeholder="University name" required/></p>
+    <p><label>Location</label><input type="text" placeholder="Location" required/></p>
+    <div class="choice">
+        <p><i class="fas fa-plus"></i><input type="submit" value="ADD" class="button_yes"/></p>
+        <p><i class="fas fa-ban"></i><input type="submit" value="CANCEL" class="button_no"></p>
+    </div>
+</form>
+</body>
+</html>

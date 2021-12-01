@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{{super()}}
+{% for cat,msg in get_flashed_messages(True) %}
+<div class="flash {{cat}}">{{msg}}</div>
+{% endfor %}
+<h1>Update University</h1>
+<form action="/update_university" method="POST" class="add_teacher_form">
+    <input name="university_id" value="{{university.id}}"  hidden />
+    <p><label>University</label><input type="text" name="name" placeholder="{{university.name}}" /></p>
+    <p><label>Location</label><input type="text" name="location" placeholder="{{university.location}}" /></p>
+    <div class="choice">
+        <p><i class="fas fa-plus"></i><input type="submit" value="ADD" class="button_yes"/></p>
+        <p><i class="fas fa-ban"></i><a href="/universities" class="button_no">CANCEL</a></p>
+    </div>
+</form>
+{% endblock %}

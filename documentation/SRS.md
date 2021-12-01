@@ -33,7 +33,7 @@ The web page is used to see the list of teachers in the whole database.
 * List of teachers load from database.
 * Web page load list of teachers from database.
 
-![alt text](html_prototype/Teachers.jpg)
+![alt text](images/Teachers.jpg)
 Picture 1.1.1 View the Teachers list
 
 Web page contains:
@@ -51,7 +51,7 @@ To filter teacher's list on the web page there are two dates "from" and "to".<br
 User should write "date from" and "date to" with equal dates to get a list of teachers,
 who was born in this date.
 
-![alt text](html_prototype/Teachers_search_by_certain_date.jpg)
+![alt text](images/Teachers_search_by_certain_date.jpg)
 Picture 1.1.2 Filtering by certain date
 
 ###Restriction
@@ -68,7 +68,7 @@ User should write "date from" as a start date and second date as an end date.
 After pushing button "Select" the web page will be updated. After updating user will see
 list of teachers between two dates.
 
-![alt text](html_prototype/Teachers_search_between_two_dates.jpg)
+![alt text](images/Teachers_search_between_two_dates.jpg)
 Picture 1.1.3 Filtering by start and end date
 
 ###Restriction
@@ -102,7 +102,7 @@ The web page is used to add new teacher to the database
 + input fields will be cleaned.
 + user will be redirected to the 'Teachers' page.
 
-![alt text](html_prototype/Add_teacher.jpg)
+![alt text](images/Add_teacher.jpg)
 Picture 1.2 Adding new teacher to the database and web page
 
 ###Restriction
@@ -147,7 +147,7 @@ The webpage is used to edit the information about a certain teacher
 + input fields will be cleaned (if they are filled).
 + user will be redirected to the 'Teachers' page.
 
-![alt text](html_prototype/Update_teacher.jpg)
+![alt text](images/Update_teacher.jpg)
 Picture 1.3 Updating information about teacher
 
 ###Restriction
@@ -166,7 +166,7 @@ Action is used to delete the teacher from web page list and database
 + "Teachers" page will be reloaded.
 + if user clicks 'no' in the popup window: the window will be closed.
 
-![alt text](html_prototype/Delete_teacher.jpg)
+![alt text](images/Delete_teacher.jpg)
 Picture 1.4 Deleting teacher from database and web page
 
 ## 2. Universities
@@ -185,7 +185,7 @@ Web page is used to see the list of universities.
 Aggregate function: column average salary count as formula: teachers from this university
 divided by count of these teachers.
 
-![alt text](html_prototype/Universities.jpg)
+![alt text](images/Universities.jpg)
 Picture 2.1 View the Universities list
 
 Web page contains:
@@ -215,7 +215,7 @@ The web page is used to add new university to the database
 + input fields will be cleaned.
 + user will be redirected to the 'Unievrsities' page.
 
-![alt text](html_prototype/Add_university.jpg)
+![alt text](images/Add_university.jpg)
 Picture 2.2 Adding new university to the database and web page
 
 ###Restriction
@@ -252,7 +252,7 @@ The webpage is used to edit the information about a certain university
 + input fields will be cleaned (if they are filled).
 + user will be redirected to the 'Universities' page.
 
-![alt text](html_prototype/Update_university.jpg)
+![alt text](images/Update_university.jpg)
 Picture 2.3 Updating information about university
 
 ###Restriction
@@ -270,5 +270,5 @@ Action is used to delete university from web page list and database
 + "University" page will be reloaded.
 + if user clicks 'no' in the popup window: the window will be closed.
 
-![alt text](html_prototype/Delete_university.jpg)
+![alt text](images/Delete_university.jpg)
 Picture 2.4 Deleting university from database

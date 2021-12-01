@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teahcers</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div class="mainmenu">
+    <a href="/teachers">Teacher</a>
+    <a href="/add_teacher">Add teacher</a>
+    <a href="/universities">University</a>
+    <a href="/add_university">Add university</a>
+    <a href="/departments">Departments</a>
+    <a href="/add_department">Add department</a>
+</div>
+<div class="content">
+    <h1>Teacher Info</h1>
+    <span class="date_from">Date from: </span>
+    <input type="date">
+    <i class="fas fa-calendar"></i>
+    <span class="to">to: </span>
+    <input type="date">
+    <i class="fas fa-calendar"></i>
+    <input type="submit" value="Search" class="search_dates">
+</div>
+<table>
+    <tr>
+        <th>Last name</th>
+        <th>Name</th>
+        <th>Date of birth</th>
+        <th>University</th>
+        <th>Salary</th>
+        <th>Department</th>
+        <th>Actions</th>
+    </tr>
+    <tr>
+        <th>Kostenko</th>
+        <th>Alexander</th>
+        <th>22.09.1987</th>
+        <th>KPI</th>
+        <th>1000</th>
+        <th>System Engeneering</th>
+        <th>
+            <i class="fas fa-pen"></i> <a href="teacher_update">Edit</a>
+            <i class="fas fa-eraser"></i><a onclick="myFunction()">Delete</a>
+        </th>
+    </tr>
+    <tr>
+        <th>Chaynikov</th>
+        <th>Sergey</th>
+        <th>01.04.1967</th>
+        <th>NURE</th>
+        <th>1200</th>
+        <th>Philosophy</th>
+        <th>
+            <i class="fas fa-pen"></i> <a href="/teacher_update">Edit</a>
+            <i class="fas fa-eraser"></i><a onclick="myFunction()">Delete</a>
+        </th>
+    </tr>
+    <tr>
+        <th>Chorna</th>
+        <th>Olga</th>
+        <th>22.09.1995</th>
+        <th>Khai</th>
+        <th>1500</th>
+        <th>Software Engeneering</th>
+        <th>
+            <i class="fas fa-pen"></i> <a href="/teacher_update">Edit</a>
+            <i class="fas fa-eraser"></i><a onclick="myFunction()">Delete</a>
+        </th>
+    </tr>
+    <tr>
+        <th>Tkachenko</th>
+        <th>Vitaliy</th>
+        <th>08.10.1982</th>
+        <th>NURE</th>
+        <th>2000</th>
+        <th>Cybernetic</th>
+        <th>
+            <i class="fas fa-pen"></i> <a href="/teacher_update">Edit</a>
+            <i class="fas fa-eraser"></i><a onclick="myFunction()">Delete</a>
+        </th>
+    </tr>
+    <tr>
+        <th>Storchak</th>
+        <th>Oleg</th>
+        <th>14.04.1978</th>
+        <th>NPI</th>
+        <th>1800</th>
+        <th>Artificial Intelligence</th>
+        <th>
+            <i class="fas fa-pen"></i> <a href="/teacher_update">Edit</a>
+            <i class="fas fa-eraser"></i><a onclick="myFunction()">Delete</a>
+        </th>
+    </tr>
+    <tr>
+        <th>Perova</th>
+        <th>Irina</th>
+        <th>02.01.1997</th>
+        <th>Karazin</th>
+        <th>1400</th>
+        <th>Journalism</th>
+        <th>
+            <i class="fas fa-pen"></i> <a href="/teacher_update">Edit</a>
+            <i class="fas fa-eraser"></i><a onclick="myFunction()">Delete</a>
+        </th>
+    </tr>
+    <tr>
+        <th>Hryapkin</th>
+        <th>Alexander</th>
+        <th>19.06.1989</th>
+        <th>KNMU</th>
+        <th>2200</th>
+        <th>Surgery</th>
+        <th>
+            <form action="/update_teacher" method="post">
+                <i class="fas fa-pen"></i>
+                <button type='submit' class="edit" name="forward_button" value="{{teacher.id}}">Edit</button>
+            </form>
+            <form action="/update_teacher" method="post">
+                <i class="fas fa-eraser"></i>
+                <button class="delete" onclick="myFunction()">Delete</button>
+            </form>
+
+        </th>
+    </tr>
+</table>
+</body>
+</html>

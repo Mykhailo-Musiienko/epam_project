@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+{{super()}}
+{% for cat,msg in get_flashed_messages(True) %}
+<div class="flash {{cat}}">{{msg}}</div>
+{% endfor %}
+<h1>Update Teacher</h1>
+<form action="/update_teacher" method="POST" class="add_teacher_form">
+    <input name="teacher_id" value="{{teacher.id}}"  hidden />
+    <p><label>Last Name</label><input type="text" name='last_name' placeholder="{{teacher.last_name}}" /></p>
+    <p><label>Name</label><input type="text" name="name" placeholder="{{teacher.name}}"/></p>
+    <p><label>Date of birth</label><input type="date" name="birth_date" /><i class="fas fa-calendar"></i></p>
+    <p><label>Salary</label><input type="number" name='salary' placeholder="{{teacher.salary}}" min="0"></p>
+    <p>
+        <label>University</label>
+        <select name="university" >
+            <option value=""  selected hidden>{{teacher.university.name}}</option>
+            {% for university in universities %}
+                <option>{{university.name}}</option>
+            {% endfor %}
+
+        </select>
+    </p>
+    <div class="choice">
+        <p><i class="fas fa-plus"></i><input type="submit"  class="button_yes"/></p>
+        <p><i class="fas fa-ban"></i><a href="/" class="button_no">CANCEL</a></p>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add teacher</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="mainmenu">
+    <a href="/teachers">Teacher</a>
+    <a href="/add_teacher">Add teacher</a>
+    <a href="/universities">University</a>
+    <a href="/add_university">Add university</a>
+    <a href="/departments">Departments</a>
+    <a href="/add_department">Add department</a>
+</div>
+<h1>Add Teacher</h1>
+<form action="/contract" method="POST" class="add_teacher_form">
+    <p><label>Last Name</label><input type="text" placeholder="Last Name" required/></p>
+    <p><label>Name</label><input type="text" placeholder="Name" required/></p>
+    <p><label>Date of birth</label><input type="date" placeholder="Date" required/><i class="fas fa-calendar"></i></p>
+    <p><label>Salary</label><input type="number" placeholder="Salary" min="0"></p>
+    <p>
+        <label>University</label>
+        <select required>
+            <option value="" disabled selected hidden>Universities</option>
+
+        </select>
+    </p>
+    <p>
+        <label>Department</label>
+        <select required>
+            <option value="" disabled selected hidden>Department</option>
+
+        </select>
+    </p>
+    <div class="choice">
+        <p><i class="fas fa-plus"></i><input type="submit" value="ADD" class="button_yes"/></p>
+        <p><i class="fas fa-ban"></i><a href="/" class="button_no">CANCEL</a></p>
+    </div>
+</form>
+</body>
+</html>
