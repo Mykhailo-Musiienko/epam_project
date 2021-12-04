@@ -41,14 +41,13 @@ def create_university() -> str:
     Route for POST method to create a new university. It also validate data before sending it to database.
     :return: str
     """
-    name = request.form['name']
-    location = request.form['location']
+    name = request.form.get('name')
+    location = request.form.get('location')
     university = University(name, location)
     if not name or not location:
         flash("You didn't write all fields please fill in every field", category="error")
         return redirect(url_for('add_university'))
     if not name.isalnum() or not location.isalnum():
-        print('Here')
         flash("Fields doesn't contain alphabetic symbols", category="error")
         return redirect(url_for('add_university'))
     if not universities_crud.create_university(university):
@@ -76,14 +75,15 @@ def update_university() -> str:
     Route method POST to update a certain university. If it is changes or whitespaces, it will not add data to database.
     :return: str
     """
-    id = request.form['university_id']
-    name = request.form['name']
-    location = request.form['location']
+    id = request.form.get('university_id')
+    name = request.form.get('name')
+    location = request.form.get('location')
     university = University(name, location)
     if not name and not location:
         flash("You didn\'t write anything, please make at least one change", category='error')
         return redirect(url_for('get_update_university', university_id=id))
     if universities_crud.update_university(university, id):
+        flash('University was updated',category='success')
         return redirect(url_for('get_all_universities'))
     else:
         flash('Incorrect data or any new changes, please enter valid data', category='error')

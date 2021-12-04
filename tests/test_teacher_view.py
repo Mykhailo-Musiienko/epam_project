@@ -3,7 +3,7 @@ This module run tests for function in module views.teacher_view.
 
 This module contains class TestTeacherView. It tests all functions that teacher_view.py file has.
 
-This module imports: app,datetime,unittest.TestCase, unittest.mock.patch, Teacher, University, teacher_crude
+This module imports: app,datetime, unittest.TestCase, unittest.mock.patch, University, University, teacher_crude
 """
 
 
@@ -63,7 +63,7 @@ class TestTeacherView(TestCase):
     def setUp(self) -> None:
         """
         Set up for app for testing
-        :return:
+        :return: None
         """
         app.config['TESTING'] = True
         app.config['DEBUG'] = False
@@ -150,7 +150,7 @@ class TestTeacherView(TestCase):
         # Test if placeholders contain teacher's attributes.
         t_crud.get_teacher.return_value = teacher1
         u_crud.get_all_universities.return_value = university_list
-        response = self.app.get('update_teacher/0', content_type='html/text')
+        response = self.app.get('update_teacher%0', content_type='html/text')
         self.assertIn(f'placeholder="{teacher1.name}"', response.get_data(as_text=True))
         self.assertIn(f'placeholder="{teacher1.last_name}"', response.get_data(as_text=True))
         self.assertIn(f'placeholder="{teacher1.salary}"', response.get_data(as_text=True))

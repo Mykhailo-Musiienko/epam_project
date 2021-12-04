@@ -4,7 +4,7 @@ This module represents model Teacher and class TeacherSchema for serialization a
 This module has class Teacher and class TeacherSchema.
 This model imports such libraries like: flask_marshmallow, app, models.teacher, models.university
 """
-from models import db, ma
+from app import db, ma
 from flask_marshmallow.fields import fields
 from models.university import UniversitySchema
 

@@ -42,7 +42,7 @@ def create_teacher(teacher) -> bool:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        print('Error of adding to db', str(ex))
+        # print('Error of adding to db', str(ex))
         return False
     return True
 
@@ -84,7 +84,7 @@ def update_teacher(teacher: Teacher, teacher_id: int) -> bool:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        print('Error of updating data to db', str(ex))
+        # print('Error of updating data to db', str(ex))
         return False
     return True
 
@@ -100,7 +100,7 @@ def delete_teacher(teacher_id) -> bool:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        print('Error of deleting from db', str(ex))
+        # print('Error of deleting from db', str(ex))
         return False
     return True
 

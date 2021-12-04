@@ -26,7 +26,7 @@ def get_all_universities() -> Any:
         average_list = list(Teacher.query.with_entities(Teacher.university_id, func.avg(Teacher.salary)).group_by(
             Teacher.university_id).all())
     except Exception as ex:
-        print('Error of taking universities from db', str(ex))
+        # print('Error of taking universities from db', str(ex))
         return []
     for i in range(len(average_list)):
         for j in range(len(universities)):
@@ -58,7 +58,7 @@ def create_university(university) -> bool:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        print('Error of adding to db', str(ex))
+        # print('Error of adding to db', str(ex))
         return False
     return True
 
@@ -87,7 +87,7 @@ def update_university(university, university_id) -> bool:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        print('Error of adding to db', str(ex))
+        # print('Error of adding to db', str(ex))
         return False
     return True
 
@@ -103,7 +103,7 @@ def delete_university(university_id) -> bool:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        print('Error of deleting from db', str(ex))
+        # print('Error of deleting from db', str(ex))
         return False
     return True
 
@@ -130,7 +130,7 @@ def create_university_api(name, location) -> dict:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        print(str(ex))
+        # print(str(ex))
         return {'error': {'message': 'Error of adding to db',
                           'status': 412}}
     return university
@@ -151,7 +151,7 @@ def delete_university_api(university_id) -> dict:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        print('Error of deleting from db', str(ex))
+        # print('Error of deleting from db', str(ex))
         return {'error': {'message': 'Error of adding to db',
                           'status': 412}}
     return university
@@ -197,6 +197,6 @@ def update_university_api(university_id, name, location) -> dict:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        print('Error of adding to db', str(ex))
+        # print('Error of adding to db', str(ex))
         return {'error': {'message': 'Error to update university to db', 'status': 412}}
     return university

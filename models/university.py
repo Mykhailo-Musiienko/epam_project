@@ -4,7 +4,7 @@ This module represents model University and class UniversitySchema for serializa
 This module has class University and class UniversitySchema.
 This model imports such libraries like: flask_marshmallow.fields, app, models.teacher, models.university
 """
-from models import db, ma
+from app import db, ma
 from flask_marshmallow.fields import fields
 
 

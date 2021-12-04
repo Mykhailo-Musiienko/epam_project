@@ -7,7 +7,7 @@ get_university(), get_university_by_id(), post_university(), update_university()
 This module imports: flask.Blueprint, flask.request, flask.jsonify, service, TeacherSchema, UniversitySchema,
 University, Teacher
 """
-from flask import Blueprint
+from flask import Blueprint, Response
 from flask import request
 from flask import jsonify
 from service import teachers_crud
@@ -63,7 +63,8 @@ def add_teacher() -> dict:
         if not university_db:
             return {'error': {'message': f'Wrong university name.', 'status': 400}}
     except Exception as ex:
-        return {'error': {'message': f'Wrong university name. {str(ex)}', 'status': 400}}
+        print(str(ex))
+        return {'error': {'message': f'Wrong university name.', 'status': 400}}
     new_teacher = Teacher(name, last_name, birth_date, salary, university_db)
     res = teachers_crud.create_teacher(new_teacher)
     if not res:
@@ -101,7 +102,6 @@ def delete_teacher(teacher_id) -> dict:
     :return: dict
     """
     res = teachers_crud.delete_teacher_api(teacher_id)
-    print(res)
     if isinstance(res, dict):
         return jsonify(res)
     else:
@@ -120,7 +120,7 @@ def get_university() -> dict:
 
 
 @api.route('/university/<int:university_id>', methods=["GET"])
-def get_university_by_id(university_id) -> dict:
+def get_university_by_id(university_id) -> Response:
     """
     Get university with given id.
     :param university_id: Id of university to read from database
@@ -134,7 +134,7 @@ def get_university_by_id(university_id) -> dict:
 
 
 @api.route('/university', methods=['POST'])
-def post_university() -> dict:
+def post_university() -> Response:
     """
     Create new university for REST-API.
     :return: dict
@@ -148,7 +148,7 @@ def post_university() -> dict:
 
 
 @api.route('/university/<int:university_id>', methods=['PATCH'])
-def update_university(university_id) -> dict:
+def update_university(university_id) -> Response:
     """
     Update university with given id.
     :param university_id: Id of university to update

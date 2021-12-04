@@ -64,7 +64,7 @@ def add_teacher() -> str:
         return redirect(url_for('add_teacher'))
 
 
-@app.route('/update_teacher/<int:teacher_id>', methods=['GET'])
+@app.route('/update_teacher%<int:teacher_id>', methods=['GET'])
 def get_update_teacher(teacher_id) -> str:
     """
     Route with GET method to render "update_teacher.html" page. It takes current teacher by given id and all

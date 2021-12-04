@@ -5,6 +5,5 @@ Module contains modules: teacher, university.
 
 This module import app, Teacher and University to get rid of circular imports
 """
-from app import db, ma
-from models.teacher import Teacher
-from models.university import University
+# from app import db, ma
+
