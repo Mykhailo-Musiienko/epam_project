@@ -1,3 +1,11 @@
+"""
+This module is made for rendering templates for university pages.
+
+Pages that are rendering are: university.html, add_university.html, update_university.html
+
+This module contains functions: get_all_universities(), add_university(), create_university(), get_update_university(),
+update_university(), delete_university().
+"""
 from views import app, render_template, request, redirect, url_for, flash
 from models.university import University
 from service import universities_crud
@@ -39,8 +47,9 @@ def create_university() -> str:
     if not name or not location:
         flash("You didn't write all fields please fill in every field", category="error")
         return redirect(url_for('add_university'))
-    if name.isalnum() or location.isspace():
-        flash("You didn't write all fields please fill in every field", category="error")
+    if not name.isalnum() or not location.isalnum():
+        print('Here')
+        flash("Fields doesn't contain alphabetic symbols", category="error")
         return redirect(url_for('add_university'))
     if not universities_crud.create_university(university):
         flash("Error of adding university to db", category="error")
@@ -81,7 +90,7 @@ def update_university() -> str:
         return redirect(url_for('get_update_university', university_id=id))
 
 
-@app.route('/delete_university%<int:university_id>', methods=['POST'])
+@app.route('/delete_university/<int:university_id>', methods=['POST'])
 def delete_university(university_id) -> str:
     """
     Route for deleting university. After modal message it delete university and render university page.

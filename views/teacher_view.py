@@ -1,3 +1,12 @@
+"""
+This module is made for rendering templates for teacher pages.
+
+Pages that are rendering are: teacher.html, add_teacher.html, update_teacher.html
+
+This module contains functions: get_all_teachers(), get_add_teacher(), add_teacher(), get_update_teacher(),
+update_teacher(), search_by_date(), delete_teacher().
+"""
+
 from views import app
 from views import render_template
 from views import request
@@ -8,7 +17,6 @@ from models.teacher import Teacher
 from models.university import University
 from service import universities_crud
 from service import teachers_crud
-
 
 
 @app.route('/', methods=['GET'])
@@ -38,11 +46,11 @@ def add_teacher() -> str:
     database request.
     :return: str
     """
-    name = request.form['name']
-    last_name = request.form['last_name']
-    birth_date = request.form['birth_date']
-    salary = request.form['salary']
-    university = request.form['university']
+    name = request.form.get('name')
+    last_name = request.form.get('last_name')
+    birth_date = request.form.get('birth_date')
+    salary = request.form.get('salary')
+    university = request.form.get('university')
     university_db = University.query.filter_by(name=university).first()
     new_teacher = Teacher(name, last_name, birth_date, salary, university_db)
     if not name or not last_name or not birth_date or not salary or not university:
@@ -56,7 +64,7 @@ def add_teacher() -> str:
         return redirect(url_for('add_teacher'))
 
 
-@app.route('/update_teacher%<int:teacher_id>', methods=['GET'])
+@app.route('/update_teacher/<int:teacher_id>', methods=['GET'])
 def get_update_teacher(teacher_id) -> str:
     """
     Route with GET method to render "update_teacher.html" page. It takes current teacher by given id and all
@@ -75,18 +83,19 @@ def update_teacher() -> str:
     Route updates teacher. It als o check validation before sending a database request.
     :return: str
     """
-    id = request.form['teacher_id']
-    name = request.form['name']
-    last_name = request.form['last_name']
-    birth_date = request.form['birth_date']
-    salary = request.form['salary']
-    university = request.form['university']
+    id = request.form.get('teacher_id')
+    name = request.form.get('name')
+    last_name = request.form.get('last_name')
+    birth_date = request.form.get('birth_date')
+    salary = request.form.get('salary')
+    university = request.form.get('university')
     university_db = University.query.filter_by(name=university).first()
     new_teacher = Teacher(name, last_name, birth_date, salary, university_db)
     if not name and not last_name and not birth_date and not university and not salary:
         flash('Incorrect data, please enter valid data', category='error')
         return redirect(url_for('get_update_teacher', teacher_id=id))
     if teachers_crud.update_teacher(new_teacher, id):
+        flash('Teacher was updated', category='success')
         return redirect(url_for('get_all_teachers'))
     else:
         flash('Incorrect data or any new changes, please enter valid data', category='error')
@@ -99,20 +108,22 @@ def search_by_date() -> str:
     Route with POST method that search in interval of two dates and return appropriate teachers to main page.
     :return: str
     """
-    date_from = request.form['date_from']
-    date_to = request.form['date_to']
+    date_from = request.form.get('date_from')
+    date_to = request.form.get('date_to')
+    if not date_to or not date_from:
+        flash("Please enter two dates and then click to search",category='error')
+        return redirect(url_for('get_all_teachers'))
     teachers = Teacher.query.filter(Teacher.birth_date.between(date_from, date_to))
     return render_template('teachers.html', title="Teachers", teachers=teachers)
 
 
-@app.route('/delete_teacher%<int:teacher_id>', methods=['POST'])
+@app.route('/delete_teacher/<int:teacher_id>', methods=['POST'])
 def delete_teacher(teacher_id) -> str:
     """
     Route delete teacher by given id. After it reload the page.
     :param teacher_id: Id of teacher.
     :return: str
     """
-    print(teacher_id)
     res = teachers_crud.delete_teacher(teacher_id)
     if res:
         flash("Teacher was deleted", category='success')
