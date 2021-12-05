@@ -323,3 +323,6 @@
 2021-12-05 20:02:57,121:app:
 2021-12-05 20:02:57,121:app:
 2021-12-05 20:02:57,123:app:
+2021-12-05 20:17:15,866:app:Route teacher.html is rendered.
+2021-12-05 20:17:19,791:app:Route create new teacher is rendered
+2021-12-05 20:17:26,648:app:Api show all teachers in database.

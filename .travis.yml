@@ -13,7 +13,7 @@ script:
   - pylint views
   - pylint --load-plugins pylint_flask_sqlalchemy models
   - pylint rest
-  - pylint service
+  - pylint --load-plugins pylint_flask_sqlalchemy service
   - pylint tests
   -  python app.py
   - python -m unittest discover

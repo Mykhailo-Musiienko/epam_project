@@ -12,6 +12,7 @@ University, Teacher
 """
 import datetime
 from flask import Blueprint, Response
+api = Blueprint('api', __name__)
 from flask import request
 from flask import jsonify
 from app import logger
@@ -21,8 +22,6 @@ from models.teacher import TeacherSchema
 from models.university import UniversitySchema
 from models.university import University
 from models.teacher import Teacher
-
-api = Blueprint('api', __name__)
 
 teacher_schema = TeacherSchema()
 university_schema = UniversitySchema()
