@@ -14,13 +14,13 @@ addons:
       - mysql-server
       - mysql-client
 before_script:
-#  - pylint views
-#  - pylint models
-#  - pylint rest
-#  - pylint service
-#  - pylint tests
-  - python app.py
+#  - python app.py
 script:
+  - pylint views
+  - pylint models
+  - pylint rest
+  - pylint service
+  - pylint tests
   - python -m unittest discover
 notifications:
   email: false
