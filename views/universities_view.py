@@ -130,5 +130,5 @@ def delete_university(university_id) -> Response:
         logger.debug('University was successfully deleted.')
         return redirect(url_for('get_all_universities'))
     flash('Can\'t delete this university from db', category='error')
-    logger.erro('Can\'t delete this university from db.')
+    logger.error('Can\'t delete this university from db.')
     return redirect(url_for('get_all_universities'))
