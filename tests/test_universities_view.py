@@ -3,7 +3,8 @@ This module run tests for function in module views.teacher_view.
 
 This module contains class TestTeacherView. It tests all functions that teacher_view.py file has.
 
-This module imports: app,datetime,unittest.TestCase, unittest.mock.patch, Teacher, University, teacher_crude
+This module imports: app,datetime,unittest.TestCase, unittest.mock.patch, Teacher,
+University, teacher_crude
 """
 
 from app import app
@@ -41,7 +42,8 @@ class TestUniversitiesView(TestCase):
     """
     This class is made for testing universities_view.py file.
 
-    It includes functions: setUp(), test_get_all_universities(), test_add_university(), test_create_university(),
+    It includes functions: setUp(), test_get_all_universities(), test_add_university(),
+    test_create_university(),
     test_add_university(), test_get_update_university(), test_delete_university()
     """
 
@@ -66,7 +68,8 @@ class TestUniversitiesView(TestCase):
         response = self.app.get('/universities', content_type='html/text')
         self.assertEqual(response.status_code, 200)
         # Test if exception was raised
-        true_response = "Error of reading Universities from db,please check if you have table &#39;University&#39; "
+        true_response = "Error of reading Universities from db,please check " \
+                        "if you have table &#39;University&#39; "
         u_crud.get_all_universities.return_value = None
         response = self.app.get('/universities', content_type='html/text', follow_redirects=True)
         self.assertIn(true_response, response.get_data(as_text=True))

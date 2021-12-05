@@ -1,11 +1,13 @@
 """
-This module represents model University and class UniversitySchema for serialization and deserialization.
+This module represents model University and class UniversitySchema
+for serialization and deserialization.
 
 This module has class University and class UniversitySchema.
-This model imports such libraries like: flask_marshmallow.fields, app, models.teacher, models.university
+This model imports such libraries like: flask_marshmallow.fields, app,
+models.teacher, models.university
 """
-from app import db, ma
 from flask_marshmallow.fields import fields
+from app import db, ma
 
 
 class University(db.Model):

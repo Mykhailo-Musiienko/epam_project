@@ -6,10 +6,11 @@ This module contains class TestTeacherCrud
 This module imports: app,datetime,unittest.TestCase, unittest.mock.patch, Teacher, University, teacher_crude
 """
 
-from app import app
+
 import datetime
 from unittest import TestCase
 from unittest.mock import patch
+from app import app
 from models.teacher import Teacher
 from models.university import University
 from service import teachers_crud
@@ -29,8 +30,9 @@ class TestTeacherCrud(TestCase):
     """
     This class runs all tests for the module service.teachers_crud.
 
-    It includes: test test_get_all_teachers, test_get_teacher, test_create_teacher, test_update_teacher,
-    test_delete_teacher, test_update_teacher_api, test_delete_teacher_api
+    It includes: test test_get_all_teachers, test_get_teacher, test_create_teacher,
+    test_update_teacher, test_delete_teacher, test_update_teacher_api,
+    test_delete_teacher_api
 
     It inherited from class TestCase
     """
@@ -113,10 +115,10 @@ class TestTeacherCrud(TestCase):
         :param get: Mock get_teacher() function
         :return: None
         """
-        response1 = {'error': {'message': f'No data was given.', 'status': 400}}
-        response2 = {'error': {'message': f'Wrong university name.', 'status': 400}}
-        response3 = {'error': {'message': f'Salary is not integer', 'status': 400}}
-        response4 = {'error': {'message': f'Incorrect date format.', 'status': 400}}
+        response1 = {'error': {'message': 'No data was given.', 'status': 400}}
+        response2 = {'error': {'message': 'Wrong university name.', 'status': 400}}
+        response3 = {'error': {'message': 'Salary is not integer', 'status': 400}}
+        response4 = {'error': {'message': 'Incorrect date format.', 'status': 400}}
         result = teachers_crud.update_teacher_api(teacher_id=0, name=None, last_name=None, birth_date=None, salary=None,
                                                   university=None)
         self.assertEqual(result, response1)
@@ -162,13 +164,13 @@ class TestTeacherCrud(TestCase):
 
         teacher.query.filter.return_value.delete.return_value = False
         result = teachers_crud.delete_teacher_api(1)
-        true_result = {'error': {'message': f'No teacher was found with given id', 'status': 400}}
+        true_result = {'error': {'message': 'No teacher was found with given id', 'status': 400}}
         self.assertEqual(result, true_result)
 
         teacher.query.filter.return_value.delete.side_effect = Exception
         db.session.rollback.return_value = 1
         result = teachers_crud.delete_teacher_api(1)
-        true_result = {'error': {'message': f'Error deleting from db.', 'status': 400}}
+        true_result = {'error': {'message': 'Error deleting from db.', 'status': 400}}
         self.assertEqual(result, true_result)
 
 

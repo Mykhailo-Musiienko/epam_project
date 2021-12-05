@@ -3,14 +3,16 @@ This module demonstrates CRUD operations for university model.
 
 It has CRUD functions for website application and for REST-API.
 
-This module includes functions: get_all_universities(), get_university(), create_university(), update_university(),
-delete_university(), create_university_api(), delete_university_api(), update_university_api().
+This module includes functions: get_all_universities(), get_university(), create_university(),
+update_university(),delete_university(), create_university_api(), delete_university_api(),
+update_university_api().
 
 This module imports: typing.Any, sqlalchemy.func, app, University, Teacher.
 """
 from typing import Any
 from sqlalchemy import func
 from app import db
+from app import logger
 from models.university import University
 from models.teacher import Teacher
 
@@ -23,17 +25,18 @@ def get_all_universities() -> Any:
     """
     try:
         universities = University.query.all()
-        average_list = list(Teacher.query.with_entities(Teacher.university_id, func.avg(Teacher.salary)).group_by(
+        average_list = list(Teacher.query.with_entities(
+            Teacher.university_id, func.avg(Teacher.salary)).group_by(
             Teacher.university_id).all())
     except Exception as ex:
-        # print('Error of taking universities from db', str(ex))
+        logger.error(str(ex))
         return []
     for i in range(len(average_list)):
         for j in range(len(universities)):
             if universities[j].id == average_list[i][0]:
                 if universities[j].average_salary != average_list[i][1]:
-                    db.session.flush()
-                universities[j].average_salary = average_list[i][1]
+                    universities[j].average_salary = average_list[i][1]
+                db.session.flush()
                 db.session.commit()
     return universities
 
@@ -49,7 +52,8 @@ def get_university(university_id) -> University:
 
 def create_university(university) -> bool:
     """
-    Add university to database. CREATE method for CRUD controller. Return true if there weren\'t any exceptions.
+    Add university to database. CREATE method for CRUD controller.
+    Return true if there weren\'t any exceptions.
     :param university: New university to add to database.
     :return: bool
     """
@@ -58,7 +62,7 @@ def create_university(university) -> bool:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        # print('Error of adding to db', str(ex))
+        logger.error(str(ex))
         return False
     return True
 
@@ -87,7 +91,7 @@ def update_university(university, university_id) -> bool:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        # print('Error of adding to db', str(ex))
+        logger.error(str(ex))
         return False
     return True
 
@@ -103,7 +107,7 @@ def delete_university(university_id) -> bool:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        # print('Error of deleting from db', str(ex))
+        logger.error(str(ex))
         return False
     return True
 
@@ -130,7 +134,7 @@ def create_university_api(name, location) -> dict:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        # print(str(ex))
+        logger.error(str(ex))
         return {'error': {'message': 'Error of adding to db',
                           'status': 412}}
     return university
@@ -151,7 +155,7 @@ def delete_university_api(university_id) -> dict:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        # print('Error of deleting from db', str(ex))
+        logger.error(str(ex))
         return {'error': {'message': 'Error of adding to db',
                           'status': 412}}
     return university
@@ -197,6 +201,6 @@ def update_university_api(university_id, name, location) -> dict:
         db.session.commit()
     except Exception as ex:
         db.session.rollback()
-        # print('Error of adding to db', str(ex))
+        logger.error(str(ex))
         return {'error': {'message': 'Error to update university to db', 'status': 412}}
     return university

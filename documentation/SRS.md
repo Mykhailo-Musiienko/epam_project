@@ -1,13 +1,13 @@
-#Managing universities
+# Managing universities
 
-***
+---
 
-#Visio
+# Visio
 
 "Managing universities" is a web applications that allows to add, 
 to edit and to delete information about teachers and universities.
 
-##Application should provide:
+## Application should provide:
 
 + Storing data in database.
 + Display list of teachers.
@@ -27,7 +27,7 @@ to edit and to delete information about teachers and universities.
 
 The web page is used to see the list of teachers in the whole database.
 
-###Main use
+### Main use
 
 * User clicks on hyperlink "Teachers".
 * List of teachers load from database.
@@ -45,7 +45,7 @@ Web page contains:
 + department of the university where teacher read lectures.
 + actions with column.
 
-###Filter list of teachers in a certain date
+### Filter list of teachers in a certain date
 
 To filter teacher's list on the web page there are two dates "from" and "to".<br>
 User should write "date from" and "date to" with equal dates to get a list of teachers,
@@ -54,14 +54,14 @@ who was born in this date.
 ![alt text](images/Teachers_search_by_certain_date.jpg)
 Picture 1.1.2 Filtering by certain date
 
-###Restriction
+### Restriction
 
 + start date and end date should be the same to filter by a certain date.
 + If start date is blank, it will raise message to fill in start date.
 + If end date is blank, application will consider today's day as an end day.
 + Updating data after pushing button "Select".
 
-###Filter teachers between selected dates
+### Filter teachers between selected dates
 
 To filter teacher's list on the web page there are two dates "from" and "to".<br>
 User should write "date from" as a start date and second date as an end date.
@@ -71,7 +71,7 @@ list of teachers between two dates.
 ![alt text](images/Teachers_search_between_two_dates.jpg)
 Picture 1.1.3 Filtering by start and end date
 
-###Restriction
+### Restriction
 
 + First date must be lower than end date, otherwise the message with error will appear. 
 + If start date is blank, it will raise message to fill in start date.
@@ -81,7 +81,7 @@ Picture 1.1.3 Filtering by start and end date
 
 The web page is used to add new teacher to the database
 
-###Main use
+### Main use
 
 * User click on hyperlink "Add Teacher".
 * Web application load the page.
@@ -95,7 +95,7 @@ The web page is used to add new teacher to the database
 * if user added wrong data the error message will raise. 
 * otherwise, user will be redirected to the web page "Teachers".
 
-###Cancel operation scenario
+### Cancel operation scenario
 
 + User click the button cancel. 
 + New teacher won't be input to the database.
@@ -105,7 +105,7 @@ The web page is used to add new teacher to the database
 ![alt text](images/Add_teacher.jpg)
 Picture 1.2 Adding new teacher to the database and web page
 
-###Restriction
+### Restriction
 
 + input field name  and last name should contain less than 30 characters.
 + Every input field must be filled.
@@ -124,7 +124,7 @@ Picture 1.2 Adding new teacher to the database and web page
 
 The webpage is used to edit the information about a certain teacher
 
-##Main use
+## Main use
 
 * User clicks on hyperlink "edit" in the column 'action' of the teacher he wants to update.
 * Web application load the page.
@@ -140,7 +140,7 @@ The webpage is used to edit the information about a certain teacher
 * otherwise, the web application redirect user to the 'Teachers' page. 
 * if user doesn't add information and click update, the teacher will contain the same information
 
-###Cancel operation scenario
+### Cancel operation scenario
 
 + User clicks the button cancel.
 + user's edits won't be input to the database.
@@ -150,7 +150,7 @@ The webpage is used to edit the information about a certain teacher
 ![alt text](images/Update_teacher.jpg)
 Picture 1.3 Updating information about teacher
 
-###Restriction
+### Restriction
 
 + input field name  and last name should contain less than 30 characters.
 + Salary must be a digit.
@@ -159,7 +159,7 @@ Picture 1.3 Updating information about teacher
 
 Action is used to delete the teacher from web page list and database
 
-##Main use
+## Main use
 + User click button 'delete' in the column 'action' with a certain teacher.
 + the web application will show the window to confirm the action of the user.
 + if user clicks 'yes' the row will be deleted from the database.
@@ -175,7 +175,7 @@ Picture 1.4 Deleting teacher from database and web page
 
 Web page is used to see the list of universities.
 
-##Main Use
+## Main Use
 
 + User click on hyperlink "Universities".
 + Web application redirect user to the web page "Universities".
@@ -198,7 +198,7 @@ Web page contains:
 
 The web page is used to add new university to the database
 
-###Main use
+### Main use
 
 * User click on hyperlink "Add University".
 * Web application load the page.
@@ -208,7 +208,7 @@ The web page is used to add new university to the database
 * if user added wrong data the error message will raise. 
 * otherwise, user will be redirected to the web page "Universities".
 
-###Cancel operation scenario
+### Cancel operation scenario
 
 + User click the button cancel. 
 + New university won't be input to the database.
@@ -218,7 +218,7 @@ The web page is used to add new university to the database
 ![alt text](images/Add_university.jpg)
 Picture 2.2 Adding new university to the database and web page
 
-###Restriction
+### Restriction
 
 + input field name and location must contain less than 50 characters.
 + Every input field must be filled.
@@ -233,7 +233,7 @@ Picture 2.2 Adding new university to the database and web page
 
 The webpage is used to edit the information about a certain university
 
-##Main use
+## Main use
 
 * User clicks on hyperlink "edit" in the column 'action' of the university he wants to update.
 * Web application load the page.
@@ -245,7 +245,7 @@ The webpage is used to edit the information about a certain university
 * otherwise, the web application redirect user to the 'Universities' page.  
 * if user doesn't add information and click update, the university will contain the same information
 
-###Cancel operation scenario
+### Cancel operation scenario
 
 + User clicks the button cancel.
 + user's edits won't be input to the database.
@@ -255,7 +255,7 @@ The webpage is used to edit the information about a certain university
 ![alt text](images/Update_university.jpg)
 Picture 2.3 Updating information about university
 
-###Restriction
+### Restriction
 
 + input field name  and location must contain less than 50 characters.
 
@@ -263,7 +263,7 @@ Picture 2.3 Updating information about university
 
 Action is used to delete university from web page list and database
 
-##Main use
+## Main use
 + User click button 'delete' in the column 'action' with a certain university.
 + the web application will show the window to confirm the action of the user.
 + if user clicks 'yes' the row will be deleted from the database.
