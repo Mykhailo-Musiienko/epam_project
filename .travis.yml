@@ -10,11 +10,11 @@ before_install:
   - sudo mysql -e "use mysql; update user set authentication_string=PASSWORD('root') where User='root'; update user set plugin='mysql_native_password';FLUSH PRIVILEGES;"
   - sudo service mysql restart
 script:
-  - pylint views
-  - pylint --load-plugins pylint_flask_sqlalchemy models
-  - pylint rest
-  - pylint --load-plugins pylint_flask_sqlalchemy service
-  - pylint tests
+#  - pylint views
+#  - pylint --load-plugins pylint_flask_sqlalchemy models
+#  - pylint rest
+#  - pylint --load-plugins pylint_flask_sqlalchemy service
+#  - pylint tests
   -  python app.py
   - python -m unittest discover
 notifications:
