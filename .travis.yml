@@ -16,6 +16,8 @@ script:
 #  - pylint --load-plugins pylint_flask_sqlalchemy service
 #  - pylint tests
   -  python app.py
-  - python -m unittest discover
+  - coverage unittest discover
+after_success:
+  coveralls
 notifications:
   email: false
