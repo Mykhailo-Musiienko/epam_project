@@ -2,11 +2,13 @@
 This module works for RESTFULL-API in website.
 
 This module includes functions: index(), read_teacher(), add_teacher(), update_teacher(), delete_teacher(),
-get_university(), get_university_by_id(), post_university(), update_university(), delete_university()
+search_by_date(), get_university(), get_university_by_id(), post_university(), update_university(), delete_university()
 
 This module imports: flask.Blueprint, flask.request, flask.jsonify, service, TeacherSchema, UniversitySchema,
 University, Teacher
 """
+import datetime
+
 from flask import Blueprint, Response
 from flask import request
 from flask import jsonify
@@ -108,6 +110,28 @@ def delete_teacher(teacher_id) -> dict:
         return teacher_schema.jsonify(res).data
 
 
+@api.route('/search_by_date', methods=['POST'])
+def search_by_date() -> dict:
+    """
+    Search teachers between given two dates
+    :return: dict
+    """
+    teacher_schema = TeacherSchema(many=True)
+    date_from = request.json.get('date_from')
+    date_to = request.json.get('date_to')
+    if not date_to or not date_from:
+        return {'error': {'message': f'Some date was not given.', 'status': 400}}
+    if not isinstance(date_from, str) or not isinstance(date_to, str):
+        return {'error': {'message': f'Date must by given in string form.', 'status': 400}}
+    try:
+        date_from = datetime.datetime.strptime(date_from, "%Y-%m-%d")
+        date_to = datetime.datetime.strptime(date_to, "%Y-%m-%d")
+    except (TypeError, ValueError):
+        return {'error': {'message': 'Date is in wrong format should be year-month-day', 'status': 400}}
+    teachers = Teacher.query.filter(Teacher.birth_date.between(date_from, date_to))
+    return teacher_schema.jsonify(teachers).data
+
+
 @api.route('/university', methods=['GET'])
 def get_university() -> dict:
     """
@@ -157,7 +181,7 @@ def update_university(university_id) -> Response:
     name = request.json.get('name')
     location = request.json.get('location')
     res = universities_crud.update_university_api(university_id, name, location)
-    if isinstance(res,dict):
+    if isinstance(res, dict):
         return jsonify(res)
     return university_schema.jsonify(res).data
     pass

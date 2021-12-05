@@ -5,12 +5,11 @@ This module contains class TestRestApi. It tests all functions that teacher_view
 
 This module imports: app,datetime, unittest.TestCase, unittest.mock.patch, University, University, teacher_crude
 """
-import json
 
-from flask import jsonify
 
 from app import app
 import datetime
+from flask import jsonify
 from unittest import TestCase
 from unittest.mock import patch
 from models.university import University, UniversitySchema
@@ -189,6 +188,38 @@ class TestRestApi(TestCase):
             true_response = jsonify(true_response).data
         self.assertEqual(true_response, response.data)
 
+    @patch('rest.restapi.Teacher')
+    def test_search_by_date(self, teacher) -> None:
+        """
+        Test search by date for REST-API
+        :param teacher: Mock Teacher class
+        :return: None
+        """
+        # Test if everything is okay
+        teacher.query.filter.return_value = teacher_list
+        response = self.app.post('/api/search_by_date', json={"date_from": '2011-01-01',
+                                                              "date_to": '2012-01-01'})
+        with app.app_context():
+            teacher_schema = TeacherSchema(many=True)
+            return_response = teacher_schema.jsonify(teacher_list).data
+        self.assertEqual(return_response, response.data)
+        # Test if some date was not writen
+        response = self.app.post('/api/search_by_date', json={"date_from": None, "date_to": '2012-01-01'})
+        with app.app_context():
+            return_response = jsonify({'error': {'message': f'Some date was not given.', 'status': 400}}).data
+        self.assertEqual(return_response, response.data)
+        # Test if dates is not in string form
+        response = self.app.post('/api/search_by_date', json={"date_from": 3, "date_to": '2012-01-01'})
+        with app.app_context():
+            return_response = jsonify({'error': {'message': f'Date must by given in string form.', 'status': 400}}).data
+        self.assertEqual(return_response, response.data)
+        # Test if exception was raised
+        response = self.app.post('/api/search_by_date', json={"date_from": '2011-12afs-asd1', "date_to": '2012-01-01'})
+        with app.app_context():
+            return_response = jsonify({'error': {'message': 'Date is in wrong format should be year-month-day',
+                                                 'status': 400}}).data
+        self.assertEqual(return_response, response.data)
+
     @patch('rest.restapi.universities_crud')
     def test_get_university(self, u_crud) -> None:
         """
@@ -273,7 +304,7 @@ class TestRestApi(TestCase):
     def test_delete_university(self, u_crud) -> None:
         """
         Test delete university for REST-API
-        :param u_crud: Mock unirsities_crud
+        :param u_crud: Mock universities_crud
         :return: None
         """
         u_crud.delete_university_api.return_value = university1

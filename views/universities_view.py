@@ -47,7 +47,7 @@ def create_university() -> str:
     if not name or not location:
         flash("You didn't write all fields please fill in every field", category="error")
         return redirect(url_for('add_university'))
-    if not name.isalnum() or not location.isalnum():
+    if not name.isalnum() or location.isspace():
         flash("Fields doesn't contain alphabetic symbols", category="error")
         return redirect(url_for('add_university'))
     if not universities_crud.create_university(university):
