@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/Mykhailo-Musiienko/epam_project/badge.svg?branch=master)](https://coveralls.io/github/Mykhailo-Musiienko/epam_project?branch=master)
+
 # Managing teachers and universities
 
 ---
