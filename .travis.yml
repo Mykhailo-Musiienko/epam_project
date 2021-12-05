@@ -14,11 +14,11 @@ addons:
       - mysql-server
       - mysql-client
 before_script:
-  - pylint views
-  - pylint models
-  - pylint rest
-  - pylint service
-  - pylint tests
+#  - pylint views
+#  - pylint models
+#  - pylint rest
+#  - pylint service
+#  - pylint tests
   - python app.py
 script:
   - python -m unittest discover
