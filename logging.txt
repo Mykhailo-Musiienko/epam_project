@@ -326,3 +326,133 @@
 2021-12-05 20:17:15,866:app:Route teacher.html is rendered.
 2021-12-05 20:17:19,791:app:Route create new teacher is rendered
 2021-12-05 20:17:26,648:app:Api show all teachers in database.
+2021-12-05 21:01:40,423:app:User make post method  add_teacher in REST-API
+2021-12-05 21:01:40,424:app:User make new teacher in REST-API
+2021-12-05 21:01:40,427:app:User make post method  add_teacher in REST-API
+2021-12-05 21:01:40,428:app:User make post method  add_teacher in REST-API
+2021-12-05 21:01:40,428:app:User did not entered some data
+2021-12-05 21:01:40,430:app:User make post method  add_teacher in REST-API
+2021-12-05 21:01:40,430:app:
+2021-12-05 21:01:40,432:app:User make delete method  delete_teacher in REST-API
+2021-12-05 21:01:40,433:app:Teacher was deleted.
+2021-12-05 21:01:40,435:app:User make delete method  delete_teacher in REST-API
+2021-12-05 21:01:40,435:app:User entered wrong teacher id
+2021-12-05 21:01:40,438:app:User make delete method to delete university in REST-API
+2021-12-05 21:01:40,438:app:University was deleted.
+2021-12-05 21:01:40,440:app:User make delete method to delete university in REST-API
+2021-12-05 21:01:40,440:app:User entered wrong university id
+2021-12-05 21:01:40,445:app:User get universities in REST-API
+2021-12-05 21:01:40,448:app:User get university with id 1 in REST-API
+2021-12-05 21:01:40,448:app:User entered wrong id
+2021-12-05 21:01:40,449:app:User get university with id 1 in REST-API
+2021-12-05 21:01:40,450:app:Teacher with id {university_id} was shown.
+2021-12-05 21:01:40,453:app:Api show all teachers in database.
+2021-12-05 21:01:40,456:app:User make post method to create new university in REST-API
+2021-12-05 21:01:40,456:app:University was added
+2021-12-05 21:01:40,458:app:User make post method to create new university in REST-API
+2021-12-05 21:01:40,458:app:User entered wrong data
+2021-12-05 21:01:40,461:app:User get teacher with id {teacher_id} in REST-API
+2021-12-05 21:01:40,464:app:User make post method  search_by_date in REST-API
+2021-12-05 21:01:40,467:app:Teachers between dates were shown
+2021-12-05 21:01:40,472:app:User make post method  search_by_date in REST-API
+2021-12-05 21:01:40,472:app:User did not entered some date
+2021-12-05 21:01:40,474:app:User make post method  search_by_date in REST-API
+2021-12-05 21:01:40,474:app:User entered date in incorrect form.
+2021-12-05 21:01:40,476:app:User make post method  search_by_date in REST-API
+2021-12-05 21:01:40,476:app:User entered date in wrong format should be year-month-day
+2021-12-05 21:01:40,479:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-05 21:01:40,479:app:Teacher was updated.
+2021-12-05 21:01:40,481:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-05 21:01:40,481:app:User entered incorrect data.
+2021-12-05 21:01:40,483:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-05 21:01:40,483:app:User entered wrong teacher id.
+2021-12-05 21:01:40,485:app:User make method patch to update university in REST-API
+2021-12-05 21:01:40,485:app:University was updated.
+2021-12-05 21:01:40,487:app:User make method patch to update university in REST-API
+2021-12-05 21:01:40,487:app:User entered wrong data.
+2021-12-05 21:01:40,492:app:
+2021-12-05 21:01:40,497:app:
+2021-12-05 21:01:40,501:app:
+2021-12-05 21:01:40,506:app:No data was given
+2021-12-05 21:01:40,507:app:Wrong university name
+2021-12-05 21:01:40,508:app:User entered salary with wrong type
+2021-12-05 21:01:40,508:app:User entered date in incorrect format.
+2021-12-05 21:01:40,513:app:User click to submit new teacher
+2021-12-05 21:01:40,519:app:Teacher was successfully added.
+2021-12-05 21:01:40,529:app:Route teacher.html is rendered.
+2021-12-05 21:01:40,545:app:User click to submit new teacher
+2021-12-05 21:01:40,547:app:Some fields were not entered
+2021-12-05 21:01:40,569:app:Route create new teacher is rendered
+2021-12-05 21:01:40,579:app:User click to submit new teacher
+2021-12-05 21:01:40,581:app:User did not enter some fields
+2021-12-05 21:01:40,599:app:Route create new teacher is rendered
+2021-12-05 21:01:40,605:app:User click delete teacher with id 1.
+2021-12-05 21:01:40,606:app:Teacher with 1 was deleted.
+2021-12-05 21:01:40,609:app:Route teacher.html is rendered.
+2021-12-05 21:01:40,611:app:User click delete teacher with id 1.
+2021-12-05 21:01:40,611:app:Error of deleting this Teacher.
+2021-12-05 21:01:40,613:app:Route teacher.html is rendered.
+2021-12-05 21:01:40,631:app:Route create new teacher is rendered
+2021-12-05 21:01:40,636:app:Route teacher.html is rendered.
+2021-12-05 21:01:40,640:app:Route teacher.html is rendered.
+2021-12-05 21:01:40,644:app:User click to update teacher with id 0
+2021-12-05 21:01:40,651:app:User click to search teachers in date intervals
+2021-12-05 21:01:40,654:app:Teachers in interval 2011-11-01 to 2011-11-01 were found.
+2021-12-05 21:01:40,656:app:User click to search teachers in date intervals
+2021-12-05 21:01:40,657:app:User did not entered all dates in date form.
+2021-12-05 21:01:40,663:app:Route teacher.html is rendered.
+2021-12-05 21:01:40,668:app:User click to update teacher
+2021-12-05 21:01:40,669:app:Teacher was successfully updated.
+2021-12-05 21:01:40,672:app:Route teacher.html is rendered.
+2021-12-05 21:01:40,676:app:User click to update teacher
+2021-12-05 21:01:40,677:app:User entered incorrect data to form fields.
+2021-12-05 21:01:40,692:app:User click to update teacher with id 1
+2021-12-05 21:01:40,700:app:User click to update teacher
+2021-12-05 21:01:40,701:app:User did not entered any new data
+2021-12-05 21:01:40,717:app:User click to update teacher with id 1
+2021-12-05 21:01:40,724:app:Page add_university.html was shown.
+2021-12-05 21:01:40,729:app:User click submit button to create new university.
+2021-12-05 21:01:40,730:app:University was added
+2021-12-05 21:01:40,732:app:university.page was shown
+2021-12-05 21:01:40,733:app:Got universities from database
+2021-12-05 21:01:40,743:app:User click submit button to create new university.
+2021-12-05 21:01:40,744:app:User did not write all fields in field form.
+2021-12-05 21:01:40,746:app:Page add_university.html was shown.
+2021-12-05 21:01:40,747:app:User click submit button to create new university.
+2021-12-05 21:01:40,748:app:User entered invalid symbols
+2021-12-05 21:01:40,749:app:Page add_university.html was shown.
+2021-12-05 21:01:40,751:app:User click submit button to create new university.
+2021-12-05 21:01:40,751:app:Error of adding university to db.
+2021-12-05 21:01:40,753:app:Page add_university.html was shown.
+2021-12-05 21:01:40,756:app:User click to delete university with id 0
+2021-12-05 21:01:40,756:app:University was successfully deleted.
+2021-12-05 21:01:40,760:app:university.page was shown
+2021-12-05 21:01:40,762:app:Got universities from database
+2021-12-05 21:01:40,764:app:User click to delete university with id 0
+2021-12-05 21:01:40,764:app:Can't delete this university from db.
+2021-12-05 21:01:40,766:app:university.page was shown
+2021-12-05 21:01:40,766:app:Got universities from database
+2021-12-05 21:01:40,769:app:university.page was shown
+2021-12-05 21:01:40,769:app:Got universities from database
+2021-12-05 21:01:40,773:app:university.page was shown
+2021-12-05 21:01:40,773:app:Error of reading Universities from db.
+2021-12-05 21:01:40,779:app:Route teacher.html is rendered.
+2021-12-05 21:01:40,783:app:Page update_university was show with university id 1
+2021-12-05 21:01:40,789:app:User click to update university
+2021-12-05 21:01:40,790:app:University was updated
+2021-12-05 21:01:40,792:app:university.page was shown
+2021-12-05 21:01:40,793:app:Got universities from database
+2021-12-05 21:01:40,795:app:User click to update university
+2021-12-05 21:01:40,796:app:User did not write anything to the field form
+2021-12-05 21:01:40,798:app:Page update_university was show with university id 1
+2021-12-05 21:01:40,802:app:User click to update university
+2021-12-05 21:01:40,803:app:User write incorrect data or any new changes
+2021-12-05 21:01:40,807:app:Page update_university was show with university id 1
+2021-12-05 21:01:40,811:app:
+2021-12-05 21:01:40,814:app:
+2021-12-05 21:01:40,817:app:
+2021-12-05 21:01:40,824:app:
+2021-12-05 21:01:40,828:app:
+2021-12-05 21:01:40,831:app:
+2021-12-05 21:01:40,831:app:
+2021-12-05 21:01:40,834:app:
