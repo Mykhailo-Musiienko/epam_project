@@ -14,7 +14,12 @@ addons:
       - mysql-server
       - mysql-client
 before_script:
-  - sudo mysql -e 'create database if not exists testing;'
+  - pylint views
+  - pylint models
+  - pylint rest
+  - pylint service
+  - pylint tests
+  - python app.py
 script:
   - python -m unittest discover
 notifications:

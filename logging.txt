@@ -1,0 +1,61 @@
+2021-12-05 13:18:00,235:app:Route teacher.html is rendered.
+2021-12-05 13:18:00,394:app:Route teacher.html is rendered.
+2021-12-05 13:44:42,859:app:university.page was shown
+2021-12-05 13:44:42,935:app:Got universities from database
+2021-12-05 13:44:45,639:app:Page add_university.html was shown.
+2021-12-05 13:44:50,721:app:User click submit button to create new university.
+2021-12-05 13:44:50,737:app:University was added
+2021-12-05 13:44:50,758:app:university.page was shown
+2021-12-05 13:44:50,831:app:Got universities from database
+2021-12-05 13:44:53,183:app:Page update_university was show with university id 20
+2021-12-05 13:44:55,482:app:User click to update university
+2021-12-05 13:44:55,508:app:University was updated
+2021-12-05 13:44:55,519:app:university.page was shown
+2021-12-05 13:44:55,578:app:Got universities from database
+2021-12-05 13:45:00,195:app:User click to delete university with id 20
+2021-12-05 13:45:00,210:app:University was successfully deleted.
+2021-12-05 13:45:00,233:app:university.page was shown
+2021-12-05 13:45:00,318:app:Got universities from database
+2021-12-05 14:27:11,517:app:Route teacher.html is rendered.
+2021-12-05 14:27:14,319:app:User click to update teacher with id 1
+2021-12-05 14:27:16,798:app:Route create new teacher is rendered
+2021-12-05 14:27:17,869:app:university.page was shown
+2021-12-05 14:27:17,993:app:Got universities from database
+2021-12-05 14:27:19,201:app:Route teacher.html is rendered.
+2021-12-05 14:27:23,220:app:User click delete teacher with id 36.
+2021-12-05 14:27:23,291:app:Teacher with 36 was deleted.
+2021-12-05 14:27:23,333:app:Route teacher.html is rendered.
+2021-12-05 14:27:57,596:app:User make post method  search_by_date in REST-API
+2021-12-05 14:27:57,599:app:Teachers between dates were shown
+2021-12-05 14:28:20,734:app:User make post method  search_by_date in REST-API
+2021-12-05 14:28:20,736:app:Teachers between dates were shown
+2021-12-05 14:28:33,453:app:Api show all teachers in database.
+2021-12-05 14:36:49,750:app:Route teacher.html is rendered.
+2021-12-05 14:36:55,659:app:Route create new teacher is rendered
+2021-12-05 14:36:57,419:app:Route teacher.html is rendered.
+2021-12-05 15:07:16,110:app:Route teacher.html is rendered.
+2021-12-05 15:59:02,097:app:Route teacher.html is rendered.
+2021-12-05 15:59:06,074:app:Route create new teacher is rendered
+2021-12-05 15:59:19,031:app:User click to submit new teacher
+2021-12-05 15:59:19,075:app:Teacher was successfully added.
+2021-12-05 15:59:19,096:app:Route teacher.html is rendered.
+2021-12-05 15:59:41,065:app:Route create new teacher is rendered
+2021-12-05 15:59:47,700:app:Route teacher.html is rendered.
+2021-12-05 16:00:29,367:app:Route teacher.html is rendered.
+2021-12-05 16:00:30,924:app:university.page was shown
+2021-12-05 16:00:30,980:app:Got universities from database
+2021-12-05 16:00:32,707:app:Page add_university.html was shown.
+2021-12-05 16:00:34,402:app:university.page was shown
+2021-12-05 16:00:34,455:app:Got universities from database
+2021-12-05 16:00:35,546:app:Route teacher.html is rendered.
+2021-12-05 16:00:37,706:app:User click to update teacher with id 37
+2021-12-05 16:00:40,767:app:User click to update teacher
+2021-12-05 16:00:40,773:app:User entered incorrect data to form fields.
+2021-12-05 16:00:40,850:app:User click to update teacher with id 37
+2021-12-05 16:00:44,458:app:User click to update teacher
+2021-12-05 16:00:44,498:app:Teacher was successfully updated.
+2021-12-05 16:00:44,513:app:Route teacher.html is rendered.
+2021-12-05 16:00:48,139:app:User click delete teacher with id 37.
+2021-12-05 16:00:48,164:app:Teacher with 37 was deleted.
+2021-12-05 16:00:48,208:app:Route teacher.html is rendered.
+2021-12-05 16:00:53,039:app:Route teacher.html is rendered.

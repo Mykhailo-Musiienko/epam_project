@@ -3,7 +3,8 @@ This module run tests for function in module views.teacher_view.
 
 This module contains class TestRestApi. It tests all functions that teacher_view.py file has.
 
-This module imports: app,datetime, unittest.TestCase, unittest.mock.patch, University, University, teacher_crude
+This module imports: app,datetime, unittest.TestCase, unittest.mock.patch,
+University, University, teacher_crude
 """
 
 
@@ -31,9 +32,11 @@ class TestRestApi(TestCase):
     """
     This class runs all tests for the restapi.py file.
 
-    This class includes functions: setUp(), test_index(), test_read_teacher(), test_add_teacher(),
-    test_update_teacher(), test_delete_teacher(), test_get_university(), test_get_university_by_id(),
-    test_post_university(), test_update_university(), test_delete_university()
+    This class includes functions: setUp(), test_index(),
+    test_read_teacher(), test_add_teacher(),
+    test_update_teacher(), test_delete_teacher(), test_get_university(),
+    test_get_university_by_id(), test_post_university(),
+    test_update_university(), test_delete_university()
     """
 
     def setUp(self) -> None:
@@ -91,8 +94,10 @@ class TestRestApi(TestCase):
         university.query.filter_by.return_value.first.return_value = university1
         t_crud.create_teacher.return_value = True
         teacher.return_value = teacher1
-        response = self.app.post('/api/', json={'name': teacher1.name, 'last_name': teacher1.last_name,
-                                                'birth_date': teacher1.birth_date, 'salary': teacher1.salary,
+        response = self.app.post('/api/', json={'name': teacher1.name,
+                                                'last_name': teacher1.last_name,
+                                                'birth_date': teacher1.birth_date,
+                                                'salary': teacher1.salary,
                                                 'university': teacher1.university.name})
         with app.app_context():
             teacher_scheme = TeacherSchema()
@@ -100,26 +105,34 @@ class TestRestApi(TestCase):
         self.assertEqual(true_response, response.data)
         # Test if university not in database
         university.query.filter_by.return_value.first.return_value = None
-        true_response = {'error': {'message': f'Wrong university name.', 'status': 400}}
-        response = self.app.post('/api/', json={'name': teacher1.name, 'last_name': teacher1.last_name,
-                                                'birth_date': "2001-10-10", 'salary': teacher1.salary,
+        true_response = {'error': {'message': 'Wrong university name.', 'status': 400}}
+        response = self.app.post('/api/', json={'name': teacher1.name,
+                                                'last_name': teacher1.last_name,
+                                                'birth_date': "2001-10-10",
+                                                'salary': teacher1.salary,
                                                 'university': teacher1.university.name})
         with app.app_context():
             true_response = jsonify(true_response).data
         self.assertEqual(true_response, response.data)
         # Test if not all fields were written
-        true_response = {'error': {'message': 'Some data was not written', 'status': 400}}
-        response = self.app.post('/api/', json={'name': None, 'last_name': teacher1.last_name,
-                                                'birth_date': "2001-10-10", 'salary': teacher1.salary,
+        true_response = {'error': {'message': 'Some data was not written',
+                                   'status': 400}}
+        response = self.app.post('/api/', json={'name': None,
+                                                'last_name': teacher1.last_name,
+                                                'birth_date': "2001-10-10",
+                                                'salary': teacher1.salary,
                                                 'university': teacher1.university.name})
         with app.app_context():
             true_response = jsonify(true_response).data
         self.assertEqual(true_response, response.data)
         # Test if exception was raised
         university.query.filter_by.return_value.first.side_effect = Exception
-        true_response = {'error': {'message': f'Wrong university name.', 'status': 400}}
-        response = self.app.post('/api/', json={'name': teacher1.name, 'last_name': teacher1.last_name,
-                                                'birth_date': "2001-10-10", 'salary': teacher1.salary,
+        true_response = {'error': {'message': 'Wrong university name.',
+                                   'status': 400}}
+        response = self.app.post('/api/', json={'name': teacher1.name,
+                                                'last_name': teacher1.last_name,
+                                                'birth_date': "2001-10-10",
+                                                'salary': teacher1.salary,
                                                 'university': teacher1.university.name})
         with app.app_context():
             true_response = jsonify(true_response).data
@@ -135,32 +148,39 @@ class TestRestApi(TestCase):
         # Test if everything is correct
         t_crud.get_teacher.return_value = teacher1
         t_crud.update_teacher_api.return_value = teacher2
-        response = self.app.patch('/api/teacher_update/1', json={'name': teacher2.name, 'last_name': teacher2.last_name,
-                                                                 'birth_date': teacher2.birth_date,
-                                                                 'salary': teacher2.salary,
-                                                                 'university': teacher2.university.name})
+        response = self.app.patch('/api/teacher_update/1',
+                                  json={'name': teacher2.name,
+                                         'last_name': teacher2.last_name,
+                                         'birth_date': teacher2.birth_date,
+                                         'salary': teacher2.salary,
+                                         'university': teacher2.university.name})
         with app.app_context():
             teacher_scheme = TeacherSchema()
             true_response = teacher_scheme.jsonify(teacher2).data
         self.assertEqual(true_response, response.data)
         # Test if wrong data given
         t_crud.get_teacher.return_value = teacher1
-        t_crud.update_teacher_api.return_value = {'error': {'message': f'No data was given.', 'status': 400}}
-        true_response = {'error': {'message': f'No data was given.', 'status': 400}}
-        response = self.app.patch('/api/teacher_update/1', json={'name': teacher2.name, 'last_name': teacher2.last_name,
-                                                                 'birth_date': teacher2.birth_date,
-                                                                 'salary': teacher2.salary,
-                                                                 'university': teacher2.university.name})
+        t_crud.update_teacher_api.return_value = {'error': {'message': f'No data was given.',
+                                                            'status': 400}}
+        true_response = {'error': {'message': 'No data was given.', 'status': 400}}
+        response = self.app.patch('/api/teacher_update/1',
+                                  json={'name': teacher2.name,
+                                         'last_name': teacher2.last_name,
+                                         'birth_date': teacher2.birth_date,
+                                         'salary': teacher2.salary,
+                                         'university': teacher2.university.name})
         with app.app_context():
             true_response = jsonify(true_response).data
         self.assertEqual(true_response, response.data)
         # Test if wrong teacher id was given
         t_crud.get_teacher.return_value = None
-        true_response = {'error': {'message': f'Wrong teacher id.', 'status': 400}}
-        response = self.app.patch('/api/teacher_update/1', json={'name': teacher2.name, 'last_name': teacher2.last_name,
-                                                                 'birth_date': teacher2.birth_date,
-                                                                 'salary': teacher2.salary,
-                                                                 'university': teacher2.university.name})
+        true_response = {'error': {'message': 'Wrong teacher id.', 'status': 400}}
+        response = self.app.patch('/api/teacher_update/1',
+                                  json={'name': teacher2.name,
+                                        'last_name': teacher2.last_name,
+                                        'birth_date': teacher2.birth_date,
+                                        'salary': teacher2.salary,
+                                        'university': teacher2.university.name})
         with app.app_context():
             true_response = jsonify(true_response).data
         self.assertEqual(true_response, response.data)
@@ -180,9 +200,9 @@ class TestRestApi(TestCase):
             true_response = teacher_scheme.jsonify(teacher1).data
         self.assertEqual(true_response, response.data)
         # Test if wrong id was given
-        t_crud.delete_teacher_api.return_value = {'error': {'message': f'No teacher was found with given id',
+        t_crud.delete_teacher_api.return_value = {'error': {'message': 'No teacher was found with given id',
                                                             'status': 400}}
-        true_response = {'error': {'message': f'No teacher was found with given id', 'status': 400}}
+        true_response = {'error': {'message': 'No teacher was found with given id', 'status': 400}}
         response = self.app.delete('/api/1')
         with app.app_context():
             true_response = jsonify(true_response).data
@@ -197,26 +217,33 @@ class TestRestApi(TestCase):
         """
         # Test if everything is okay
         teacher.query.filter.return_value = teacher_list
-        response = self.app.post('/api/search_by_date', json={"date_from": '2011-01-01',
-                                                              "date_to": '2012-01-01'})
+        response = self.app.post('/api/search_by_date',
+                                 json={"date_from": '2011-01-01',
+                                       "date_to": '2012-01-01'})
         with app.app_context():
             teacher_schema = TeacherSchema(many=True)
             return_response = teacher_schema.jsonify(teacher_list).data
         self.assertEqual(return_response, response.data)
         # Test if some date was not writen
-        response = self.app.post('/api/search_by_date', json={"date_from": None, "date_to": '2012-01-01'})
+        response = self.app.post('/api/search_by_date',
+                                 json={"date_from": None, "date_to": '2012-01-01'})
         with app.app_context():
-            return_response = jsonify({'error': {'message': f'Some date was not given.', 'status': 400}}).data
+            return_response = jsonify({'error': {'message': 'Some date was not given.',
+                                                 'status': 400}}).data
         self.assertEqual(return_response, response.data)
         # Test if dates is not in string form
-        response = self.app.post('/api/search_by_date', json={"date_from": 3, "date_to": '2012-01-01'})
+        response = self.app.post('/api/search_by_date',
+                                 json={"date_from": 3, "date_to": '2012-01-01'})
         with app.app_context():
-            return_response = jsonify({'error': {'message': f'Date must by given in string form.', 'status': 400}}).data
+            return_response = jsonify({'error': {'message': 'Date must by given in string form.',
+                                                 'status': 400}}).data
         self.assertEqual(return_response, response.data)
         # Test if exception was raised
-        response = self.app.post('/api/search_by_date', json={"date_from": '2011-12afs-asd1', "date_to": '2012-01-01'})
+        response = self.app.post('/api/search_by_date',
+                                 json={"date_from": '2011-12afs-asd1', "date_to": '2012-01-01'})
         with app.app_context():
-            return_response = jsonify({'error': {'message': 'Date is in wrong format should be year-month-day',
+            return_response = jsonify({'error': {'message': 'Date is in wrong format'
+                                                            ' should be year-month-day',
                                                  'status': 400}}).data
         self.assertEqual(return_response, response.data)
 
@@ -251,7 +278,8 @@ class TestRestApi(TestCase):
         # Test if exception was raised
         u_crud.get_university.return_value = None
         with app.app_context():
-            true_response = jsonify({'error': {'message': 'No university was found with given id', 'status': 400}}).data
+            true_response = jsonify({'error': {'message': 'No university was found'
+                                                          ' with given id', 'status': 400}}).data
         response = self.app.get('/api/university/1').data
         self.assertEqual(true_response, response)
 
@@ -264,7 +292,8 @@ class TestRestApi(TestCase):
         """
         # Test if everything is okay
         u_crud.create_university_api.return_value = university2
-        response = self.app.post('/api/university', json={'name': university2.name, 'location': university2.location})
+        response = self.app.post('/api/university',
+                                 json={'name': university2.name, 'location': university2.location})
         with app.app_context():
             university_scheme = UniversitySchema()
             true_response = university_scheme.jsonify(university2).data
@@ -274,7 +303,8 @@ class TestRestApi(TestCase):
         true_response = {'error': {'message': 'Incorrect data type', 'status': 400}}
         with app.app_context():
             true_response = jsonify(true_response).data
-        response = self.app.post('/api/university', json={'name': university2.name, 'location': university2.location})
+        response = self.app.post('/api/university',
+                                 json={'name': university2.name, 'location': university2.location})
         self.assertEqual(true_response, response.data)
 
     @patch('rest.restapi.universities_crud')
@@ -292,7 +322,8 @@ class TestRestApi(TestCase):
             true_response = university_scheme.jsonify(university2).data
         self.assertEqual(true_response, response.data)
         # Test if exception was raised
-        u_crud.update_university_api.return_value = {'error': {'message': 'Incorrect data type', 'status': 400}}
+        u_crud.update_university_api.return_value = {'error':
+                                                         {'message': 'Incorrect data type', 'status': 400}}
         true_response = {'error': {'message': 'Incorrect data type', 'status': 400}}
         with app.app_context():
             true_response = jsonify(true_response).data

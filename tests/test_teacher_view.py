@@ -3,14 +3,15 @@ This module run tests for function in module views.teacher_view.
 
 This module contains class TestTeacherView. It tests all functions that teacher_view.py file has.
 
-This module imports: app,datetime, unittest.TestCase, unittest.mock.patch, University, University, teacher_crude
+This module imports: app,datetime, unittest.TestCase, unittest.mock.patch, University,
+University, teacher_crude
 """
 
 
-from app import app
-import datetime
 from unittest import TestCase
 from unittest.mock import patch
+from app import app
+import datetime
 from models.university import University
 
 
@@ -55,8 +56,10 @@ class TestTeacherView(TestCase):
     """
     This class runs all tests for the module views.teacher_view.
 
-    It includes functions: setUp(), test_get_all_teachers(), test_get_add_teacher(), test_add_teacher(),
-    test_get_update_teacher(), test_update_teacher(), test_search_by_date(), test_delete_teacher().
+    It includes functions: setUp(), test_get_all_teachers(), test_get_add_teacher(),
+    test_add_teacher(),
+    test_get_update_teacher(), test_update_teacher(), test_search_by_date(),
+    test_delete_teacher().
 
     It inherited from class TestCase
     """
@@ -78,7 +81,8 @@ class TestTeacherView(TestCase):
         # Test for status code
         response = self.app.get('/', content_type='html/text')
         self.assertEqual(response.status_code, 200)
-        # Test for data in response 
+
+        # Test for data in response
         teachers_crud.get_all_teachers.return_value = teacher_list
         response = self.app.get('/', content_type='html/text')
         data = response.get_data(as_text=str)

@@ -3,7 +3,8 @@ This module run tests for  function in module service.universities_crud.
 
 This module contains class Test
 
-This module imports: app,datetime,unittest.TestCase, unittest.mock.patch, Teacher, University, teacher_crude
+This module imports: app,datetime,unittest.TestCase, unittest.mock.patch, Teacher,
+University, teacher_crude
 """
 
 from app import app
@@ -23,8 +24,10 @@ class TestUniversityCrud(TestCase):
     """
     This class runs all tests for the module service.universities_crud.
 
-    It includes: test test_get_all_universities, test_get_university, test_create_university, test_update_university,
-    test_delete_university, test_create_university_api, test_delete_university_api, test_update_university_api
+    It includes: test test_get_all_universities, test_get_university,
+    test_create_university, test_update_university,
+    test_delete_university, test_create_university_api,
+    test_delete_university_api, test_update_university_api
 
     It inherited from class TestCase
     """
@@ -144,7 +147,8 @@ class TestUniversityCrud(TestCase):
         self.assertEqual(true_value, result)
         # Test if name or location contains wrong symbols
         result = universities_crud.create_university_api('1?#$%^&', '    ')
-        true_value = {'error': {'message': 'Some fields contain not allowed symbols', 'status': 400}}
+        true_value = {'error': {'message': 'Some fields contain '
+                                           'not allowed symbols', 'status': 400}}
         self.assertEqual(true_value, result)
 
     @patch('service.universities_crud.db')

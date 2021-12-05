@@ -4,8 +4,8 @@ This module represents model Teacher and class TeacherSchema for serialization a
 This module has class Teacher and class TeacherSchema.
 This model imports such libraries like: flask_marshmallow, app, models.teacher, models.university
 """
-from app import db, ma
 from flask_marshmallow.fields import fields
+from app import db, ma
 from models.university import UniversitySchema
 
 
@@ -55,7 +55,8 @@ class Teacher(db.Model):
         String representation of class Teacher
         :return: str
         """
-        return f"Name: {self.name}, Last Name: {self.last_name},birth_date: {self.birth_date},salary: {self.salary}," \
+        return f"Name: {self.name}, Last Name: {self.last_name},birth_date: {self.birth_date}," \
+               f"salary: {self.salary}," \
                f"university: {self.university}"
 
 
