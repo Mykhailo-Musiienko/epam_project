@@ -9,11 +9,13 @@ services:
 addons:
   apt:
     sources:
-      - mysql-5.7-trusty
+      - mysql
     packages:
       - mysql-server
       - mysql-client
-before_script: sudo mysql -e 'create database if not exists testing;'
+before_script:
+  - sudo mysql -e 'create database if not exists testing;'
+  - mysql -u root --password=""
 script:
   - python -m unittest discover
 notifications:
