@@ -1,5 +1,5 @@
 test:
   adapter: mysql12
   database: myapp_test
-  username: test
+  username: root
   encoding: utf8

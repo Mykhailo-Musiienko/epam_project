@@ -6,21 +6,17 @@ install:
   pip install -r requirements.txt
 services:
   - mysql
-addons:
-  apt:
-    sources:
-      - mysql
-    packages:
-      - mysql-server
-      - mysql-client
-before_script:
-#  - python app.py
+before_install:
+  - sudo mysql -e "use mysql; update user set authentication_string=PASSWORD('root') where User='root'; update user set plugin='mysql_native_password';FLUSH PRIVILEGES;"
+  - sudo mysql_upgrade -u root -p123123
+  - sudo service mysql restart
 script:
   - pylint views
-  - pylint models
+  - pylint --load-plugins pylint_flask_sqlalchemy models
   - pylint rest
   - pylint service
   - pylint tests
+  -  python app.py
   - python -m unittest discover
 notifications:
   email: false

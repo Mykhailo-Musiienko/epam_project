@@ -21,6 +21,9 @@ marshmallow-sqlalchemy==0.26.1
 mccabe==0.6.1
 platformdirs==2.4.0
 pylint==2.12.2
+pylint-flask==0.6
+pylint-flask-sqlalchemy==0.2.0
+pylint-plugin-utils==0.6
 PyMySQL==1.0.2
 six==1.16.0
 SQLAlchemy==1.4.27

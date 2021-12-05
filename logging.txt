@@ -59,3 +59,10 @@
 2021-12-05 16:00:48,164:app:Teacher with 37 was deleted.
 2021-12-05 16:00:48,208:app:Route teacher.html is rendered.
 2021-12-05 16:00:53,039:app:Route teacher.html is rendered.
+2021-12-05 17:52:10,736:app:Route teacher.html is rendered.
+2021-12-05 17:53:00,448:app:Route teacher.html is rendered.
+2021-12-05 18:01:33,272:app:Route teacher.html is rendered.
+2021-12-05 18:01:41,207:app:Route teacher.html is rendered.
+2021-12-05 18:01:46,329:app:Api show all teachers in database.
+2021-12-05 18:02:51,991:app:User get teacher with id {teacher_id} in REST-API
+2021-12-05 18:15:50,455:app:User get universities in REST-API
