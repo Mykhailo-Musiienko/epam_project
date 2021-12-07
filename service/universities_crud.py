@@ -43,7 +43,7 @@ def get_all_universities() -> Any:
 
 def get_university(university_id) -> University:
     """
-    Get university with given id.
+    Get university with given id
     :param university_id: Id of university.
     :return: University
     """
@@ -53,7 +53,7 @@ def get_university(university_id) -> University:
 def create_university(university) -> bool:
     """
     Add university to database. CREATE method for CRUD controller.
-    Return true if there weren\'t any exceptions.
+    Return true if there weren't any exceptions
     :param university: New university to add to database.
     :return: bool
     """
@@ -69,8 +69,8 @@ def create_university(university) -> bool:
 
 def update_university(university, university_id) -> bool:
     """
-    Update data of a university with id that was given. UPDATE method for CRUD controller.
-    :param university: University object with new data.
+    Update data of a university with id that was given. UPDATE method for CRUD controller
+    :param university: University object with new data
     :param university_id: Id of university  to update.
     :return: bool
     """
@@ -98,7 +98,7 @@ def update_university(university, university_id) -> bool:
 
 def delete_university(university_id) -> bool:
     """
-    Delete university from database with id that is given. DELETE method for CRUD controller.
+    Delete university from database with id that is given. DELETE method for CRUD controller
     :param university_id: Id of university to delete.
     :return: bool
     """
@@ -114,7 +114,7 @@ def delete_university(university_id) -> bool:
 
 def create_university_api(name, location) -> dict:
     """
-    Function to creat university for REST-API
+    Function to create university for REST-API
     :param name: name of university
     :param location: where is university located
     :return: University

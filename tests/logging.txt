@@ -1,0 +1,425 @@
+2021-12-07 10:16:56,338:app:
+2021-12-07 10:16:56,366:app:
+2021-12-07 10:16:56,385:app:
+2021-12-07 10:16:56,420:app:No data was given
+2021-12-07 10:16:56,424:app:Wrong university name
+2021-12-07 10:16:56,424:app:User entered salary with wrong type
+2021-12-07 10:16:56,424:app:User entered date in incorrect format.
+2021-12-07 10:17:11,613:app:
+2021-12-07 10:17:11,620:app:
+2021-12-07 10:17:11,628:app:
+2021-12-07 10:17:11,665:app:No data was given
+2021-12-07 10:17:11,690:app:Wrong university name
+2021-12-07 10:17:11,690:app:User entered salary with wrong type
+2021-12-07 10:17:11,691:app:User entered date in incorrect format.
+2021-12-07 10:17:30,089:app:
+2021-12-07 10:17:30,112:app:
+2021-12-07 10:17:30,128:app:
+2021-12-07 10:17:30,177:app:No data was given
+2021-12-07 10:17:30,189:app:Wrong university name
+2021-12-07 10:17:30,189:app:User entered salary with wrong type
+2021-12-07 10:17:30,190:app:User entered date in incorrect format.
+2021-12-07 10:23:37,253:app:User make post method  add_teacher in REST-API
+2021-12-07 10:23:37,254:app:User make new teacher in REST-API
+2021-12-07 10:23:37,262:app:User make post method  add_teacher in REST-API
+2021-12-07 10:23:37,267:app:User make post method  add_teacher in REST-API
+2021-12-07 10:23:37,267:app:User did not entered some data
+2021-12-07 10:23:37,269:app:User make post method  add_teacher in REST-API
+2021-12-07 10:23:37,269:app:Can't add teacher to database in REST-API
+2021-12-07 10:23:37,284:app:User make delete method  delete_teacher in REST-API
+2021-12-07 10:23:37,284:app:Teacher was deleted.
+2021-12-07 10:23:37,290:app:User make delete method  delete_teacher in REST-API
+2021-12-07 10:23:37,290:app:User entered wrong teacher id
+2021-12-07 10:23:37,304:app:User make delete method to delete university in REST-API
+2021-12-07 10:23:37,305:app:University was deleted.
+2021-12-07 10:23:37,313:app:User make delete method to delete university in REST-API
+2021-12-07 10:23:37,313:app:User entered wrong university id
+2021-12-07 10:23:37,316:app:User get universities in REST-API
+2021-12-07 10:23:37,323:app:User get university with id 1 in REST-API
+2021-12-07 10:23:37,323:app:User entered wrong id
+2021-12-07 10:23:37,324:app:User get university with id 1 in REST-API
+2021-12-07 10:23:37,324:app:Teacher with id {university_id} was shown.
+2021-12-07 10:23:37,333:app:Api show all teachers in database.
+2021-12-07 10:23:37,336:app:User make post method to create new university in REST-API
+2021-12-07 10:23:37,336:app:University was added
+2021-12-07 10:23:37,338:app:User make post method to create new university in REST-API
+2021-12-07 10:23:37,353:app:User entered wrong data
+2021-12-07 10:23:37,360:app:User get teacher with id {teacher_id} in REST-API
+2021-12-07 10:23:37,363:app:User make post method  search_by_date in REST-API
+2021-12-07 10:23:37,386:app:Teachers between dates were shown
+2021-12-07 10:23:37,388:app:User make post method  search_by_date in REST-API
+2021-12-07 10:23:37,389:app:User did not entered some date
+2021-12-07 10:23:37,390:app:User make post method  search_by_date in REST-API
+2021-12-07 10:23:37,392:app:User entered date in incorrect form.
+2021-12-07 10:23:37,394:app:User make post method  search_by_date in REST-API
+2021-12-07 10:23:37,401:app:User entered date in wrong format should be year-month-day
+2021-12-07 10:23:37,407:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:23:37,407:app:Teacher was updated.
+2021-12-07 10:23:37,422:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:23:37,422:app:User entered incorrect data.
+2021-12-07 10:23:37,430:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:23:37,430:app:User entered wrong teacher id.
+2021-12-07 10:23:37,437:app:User make method patch to update university in REST-API
+2021-12-07 10:23:37,437:app:University was updated.
+2021-12-07 10:23:37,441:app:User make method patch to update university in REST-API
+2021-12-07 10:23:37,441:app:User entered wrong data.
+2021-12-07 10:24:00,374:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:00,384:app:User make new teacher in REST-API
+2021-12-07 10:24:00,389:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:00,391:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:00,391:app:User did not entered some data
+2021-12-07 10:24:00,401:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:00,402:app:Can't add teacher to database in REST-API
+2021-12-07 10:24:00,408:app:User make delete method  delete_teacher in REST-API
+2021-12-07 10:24:00,408:app:Teacher was deleted.
+2021-12-07 10:24:00,411:app:User make delete method  delete_teacher in REST-API
+2021-12-07 10:24:00,411:app:User entered wrong teacher id
+2021-12-07 10:24:00,415:app:User make delete method to delete university in REST-API
+2021-12-07 10:24:00,416:app:University was deleted.
+2021-12-07 10:24:00,418:app:User make delete method to delete university in REST-API
+2021-12-07 10:24:00,418:app:User entered wrong university id
+2021-12-07 10:24:00,428:app:User get universities in REST-API
+2021-12-07 10:24:00,433:app:User get university with id 1 in REST-API
+2021-12-07 10:24:00,433:app:User entered wrong id
+2021-12-07 10:24:00,435:app:User get university with id 1 in REST-API
+2021-12-07 10:24:00,435:app:Teacher with id {university_id} was shown.
+2021-12-07 10:24:00,440:app:Api show all teachers in database.
+2021-12-07 10:24:00,444:app:User make post method to create new university in REST-API
+2021-12-07 10:24:00,445:app:University was added
+2021-12-07 10:24:00,447:app:User make post method to create new university in REST-API
+2021-12-07 10:24:00,447:app:User entered wrong data
+2021-12-07 10:24:00,452:app:User get teacher with id {teacher_id} in REST-API
+2021-12-07 10:24:00,456:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:00,461:app:Teachers between dates were shown
+2021-12-07 10:24:00,465:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:00,465:app:User did not entered some date
+2021-12-07 10:24:00,467:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:00,488:app:User entered date in incorrect form.
+2021-12-07 10:24:00,491:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:00,491:app:User entered date in wrong format should be year-month-day
+2021-12-07 10:24:00,509:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:24:00,510:app:Teacher was updated.
+2021-12-07 10:24:00,525:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:24:00,526:app:User entered incorrect data.
+2021-12-07 10:24:00,534:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:24:00,535:app:User entered wrong teacher id.
+2021-12-07 10:24:00,539:app:User make method patch to update university in REST-API
+2021-12-07 10:24:00,539:app:University was updated.
+2021-12-07 10:24:00,543:app:User make method patch to update university in REST-API
+2021-12-07 10:24:00,544:app:User entered wrong data.
+2021-12-07 10:24:46,336:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:46,337:app:User make new teacher in REST-API
+2021-12-07 10:24:46,342:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:46,345:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:46,345:app:User did not entered some data
+2021-12-07 10:24:46,348:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:46,348:app:Can't add teacher to database in REST-API
+2021-12-07 10:24:46,350:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:46,351:app:
+2021-12-07 10:24:46,358:app:User make delete method  delete_teacher in REST-API
+2021-12-07 10:24:46,358:app:Teacher was deleted.
+2021-12-07 10:24:46,362:app:User make delete method  delete_teacher in REST-API
+2021-12-07 10:24:46,362:app:User entered wrong teacher id
+2021-12-07 10:24:46,368:app:User make delete method to delete university in REST-API
+2021-12-07 10:24:46,369:app:University was deleted.
+2021-12-07 10:24:46,372:app:User make delete method to delete university in REST-API
+2021-12-07 10:24:46,372:app:User entered wrong university id
+2021-12-07 10:24:46,379:app:User get universities in REST-API
+2021-12-07 10:24:46,386:app:User get university with id 1 in REST-API
+2021-12-07 10:24:46,387:app:User entered wrong id
+2021-12-07 10:24:46,389:app:User get university with id 1 in REST-API
+2021-12-07 10:24:46,390:app:Teacher with id {university_id} was shown.
+2021-12-07 10:24:46,397:app:Api show all teachers in database.
+2021-12-07 10:24:46,404:app:User make post method to create new university in REST-API
+2021-12-07 10:24:46,405:app:University was added
+2021-12-07 10:24:46,408:app:User make post method to create new university in REST-API
+2021-12-07 10:24:46,408:app:User entered wrong data
+2021-12-07 10:24:46,415:app:User get teacher with id {teacher_id} in REST-API
+2021-12-07 10:24:46,423:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:46,429:app:Teachers between dates were shown
+2021-12-07 10:24:46,434:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:46,435:app:User did not entered some date
+2021-12-07 10:24:46,437:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:46,438:app:User entered date in incorrect form.
+2021-12-07 10:24:46,440:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:46,441:app:User entered date in wrong format should be year-month-day
+2021-12-07 10:24:46,448:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:24:46,449:app:Teacher was updated.
+2021-12-07 10:24:46,452:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:24:46,453:app:User entered incorrect data.
+2021-12-07 10:24:46,455:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:24:46,456:app:User entered wrong teacher id.
+2021-12-07 10:24:46,462:app:User make method patch to update university in REST-API
+2021-12-07 10:24:46,463:app:University was updated.
+2021-12-07 10:24:46,466:app:User make method patch to update university in REST-API
+2021-12-07 10:24:46,467:app:User entered wrong data.
+2021-12-07 10:24:49,512:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:49,514:app:User make new teacher in REST-API
+2021-12-07 10:24:49,527:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:49,534:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:49,534:app:User did not entered some data
+2021-12-07 10:24:49,552:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:49,552:app:Can't add teacher to database in REST-API
+2021-12-07 10:24:49,554:app:User make post method  add_teacher in REST-API
+2021-12-07 10:24:49,554:app:
+2021-12-07 10:24:49,570:app:User make delete method  delete_teacher in REST-API
+2021-12-07 10:24:49,571:app:Teacher was deleted.
+2021-12-07 10:24:49,573:app:User make delete method  delete_teacher in REST-API
+2021-12-07 10:24:49,573:app:User entered wrong teacher id
+2021-12-07 10:24:49,597:app:User make delete method to delete university in REST-API
+2021-12-07 10:24:49,598:app:University was deleted.
+2021-12-07 10:24:49,600:app:User make delete method to delete university in REST-API
+2021-12-07 10:24:49,600:app:User entered wrong university id
+2021-12-07 10:24:49,630:app:User get universities in REST-API
+2021-12-07 10:24:49,650:app:User get university with id 1 in REST-API
+2021-12-07 10:24:49,650:app:User entered wrong id
+2021-12-07 10:24:49,652:app:User get university with id 1 in REST-API
+2021-12-07 10:24:49,652:app:Teacher with id {university_id} was shown.
+2021-12-07 10:24:49,679:app:Api show all teachers in database.
+2021-12-07 10:24:49,686:app:User make post method to create new university in REST-API
+2021-12-07 10:24:49,687:app:University was added
+2021-12-07 10:24:49,689:app:User make post method to create new university in REST-API
+2021-12-07 10:24:49,694:app:User entered wrong data
+2021-12-07 10:24:49,702:app:User get teacher with id {teacher_id} in REST-API
+2021-12-07 10:24:49,715:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:49,720:app:Teachers between dates were shown
+2021-12-07 10:24:49,727:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:49,729:app:User did not entered some date
+2021-12-07 10:24:49,731:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:49,732:app:User entered date in incorrect form.
+2021-12-07 10:24:49,734:app:User make post method  search_by_date in REST-API
+2021-12-07 10:24:49,735:app:User entered date in wrong format should be year-month-day
+2021-12-07 10:24:49,765:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:24:49,765:app:Teacher was updated.
+2021-12-07 10:24:49,769:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:24:49,769:app:User entered incorrect data.
+2021-12-07 10:24:49,773:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:24:49,773:app:User entered wrong teacher id.
+2021-12-07 10:24:49,781:app:User make method patch to update university in REST-API
+2021-12-07 10:24:49,782:app:University was updated.
+2021-12-07 10:24:49,789:app:User make method patch to update university in REST-API
+2021-12-07 10:24:49,789:app:User entered wrong data.
+2021-12-07 10:25:58,150:app:User make post method  add_teacher in REST-API
+2021-12-07 10:25:58,151:app:User make new teacher in REST-API
+2021-12-07 10:25:58,156:app:User make post method  add_teacher in REST-API
+2021-12-07 10:25:58,159:app:User make post method  add_teacher in REST-API
+2021-12-07 10:25:58,160:app:User did not entered some data
+2021-12-07 10:25:58,163:app:User make post method  add_teacher in REST-API
+2021-12-07 10:25:58,163:app:Can't add teacher to database in REST-API
+2021-12-07 10:25:58,165:app:User make post method  add_teacher in REST-API
+2021-12-07 10:25:58,166:app:
+2021-12-07 10:25:58,169:app:User make delete method  delete_teacher in REST-API
+2021-12-07 10:25:58,170:app:Teacher was deleted.
+2021-12-07 10:25:58,172:app:User make delete method  delete_teacher in REST-API
+2021-12-07 10:25:58,173:app:User entered wrong teacher id
+2021-12-07 10:25:58,177:app:User make delete method to delete university in REST-API
+2021-12-07 10:25:58,177:app:University was deleted.
+2021-12-07 10:25:58,179:app:User make delete method to delete university in REST-API
+2021-12-07 10:25:58,180:app:User entered wrong university id
+2021-12-07 10:25:58,184:app:User get universities in REST-API
+2021-12-07 10:25:58,188:app:User get university with id 1 in REST-API
+2021-12-07 10:25:58,189:app:User entered wrong id
+2021-12-07 10:25:58,190:app:User get university with id 1 in REST-API
+2021-12-07 10:25:58,191:app:Teacher with id {university_id} was shown.
+2021-12-07 10:25:58,196:app:Api show all teachers in database.
+2021-12-07 10:25:58,201:app:User make post method to create new university in REST-API
+2021-12-07 10:25:58,201:app:University was added
+2021-12-07 10:25:58,204:app:User make post method to create new university in REST-API
+2021-12-07 10:25:58,204:app:User entered wrong data
+2021-12-07 10:25:58,209:app:User get teacher with id {teacher_id} in REST-API
+2021-12-07 10:25:58,213:app:User make post method  search_by_date in REST-API
+2021-12-07 10:25:58,218:app:Teachers between dates were shown
+2021-12-07 10:25:58,222:app:User make post method  search_by_date in REST-API
+2021-12-07 10:25:58,223:app:User did not entered some date
+2021-12-07 10:25:58,229:app:User make post method  search_by_date in REST-API
+2021-12-07 10:25:58,233:app:User entered date in incorrect form.
+2021-12-07 10:25:58,235:app:User make post method  search_by_date in REST-API
+2021-12-07 10:25:58,235:app:User entered date in wrong format should be year-month-day
+2021-12-07 10:25:58,251:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:25:58,252:app:Teacher was updated.
+2021-12-07 10:25:58,257:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:25:58,257:app:User entered incorrect data.
+2021-12-07 10:25:58,261:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 10:25:58,266:app:User entered wrong teacher id.
+2021-12-07 10:25:58,274:app:User make method patch to update university in REST-API
+2021-12-07 10:25:58,274:app:University was updated.
+2021-12-07 10:25:58,280:app:User make method patch to update university in REST-API
+2021-12-07 10:25:58,281:app:User entered wrong data.
+2021-12-07 11:44:49,071:app:User make post method  add_teacher in REST-API
+2021-12-07 11:44:49,072:app:User make new teacher in REST-API
+2021-12-07 11:44:49,077:app:User make post method  add_teacher in REST-API
+2021-12-07 11:44:49,092:app:User make post method  add_teacher in REST-API
+2021-12-07 11:44:49,092:app:User did not entered some data
+2021-12-07 11:44:49,099:app:User make post method  add_teacher in REST-API
+2021-12-07 11:44:49,099:app:Can't add teacher to database in REST-API
+2021-12-07 11:44:49,102:app:User make post method  add_teacher in REST-API
+2021-12-07 11:44:49,103:app:
+2021-12-07 11:44:49,107:app:User make delete method  delete_teacher in REST-API
+2021-12-07 11:44:49,108:app:Teacher was deleted.
+2021-12-07 11:44:49,111:app:User make delete method  delete_teacher in REST-API
+2021-12-07 11:44:49,111:app:User entered wrong teacher id
+2021-12-07 11:44:49,125:app:User make delete method to delete university in REST-API
+2021-12-07 11:44:49,125:app:University was deleted.
+2021-12-07 11:44:49,128:app:User make delete method to delete university in REST-API
+2021-12-07 11:44:49,128:app:User entered wrong university id
+2021-12-07 11:44:49,139:app:User get universities in REST-API
+2021-12-07 11:44:49,154:app:User get university with id 1 in REST-API
+2021-12-07 11:44:49,154:app:User entered wrong id
+2021-12-07 11:44:49,158:app:User get university with id 1 in REST-API
+2021-12-07 11:44:49,158:app:Teacher with id {university_id} was shown.
+2021-12-07 11:44:49,171:app:Api show all teachers in database.
+2021-12-07 11:44:49,185:app:User make post method to create new university in REST-API
+2021-12-07 11:44:49,186:app:University was added
+2021-12-07 11:44:49,190:app:User make post method to create new university in REST-API
+2021-12-07 11:44:49,190:app:User entered wrong data
+2021-12-07 11:44:49,203:app:User get teacher with id {teacher_id} in REST-API
+2021-12-07 11:44:49,213:app:User make post method  search_by_date in REST-API
+2021-12-07 11:44:49,222:app:Teachers between dates were shown
+2021-12-07 11:44:49,231:app:User make post method  search_by_date in REST-API
+2021-12-07 11:44:49,237:app:User did not entered some date
+2021-12-07 11:44:49,239:app:User make post method  search_by_date in REST-API
+2021-12-07 11:44:49,240:app:User entered date in incorrect form.
+2021-12-07 11:44:49,241:app:User make post method  search_by_date in REST-API
+2021-12-07 11:44:49,242:app:User entered date in wrong format should be year-month-day
+2021-12-07 11:44:49,258:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 11:44:49,258:app:Teacher was updated.
+2021-12-07 11:44:49,262:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 11:44:49,262:app:User entered incorrect data.
+2021-12-07 11:44:49,264:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 11:44:49,265:app:User entered wrong teacher id.
+2021-12-07 11:44:49,269:app:User make method patch to update university in REST-API
+2021-12-07 11:44:49,273:app:University was updated.
+2021-12-07 11:44:49,276:app:User make method patch to update university in REST-API
+2021-12-07 11:44:49,277:app:User entered wrong data.
+2021-12-07 11:45:02,947:app:
+2021-12-07 11:45:02,962:app:
+2021-12-07 11:45:02,979:app:
+2021-12-07 11:45:03,025:app:No data was given
+2021-12-07 11:45:03,028:app:Wrong university name
+2021-12-07 11:45:03,028:app:User entered salary with wrong type
+2021-12-07 11:45:03,029:app:User entered date in incorrect format.
+2021-12-07 11:45:15,949:app:Page add_university.html was shown.
+2021-12-07 11:45:15,974:app:User click submit button to create new university.
+2021-12-07 11:45:15,983:app:University was added
+2021-12-07 11:45:15,988:app:university.page was shown
+2021-12-07 11:45:15,990:app:Got universities from database
+2021-12-07 11:45:16,003:app:User click submit button to create new university.
+2021-12-07 11:45:16,008:app:User did not write all fields in field form.
+2021-12-07 11:45:16,012:app:Page add_university.html was shown.
+2021-12-07 11:45:16,014:app:User click submit button to create new university.
+2021-12-07 11:45:16,015:app:User entered invalid symbols
+2021-12-07 11:45:16,022:app:Page add_university.html was shown.
+2021-12-07 11:45:16,024:app:User click submit button to create new university.
+2021-12-07 11:45:16,027:app:Error of adding university to db.
+2021-12-07 11:45:16,031:app:Page add_university.html was shown.
+2021-12-07 11:45:16,035:app:User click to delete university with id 0
+2021-12-07 11:45:16,035:app:University was successfully deleted.
+2021-12-07 11:45:16,045:app:university.page was shown
+2021-12-07 11:45:16,047:app:Got universities from database
+2021-12-07 11:45:16,050:app:User click to delete university with id 0
+2021-12-07 11:45:16,050:app:Can't delete this university from db.
+2021-12-07 11:45:16,074:app:university.page was shown
+2021-12-07 11:45:16,074:app:Got universities from database
+2021-12-07 11:45:16,088:app:university.page was shown
+2021-12-07 11:45:16,088:app:Got universities from database
+2021-12-07 11:45:16,095:app:university.page was shown
+2021-12-07 11:45:16,095:app:Error of reading Universities from db.
+2021-12-07 11:45:16,139:app:Route teacher.html is rendered.
+2021-12-07 11:45:16,169:app:Page update_university was show with university id 1
+2021-12-07 11:45:16,186:app:User click to update university
+2021-12-07 11:45:16,187:app:University was updated
+2021-12-07 11:45:16,193:app:university.page was shown
+2021-12-07 11:45:16,195:app:Got universities from database
+2021-12-07 11:45:16,201:app:User click to update university
+2021-12-07 11:45:16,202:app:User did not write anything to the field form
+2021-12-07 11:45:16,206:app:Page update_university was show with university id 1
+2021-12-07 11:45:16,213:app:User click to update university
+2021-12-07 11:45:16,213:app:User write incorrect data or any new changes
+2021-12-07 11:45:16,228:app:Page update_university was show with university id 1
+2021-12-07 11:45:32,292:app:User click to submit new teacher
+2021-12-07 11:45:32,311:app:Teacher was successfully added.
+2021-12-07 11:45:32,342:app:Route teacher.html is rendered.
+2021-12-07 11:45:32,363:app:User click to submit new teacher
+2021-12-07 11:45:32,369:app:Some fields were not entered
+2021-12-07 11:45:32,409:app:Route create new teacher is rendered
+2021-12-07 11:45:32,421:app:User click to submit new teacher
+2021-12-07 11:45:32,424:app:User did not enter some fields
+2021-12-07 11:45:32,444:app:Route create new teacher is rendered
+2021-12-07 11:45:32,453:app:User click delete teacher with id 1.
+2021-12-07 11:45:32,453:app:Teacher with 1 was deleted.
+2021-12-07 11:45:32,459:app:Route teacher.html is rendered.
+2021-12-07 11:45:32,462:app:User click delete teacher with id 1.
+2021-12-07 11:45:32,462:app:Error of deleting this Teacher.
+2021-12-07 11:45:32,466:app:Route teacher.html is rendered.
+2021-12-07 11:45:32,494:app:Route create new teacher is rendered
+2021-12-07 11:45:32,506:app:Route teacher.html is rendered.
+2021-12-07 11:45:32,514:app:Route teacher.html is rendered.
+2021-12-07 11:45:32,535:app:User click to update teacher with id 0
+2021-12-07 11:45:32,556:app:User click to search teachers in date intervals
+2021-12-07 11:45:32,561:app:Teachers in interval 2011-11-01 to 2011-11-01 were found.
+2021-12-07 11:45:32,563:app:User click to search teachers in date intervals
+2021-12-07 11:45:32,564:app:User did not entered all dates in date form.
+2021-12-07 11:45:32,580:app:Route teacher.html is rendered.
+2021-12-07 11:45:32,631:app:User click to update teacher
+2021-12-07 11:45:32,632:app:Teacher was successfully updated.
+2021-12-07 11:45:32,651:app:Route teacher.html is rendered.
+2021-12-07 11:45:32,663:app:User click to update teacher
+2021-12-07 11:45:32,676:app:User entered incorrect data to form fields.
+2021-12-07 11:45:32,749:app:User click to update teacher with id 1
+2021-12-07 11:45:32,796:app:User click to update teacher
+2021-12-07 11:45:32,797:app:User did not entered any new data
+2021-12-07 11:45:32,870:app:User click to update teacher with id 1
+2021-12-07 11:46:48,551:app:
+2021-12-07 11:46:48,557:app:
+2021-12-07 11:46:48,565:app:
+2021-12-07 11:46:48,574:app:
+2021-12-07 11:46:48,586:app:
+2021-12-07 11:46:48,594:app:
+2021-12-07 11:46:48,594:app:
+2021-12-07 11:46:48,599:app:
+2021-12-07 11:50:09,013:app:User make post method  add_teacher in REST-API
+2021-12-07 11:50:09,013:app:User make new teacher in REST-API
+2021-12-07 11:50:09,017:app:User make post method  add_teacher in REST-API
+2021-12-07 11:50:09,020:app:User make post method  add_teacher in REST-API
+2021-12-07 11:50:09,020:app:User did not entered some data
+2021-12-07 11:50:09,029:app:User make post method  add_teacher in REST-API
+2021-12-07 11:50:09,030:app:Can't add teacher to database in REST-API
+2021-12-07 11:50:09,037:app:User make post method  add_teacher in REST-API
+2021-12-07 11:50:09,037:app:
+2021-12-07 11:50:09,051:app:User make delete method  delete_teacher in REST-API
+2021-12-07 11:50:09,052:app:Teacher was deleted.
+2021-12-07 11:50:09,058:app:User make delete method  delete_teacher in REST-API
+2021-12-07 11:50:09,058:app:User entered wrong teacher id
+2021-12-07 11:50:09,069:app:User make delete method to delete university in REST-API
+2021-12-07 11:50:09,069:app:University was deleted.
+2021-12-07 11:50:09,076:app:User make delete method to delete university in REST-API
+2021-12-07 11:50:09,077:app:User entered wrong university id
+2021-12-07 11:50:09,096:app:User get universities in REST-API
+2021-12-07 11:50:09,119:app:User get university with id 1 in REST-API
+2021-12-07 11:50:09,120:app:User entered wrong id
+2021-12-07 11:50:09,131:app:User get university with id 1 in REST-API
+2021-12-07 11:50:09,131:app:Teacher with id {university_id} was shown.
+2021-12-07 11:50:09,148:app:Api show all teachers in database.
+2021-12-07 11:50:09,153:app:User make post method to create new university in REST-API
+2021-12-07 11:50:09,153:app:University was added
+2021-12-07 11:50:09,162:app:User make post method to create new university in REST-API
+2021-12-07 11:50:09,162:app:User entered wrong data
+2021-12-07 11:50:09,169:app:User get teacher with id {teacher_id} in REST-API
+2021-12-07 11:50:09,181:app:User make post method  search_by_date in REST-API
+2021-12-07 11:50:09,186:app:Teachers between dates were shown
+2021-12-07 11:50:09,197:app:User make post method  search_by_date in REST-API
+2021-12-07 11:50:09,198:app:User did not entered some date
+2021-12-07 11:50:09,200:app:User make post method  search_by_date in REST-API
+2021-12-07 11:50:09,200:app:User entered date in incorrect form.
+2021-12-07 11:50:09,203:app:User make post method  search_by_date in REST-API
+2021-12-07 11:50:09,203:app:User entered date in wrong format should be year-month-day
+2021-12-07 11:50:09,217:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 11:50:09,217:app:Teacher was updated.
+2021-12-07 11:50:09,230:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 11:50:09,230:app:User entered incorrect data.
+2021-12-07 11:50:09,233:app:User make patch method  update_teacher with id 1 in REST-API
+2021-12-07 11:50:09,233:app:User entered wrong teacher id.
+2021-12-07 11:50:09,251:app:User make method patch to update university in REST-API
+2021-12-07 11:50:09,251:app:University was updated.
+2021-12-07 11:50:09,253:app:User make method patch to update university in REST-API
+2021-12-07 11:50:09,254:app:User entered wrong data.

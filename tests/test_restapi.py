@@ -7,7 +7,6 @@ This module imports: app,datetime, unittest.TestCase, unittest.mock.patch,
 University, University, teacher_crude
 """
 
-
 from app import app
 import datetime
 from flask import jsonify
@@ -125,6 +124,18 @@ class TestRestApi(TestCase):
         with app.app_context():
             true_response = jsonify(true_response).data
         self.assertEqual(true_response, response.data)
+        # Test if error in adding to database
+        university.query.filter_by.return_value.first.return_value = university1
+        t_crud.create_teacher.return_value = False
+        true_response = {'error': {'message': 'Can\'t add teacher to database', 'status': 412}}
+        response = self.app.post('/api/', json={'name': teacher1.name,
+                                                'last_name': teacher1.last_name,
+                                                'birth_date': "2001-10-10",
+                                                'salary': teacher1.salary,
+                                                'university': teacher1.university.name})
+        with app.app_context():
+            true_response = jsonify(true_response).data
+        self.assertEqual(true_response, response.data)
         # Test if exception was raised
         university.query.filter_by.return_value.first.side_effect = Exception
         true_response = {'error': {'message': 'Wrong university name.',
@@ -150,10 +161,10 @@ class TestRestApi(TestCase):
         t_crud.update_teacher_api.return_value = teacher2
         response = self.app.patch('/api/teacher_update/1',
                                   json={'name': teacher2.name,
-                                         'last_name': teacher2.last_name,
-                                         'birth_date': teacher2.birth_date,
-                                         'salary': teacher2.salary,
-                                         'university': teacher2.university.name})
+                                        'last_name': teacher2.last_name,
+                                        'birth_date': teacher2.birth_date,
+                                        'salary': teacher2.salary,
+                                        'university': teacher2.university.name})
         with app.app_context():
             teacher_scheme = TeacherSchema()
             true_response = teacher_scheme.jsonify(teacher2).data
@@ -165,10 +176,10 @@ class TestRestApi(TestCase):
         true_response = {'error': {'message': 'No data was given.', 'status': 400}}
         response = self.app.patch('/api/teacher_update/1',
                                   json={'name': teacher2.name,
-                                         'last_name': teacher2.last_name,
-                                         'birth_date': teacher2.birth_date,
-                                         'salary': teacher2.salary,
-                                         'university': teacher2.university.name})
+                                        'last_name': teacher2.last_name,
+                                        'birth_date': teacher2.birth_date,
+                                        'salary': teacher2.salary,
+                                        'university': teacher2.university.name})
         with app.app_context():
             true_response = jsonify(true_response).data
         self.assertEqual(true_response, response.data)
@@ -322,8 +333,8 @@ class TestRestApi(TestCase):
             true_response = university_scheme.jsonify(university2).data
         self.assertEqual(true_response, response.data)
         # Test if exception was raised
-        u_crud.update_university_api.return_value = {'error':
-                                                         {'message': 'Incorrect data type', 'status': 400}}
+        u_crud.update_university_api.return_value = \
+            {'error': {'message': 'Incorrect data type', 'status': 400}}
         true_response = {'error': {'message': 'Incorrect data type', 'status': 400}}
         with app.app_context():
             true_response = jsonify(true_response).data

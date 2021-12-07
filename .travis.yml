@@ -15,7 +15,7 @@ script:
 #  - pylint rest
 #  - pylint --load-plugins pylint_flask_sqlalchemy service
 #  - pylint tests
-  -  python app.py
+  - python app.py
   - coverage run -m unittest discover
 after_success:
   coveralls

@@ -43,6 +43,15 @@ you can type:
 pip install -r requirements.txt
 ```
 
+## Requirements for Database
+
+Default user name, password and database name are in file
+[.env](https://github.com/Mykhailo-Musiienko/epam_project/blob/master/.env)
+
+If you have different username or password in your database you can just redo this file
+and write your values instead of given. For example ***USER='root'*** change to ***USER='kali'***
+and so on.
+
 # Instalation
 
 ---

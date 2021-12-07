@@ -25,7 +25,7 @@ def get_all_teachers() -> list:
 
 def get_teacher(teacher_id) -> Teacher:
     """
-    Return teacher with given id from database.
+    Return teacher with given id from database
     :param teacher_id: Id of teacher.
     :return: Teacher
     """
@@ -34,7 +34,7 @@ def get_teacher(teacher_id) -> Teacher:
 
 def create_teacher(teacher) -> bool:
     """
-    Add teacher to database. Return True if teacher was added and False if raised exception.
+    Add teacher to database. Return True if teacher was added and False if raised exception
     :param teacher: Teacher to add.
     :return: bool
     """
@@ -51,7 +51,7 @@ def create_teacher(teacher) -> bool:
 def update_teacher(teacher: Teacher, teacher_id: int) -> bool:
     """
     Update teacher from database to given teacher. Return true if teacher was successfully updated
-    and False if it was raised an exception.
+    and False if it was raised an exception
     :param teacher: new teacher
     :param teacher_id: Id of teacher to update
     :return: bool
@@ -161,7 +161,7 @@ def update_teacher_api(teacher_id, name, last_name, birth_date, salary, universi
 
 def delete_teacher_api(teacher_id) -> dict:
     """
-    Delete teacher with current id for reset api.
+    Delete teacher with current id for reset api
     :param teacher_id: Id of teacher
     :return: Teacher
     """
