@@ -12,6 +12,7 @@ University, Teacher
 """
 import datetime
 from flask import Blueprint, Response
+
 api = Blueprint('api', __name__)
 from flask import request
 from flask import jsonify
@@ -40,13 +41,16 @@ def index() -> dict:
 
 
 @api.route('/<int:teacher_id>', methods=['GET'])
-def read_teacher(teacher_id: int) -> dict:
+def read_teacher(teacher_id: int) -> Response:
     """
     Show teacher with given id in json response
     :param teacher_id: Id of teacher
-    :return: dict
+    :return: Response
     """
     teacher = teachers_crud.get_teacher(teacher_id)
+    if not teacher:
+        return jsonify({'error': {'message': 'No university was found with given id',
+                                  'status': 400}})
     logger.debug("User get teacher with id {teacher_id} in REST-API")
     return teacher_schema.jsonify(teacher).data
 
@@ -73,6 +77,17 @@ def add_teacher() -> dict:
     except Exception as ex:
         logger.error(str(ex))
         return {'error': {'message': 'Wrong university name.', 'status': 400}}
+
+    try:
+        birth_date = datetime.datetime.strptime(birth_date, "%Y-%m-%d")
+    except (TypeError, ValueError):
+        logger.debug('User entered date in incorrect format.')
+        return {'error': {'message': 'Incorrect date format.', 'status': 400}}
+    if not isinstance(salary, int):
+        logger.debug('User entered salary in incorrect format.')
+        return {'error': {'message': 'Incorrect salary format.'
+                                     ' Salary must be integer.', 'status': 400}}
+
     new_teacher = Teacher(name, last_name, birth_date, salary, university_db)
     res = teachers_crud.create_teacher(new_teacher)
     if not res:
@@ -82,7 +97,7 @@ def add_teacher() -> dict:
     return teacher_schema.jsonify(new_teacher).data
 
 
-@api.route('/teacher_update/<int:teacher_id>', methods=['PATCH'])
+@api.route('/<int:teacher_id>', methods=['PATCH'])
 def update_teacher(teacher_id) -> Response:
     """
     Update teacher with given id for REST-API

@@ -100,7 +100,7 @@ Here are all api links with their allowed methods:
   * You can delete teacher with given **id** 
 * http://0.0.0.0:5000/api/id request method GET
   * Returns teacher with writen **id**.
-* http://0.0.0.0:5000/api/teacher_update/id request method PATCH
+* http://0.0.0.0:5000/api/id request method PATCH
   * You can update teacher with given **id**.
 * http://0.0.0.0:5000/api/search_by_date request with method POST
   *You can search teachers how are between two dates
