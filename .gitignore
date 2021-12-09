@@ -7,6 +7,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.idea
 build/
 develop-eggs/
 dist/
@@ -130,3 +131,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Else
+tests/logging.txt

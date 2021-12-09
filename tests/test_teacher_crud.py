@@ -81,10 +81,17 @@ class TestTeacherCrud(TestCase):
         :param session: Mock session class.
         :return: None
         """
+        # Test if everything is correct
         get_teacher.return_value = teacher1
         session.commit.return_value = 1
         result = teachers_crud.update_teacher(teacher2, 1)
         self.assertEqual(result, True)
+        # Test if no new data
+        result = teachers_crud.update_teacher(teacher1, 1)
+        self.assertEqual(result, False)
+        # Test if exception was raised
+        get_teacher.side_effect = Exception
+        session.rollback.return_value = 1
         result = teachers_crud.update_teacher(teacher1, 1)
         self.assertEqual(result, False)
 
@@ -118,24 +125,28 @@ class TestTeacherCrud(TestCase):
         response2 = {'error': {'message': 'Wrong university name.', 'status': 400}}
         response3 = {'error': {'message': 'Salary is not integer', 'status': 400}}
         response4 = {'error': {'message': 'Incorrect date format.', 'status': 400}}
+        # Test if no data given
         result = teachers_crud.update_teacher_api(teacher_id=0, name=None, last_name=None, birth_date=None, salary=None,
                                                   university=None)
         self.assertEqual(result, response1)
+        # Test if wrong university name
         university.query.filter_by.return_value.first.return_value = None
         result = teachers_crud.update_teacher_api(teacher_id=0, name='Test', last_name=None, birth_date=None,
                                                   salary=None,
                                                   university=1)
         self.assertEqual(result, response2)
+        # Test if wrong salary type
         result = teachers_crud.update_teacher_api(teacher_id=0, name='Test', last_name=None, birth_date=None,
                                                   salary='80a00',
                                                   university=None)
         self.assertEqual(result, response3)
-
+        # Test if incorrect date format
         result = teachers_crud.update_teacher_api(teacher_id=0, name='Test', last_name=None,
                                                   birth_date=datetime.date(2011, 11, 1),
                                                   salary=None,
                                                   university=None)
         self.assertEqual(result, response4)
+        # Test if everything is correct
         university.query.filter_by.return_value.first.return_value = university2
         get.return_value = teacher1
         result = teachers_crud.update_teacher_api(teacher_id=0, name=teacher2.name, last_name=teacher2.last_name,
@@ -145,6 +156,20 @@ class TestTeacherCrud(TestCase):
         self.assertEqual(result.name, teacher2.name)
         self.assertEqual(result.last_name, teacher2.last_name)
         self.assertEqual(result.university, teacher2.university)
+        # Test if Name has wrong symbols
+        result = teachers_crud.update_teacher_api(teacher_id=0, name="#$%^&", last_name=teacher2.last_name,
+                                                  birth_date=str(teacher2.birth_date),
+                                                  salary=teacher2.salary,
+                                                  university="Test1")
+        true_response={'error': {'message': 'Symbols in name are not allowed.', 'status': 400}}
+        self.assertEqual(true_response, result)
+        # Test if last name contains wrong symbols
+        result = teachers_crud.update_teacher_api(teacher_id=0, name=teacher2.name, last_name="#$%^&",
+                                                  birth_date=str(teacher2.birth_date),
+                                                  salary=teacher2.salary,
+                                                  university="Test1")
+        true_response = {'error': {'message': 'Symbols in last name are not allowed.', 'status': 400}}
+        self.assertEqual(true_response, result)
 
     @patch('service.teachers_crud.db')
     @patch('service.teachers_crud.Teacher')

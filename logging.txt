@@ -1016,3 +1016,8 @@
 2021-12-08 12:50:51,201:app:Route create new teacher is rendered
 2021-12-08 12:50:52,592:app:Page add_university.html was shown.
 2021-12-08 12:50:53,838:app:Route teacher.html is rendered.
+2021-12-09 06:52:19,346:app:Route teacher.html is rendered.
+2021-12-09 06:52:24,522:app:university.page was shown
+2021-12-09 06:52:24,579:app:Got universities from database
+2021-12-09 06:52:27,399:app:Route create new teacher is rendered
+2021-12-09 06:52:30,049:app:Page add_university.html was shown.
