@@ -59,7 +59,7 @@ class TestUniversitiesView(TestCase):
     @patch('views.universities_view.universities_crud')
     def test_get_all_universities(self, u_crud) -> None:
         """
-        Test univesity main page.
+        Test university main page.
         :param u_crud: Mock universities_crud
         :return: None
         """

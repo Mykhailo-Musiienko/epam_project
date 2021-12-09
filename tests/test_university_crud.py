@@ -190,8 +190,8 @@ class TestUniversityCrud(TestCase):
         :return: None
         """
         # Test if everything is okay
-        university1 = University('Test1', 'Test1')
-        get_university.return_value = university1
+        temp_university = University('Test1', 'Test1')
+        get_university.return_value = temp_university
         db.session.flush.return_value = 1
         db.session.commit.return_value = 1
         result = universities_crud.update_university_api(1, university2.name, university2.location)
@@ -205,27 +205,27 @@ class TestUniversityCrud(TestCase):
         self.assertEqual(true_result, result)
         # Test if name contains incorrect symbols
         get_university.side_effect = None
-        get_university.return_value = university1
+        get_university.return_value = temp_university
         result = universities_crud.update_university_api(-1, '@#$%^&', university2.location)
         true_result = {'error': {'message': 'Name contains wrong symbols', 'status': 400}}
         self.assertEqual(true_result, result)
         # Test if name not string
-        get_university.return_value = university1
+        get_university.return_value = temp_university
         result = universities_crud.update_university_api(-1, 1, university2.location)
         true_result = {'error': {'message': 'Name is an incorrect data type', 'status': 400}}
         self.assertEqual(true_result, result)
         # Test if location contains incorrect symbols
         get_university.side_effect = None
-        get_university.return_value = university1
-        result = universities_crud.update_university_api(-1, university1.name, ' ')
+        get_university.return_value = temp_university
+        result = universities_crud.update_university_api(-1, temp_university.name, ' ')
         true_result = {'error': {'message': 'Location contains wrong symbols', 'status': 400}}
         self.assertEqual(true_result, result)
         # Test if location not string
-        get_university.return_value = university1
-        result = universities_crud.update_university_api(-1, university1.name, 1)
+        get_university.return_value = temp_university
+        result = universities_crud.update_university_api(-1, temp_university.name, 1)
         true_result = {'error': {'message': 'Location is an incorrect data type', 'status': 400}}
         self.assertEqual(true_result, result)
         # Test if no data was changes
-        result = universities_crud.update_university_api(-1, university1.name, university1.location)
+        result = universities_crud.update_university_api(-1, temp_university.name, temp_university.location)
         true_result = {'error': {'message': 'No new data was given', 'status': 400}}
         self.assertEqual(true_result, result)

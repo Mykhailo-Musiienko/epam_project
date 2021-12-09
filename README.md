@@ -43,6 +43,15 @@ you can type:
 pip install -r requirements.txt
 ```
 
+## Requirements for Database
+
+Default user name, password and database name are in file
+[.env](https://github.com/Mykhailo-Musiienko/epam_project/blob/master/.env)
+
+If you have different username or password in your database you can just redo this file
+and write your values instead of given. For example ***USER='root'*** change to ***USER='kali'***
+and so on.
+
 # Instalation
 
 ---
@@ -91,7 +100,7 @@ Here are all api links with their allowed methods:
   * You can delete teacher with given **id** 
 * http://0.0.0.0:5000/api/id request method GET
   * Returns teacher with writen **id**.
-* http://0.0.0.0:5000/api/teacher_update/id request method PATCH
+* http://0.0.0.0:5000/api/id request method PATCH
   * You can update teacher with given **id**.
 * http://0.0.0.0:5000/api/search_by_date request with method POST
   *You can search teachers how are between two dates

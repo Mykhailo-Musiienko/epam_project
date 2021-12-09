@@ -6,8 +6,6 @@ This module contains class TestTeacherView. It tests all functions that teacher_
 This module imports: app,datetime, unittest.TestCase, unittest.mock.patch, University,
 University, teacher_crude
 """
-
-
 from unittest import TestCase
 from unittest.mock import patch
 from app import app

@@ -6,7 +6,6 @@ This module contains class TestTeacherCrud
 This module imports: app,datetime,unittest.TestCase, unittest.mock.patch, Teacher, University, teacher_crude
 """
 
-
 import datetime
 from unittest import TestCase
 from unittest.mock import patch
@@ -32,7 +31,7 @@ class TestTeacherCrud(TestCase):
 
     It includes: test test_get_all_teachers, test_get_teacher, test_create_teacher,
     test_update_teacher, test_delete_teacher, test_update_teacher_api,
-    test_delete_teacher_api
+    test_delete_teacher_api,test_teacher_str
 
     It inherited from class TestCase
     """
@@ -173,4 +172,12 @@ class TestTeacherCrud(TestCase):
         true_result = {'error': {'message': 'Error deleting from db.', 'status': 400}}
         self.assertEqual(result, true_result)
 
-
+    def test_teacher_str(self) -> None:
+        """
+        Test __str__() method
+        :return: None
+        """
+        result = f"Name: {teacher1.name}, Last Name: {teacher1.last_name}" \
+                 f",birth_date: {teacher1.birth_date},salary: {teacher1.salary}," \
+                 f"university: {teacher1.university}"
+        self.assertEqual(result, teacher1.__str__())

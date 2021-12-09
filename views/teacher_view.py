@@ -6,12 +6,14 @@ Pages that are rendering are: teacher.html, add_teacher.html, update_teacher.htm
 This module contains functions: get_all_teachers(), get_add_teacher(), add_teacher(),
 get_update_teacher(), update_teacher(), search_by_date(), delete_teacher().
 """
-from flask import Response
+from typing import Union
 from flask import render_template
 from flask import request
 from flask import redirect
 from flask import url_for
 from flask import flash
+from werkzeug import Response
+
 from views import app
 from app import logger
 from models.teacher import Teacher
@@ -105,7 +107,7 @@ def update_teacher() -> Response:
         flash('Incorrect data, please enter valid data', category='error')
         logger.debug('User entered incorrect data to form fields.')
         return redirect(url_for('get_update_teacher', teacher_id=teacher_id))
-    if teachers_crud.update_teacher(new_teacher, teacher_id):
+    if teachers_crud.update_teacher(new_teacher, int(teacher_id)):
         flash('Teacher was updated', category='success')
         logger.debug('Teacher was successfully updated.')
         return redirect(url_for('get_all_teachers'))
@@ -115,11 +117,11 @@ def update_teacher() -> Response:
 
 
 @app.route('/search_by_date', methods=['POST'])
-def search_by_date() -> Response:
+def search_by_date() -> Union[Response, str]:
     """
     Route with POST method that search in interval of two dates
     and return appropriate teachers to main page.
-    :return: Response
+    :return: Union[Response, str]
     """
     logger.debug('User click to search teachers in date intervals')
     date_from = request.form.get('date_from')
@@ -136,7 +138,7 @@ def search_by_date() -> Response:
 @app.route('/delete_teacher/<int:teacher_id>', methods=['POST'])
 def delete_teacher(teacher_id) -> Response:
     """
-    Route delete teacher by given id. After it reload the page.
+    Route delete teacher by given id. After it reloads the page.
     :param teacher_id: Id of teacher.
     :return: str
     """
@@ -149,7 +151,3 @@ def delete_teacher(teacher_id) -> Response:
         flash("Error of deleting this Teacher", category='error')
         logger.error('Error of deleting this Teacher.')
     return redirect(url_for('get_all_teachers'))
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
