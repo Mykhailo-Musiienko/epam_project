@@ -139,11 +139,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.run" />
       <item itemvalue="Python.app" />
+      <item itemvalue="Python.run" />
       <item itemvalue="Python tests.Python tests for test_restapi.TestRestApi" />
-      <item itemvalue="Python tests.Python tests for test_university_crud.TestUniversityCrud" />
       <item itemvalue="Python tests.Python tests for test_teacher_view.TestTeacherView" />
+      <item itemvalue="Python tests.Python tests for test_university_crud.TestUniversityCrud" />
       <item itemvalue="Python tests.Python tests in test_restapi.py" />
     </list>
     <recent_temporary>
