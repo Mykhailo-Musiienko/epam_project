@@ -95,6 +95,8 @@ class TestUniversityCrud(TestCase):
         result = universities_crud.update_university(university2, 1)
         self.assertEqual(result, False)
         # Test if no new data was added
+        get_university.side_effect = None
+        get_university.return_value = university1
         result = universities_crud.update_university(university1, 1)
         self.assertEqual(result, False)
 
@@ -228,4 +230,9 @@ class TestUniversityCrud(TestCase):
         # Test if no data was changes
         result = universities_crud.update_university_api(-1, temp_university.name, temp_university.location)
         true_result = {'error': {'message': 'No new data was given', 'status': 400}}
+        self.assertEqual(true_result, result)
+        # Test if no university was found
+        get_university.return_value = None
+        result = universities_crud.update_university_api(-1, temp_university.name, temp_university.location)
+        true_result = {'error': {'message': 'No university was found with given id', 'status': 400}}
         self.assertEqual(true_result, result)

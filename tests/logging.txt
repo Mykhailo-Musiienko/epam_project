@@ -915,3 +915,68 @@
 2021-12-08 12:07:47,172:app:University was updated.
 2021-12-08 12:07:47,174:app:User make method patch to update university in REST-API
 2021-12-08 12:07:47,174:app:User entered wrong data.
+2021-12-09 07:00:27,054:app:
+2021-12-09 07:00:27,082:app:
+2021-12-09 07:00:27,101:app:
+2021-12-09 07:00:27,128:app:
+2021-12-09 07:00:27,154:app:
+2021-12-09 07:00:27,172:app:
+2021-12-09 07:00:27,173:app:
+2021-12-09 07:00:27,186:app:
+2021-12-09 07:01:08,375:app:
+2021-12-09 07:01:08,388:app:
+2021-12-09 07:01:08,423:app:
+2021-12-09 07:01:08,447:app:
+2021-12-09 07:01:08,471:app:
+2021-12-09 07:01:08,476:app:
+2021-12-09 07:01:08,499:app:
+2021-12-09 07:04:41,260:app:
+2021-12-09 07:04:41,273:app:
+2021-12-09 07:04:41,293:app:
+2021-12-09 07:04:41,320:app:
+2021-12-09 07:04:41,350:app:
+2021-12-09 07:04:41,377:app:
+2021-12-09 07:04:41,392:app:
+2021-12-09 07:09:32,890:app:
+2021-12-09 07:09:32,915:app:
+2021-12-09 07:09:32,944:app:
+2021-12-09 07:09:32,968:app:
+2021-12-09 07:09:33,012:app:
+2021-12-09 07:09:33,030:app:
+2021-12-09 07:09:33,047:app:
+2021-12-09 07:09:40,512:app:
+2021-12-09 07:09:40,525:app:
+2021-12-09 07:09:40,535:app:
+2021-12-09 07:09:40,548:app:
+2021-12-09 07:09:40,551:app:No data was given
+2021-12-09 07:09:40,554:app:Wrong university name
+2021-12-09 07:09:40,554:app:User entered salary with wrong type
+2021-12-09 07:09:40,554:app:User entered date in incorrect format.
+2021-12-09 07:13:53,247:app:
+2021-12-09 07:13:53,260:app:
+2021-12-09 07:13:53,271:app:
+2021-12-09 07:13:53,284:app:
+2021-12-09 07:13:53,285:app:No data was given
+2021-12-09 07:13:53,289:app:Wrong university name
+2021-12-09 07:13:53,291:app:User entered salary with wrong type
+2021-12-09 07:13:53,292:app:User entered date in incorrect format.
+2021-12-09 07:13:53,299:app:User entered symbols in name that are not allowed
+2021-12-09 07:14:05,198:app:
+2021-12-09 07:14:05,221:app:
+2021-12-09 07:14:05,254:app:
+2021-12-09 07:14:05,288:app:
+2021-12-09 07:14:05,290:app:No data was given
+2021-12-09 07:14:05,318:app:Wrong university name
+2021-12-09 07:14:05,318:app:User entered salary with wrong type
+2021-12-09 07:14:05,318:app:User entered date in incorrect format.
+2021-12-09 07:14:05,339:app:User entered symbols in name that are not allowed
+2021-12-09 07:15:02,581:app:
+2021-12-09 07:15:02,600:app:
+2021-12-09 07:15:02,637:app:
+2021-12-09 07:15:02,695:app:
+2021-12-09 07:15:02,707:app:No data was given
+2021-12-09 07:15:02,719:app:Wrong university name
+2021-12-09 07:15:02,720:app:User entered salary with wrong type
+2021-12-09 07:15:02,720:app:User entered date in incorrect format.
+2021-12-09 07:15:02,723:app:User entered symbols in name that are not allowed
+2021-12-09 07:15:02,723:app:User entered symbols in last name that are not allowed
