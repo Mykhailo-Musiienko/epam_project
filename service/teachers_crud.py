@@ -48,36 +48,40 @@ def create_teacher(teacher) -> bool:
     return True
 
 
-def update_teacher(teacher: Teacher, teacher_id: int) -> bool:
+def update_teacher(name, last_name, birth_date, salary, university, teacher_id: int) -> bool:
     """
     Update teacher from database to given teacher. Return true if teacher was successfully updated
     and False if it was raised an exception
-    :param teacher: new teacher
+    :param name: name of teacher
+    :param last_name: last name of teacher
+    :param salary: salary of teacher
+    :param birth_date: birthdate of teacher
+    :param university: new teacher
     :param teacher_id: Id of teacher to update
     :return: bool
     """
     is_changed = False
     try:
         db_teacher = get_teacher(teacher_id)
-        if teacher.name:
-            if not teacher.name == db_teacher.name:
-                db_teacher.name = teacher.name
+        if name:
+            if not name == db_teacher.name:
+                db_teacher.name = name
                 is_changed = True
-        if teacher.last_name:
-            if not teacher.last_name == db_teacher.last_name:
-                db_teacher.last_name = teacher.last_name
+        if last_name:
+            if not last_name == db_teacher.last_name:
+                db_teacher.last_name = last_name
                 is_changed = True
-        if teacher.birth_date:
-            if not teacher.birth_date == db_teacher.birth_date:
-                db_teacher.birth_date = teacher.birth_date
+        if birth_date:
+            if not birth_date == db_teacher.birth_date:
+                db_teacher.birth_date = birth_date
                 is_changed = True
-        if teacher.salary:
-            if not int(teacher.salary) == db_teacher.salary:
-                db_teacher.salary = teacher.salary
+        if salary:
+            if not int(salary) == db_teacher.salary:
+                db_teacher.salary = salary
                 is_changed = True
-        if teacher.university:
-            if not teacher.university == db_teacher.university:
-                db_teacher.university = teacher.university
+        if university:
+            if not university == db_teacher.university:
+                db_teacher.university = university
                 is_changed = True
         if not is_changed:
             return False

@@ -1021,3 +1021,1516 @@
 2021-12-09 06:52:24,579:app:Got universities from database
 2021-12-09 06:52:27,399:app:Route create new teacher is rendered
 2021-12-09 06:52:30,049:app:Page add_university.html was shown.
+2021-12-09 07:27:41,390:app:Route teacher.html is rendered.
+2021-12-09 07:27:46,757:app:Route create new teacher is rendered
+2021-12-09 07:27:48,979:app:university.page was shown
+2021-12-09 07:27:49,095:app:Got universities from database
+2021-12-09 07:27:53,971:app:Route teacher.html is rendered.
+2021-12-09 07:27:56,072:app:Page add_university.html was shown.
+2021-12-09 07:27:58,293:app:university.page was shown
+2021-12-09 07:27:58,359:app:Got universities from database
+2021-12-09 07:28:01,049:app:Route create new teacher is rendered
+2021-12-09 07:28:02,830:app:Route teacher.html is rendered.
+2022-01-15 15:13:31,309:app:Route teacher.html is rendered.
+2022-01-15 15:13:35,942:app:Route create new teacher is rendered
+2022-01-15 15:13:37,553:app:university.page was shown
+2022-01-15 15:13:37,616:app:Got universities from database
+2022-01-15 15:13:39,185:app:Page add_university.html was shown.
+2022-01-15 15:13:42,325:app:Route teacher.html is rendered.
+2022-01-15 15:13:49,708:app:User click delete teacher with id 8.
+2022-01-15 15:13:49,724:app:Teacher with 8 was deleted.
+2022-01-15 15:13:49,782:app:Route teacher.html is rendered.
+2022-01-15 15:13:53,634:app:Route teacher.html is rendered.
+2022-01-15 15:14:11,227:app:User click to search teachers in date intervals
+2022-01-15 15:14:11,230:app:Teachers in interval 0002-02-22 to 1233-12-23 were found.
+2022-01-15 15:14:24,637:app:User click to search teachers in date intervals
+2022-01-15 15:14:24,639:app:Teachers in interval 1999-01-01 to 2021-01-01 were found.
+2022-01-15 15:14:33,260:app:User click to update teacher with id 1
+2022-01-15 15:14:36,823:app:Route teacher.html is rendered.
+2022-01-15 15:14:47,198:app:Route create new teacher is rendered
+2022-01-15 15:15:04,310:app:User click to submit new teacher
+2022-01-15 15:15:04,369:app:Teacher was successfully added.
+2022-01-15 15:15:04,417:app:Route teacher.html is rendered.
+2022-01-15 15:15:08,192:app:university.page was shown
+2022-01-15 15:15:08,270:app:Got universities from database
+2022-01-15 15:15:10,507:app:Route teacher.html is rendered.
+2022-01-15 15:15:19,588:app:university.page was shown
+2022-01-15 15:15:19,642:app:Got universities from database
+2022-01-15 15:15:26,147:app:Page add_university.html was shown.
+2022-01-15 15:15:36,473:app:User click submit button to create new university.
+2022-01-15 15:15:36,482:app:University was added
+2022-01-15 15:15:36,508:app:university.page was shown
+2022-01-15 15:15:36,550:app:Got universities from database
+2022-01-15 15:15:39,491:app:Route teacher.html is rendered.
+2022-01-15 15:15:46,301:app:User click to update teacher with id 43
+2022-01-15 15:15:50,318:app:User click to update teacher
+2022-01-15 15:15:50,329:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:15:50,329:app:User did not entered any new data
+2022-01-15 15:15:50,412:app:User click to update teacher with id 43
+2022-01-15 15:15:59,742:app:Route teacher.html is rendered.
+2022-01-15 15:16:01,872:app:User click to update teacher with id 43
+2022-01-15 15:16:07,943:app:User click to update teacher
+2022-01-15 15:16:07,966:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:16:07,966:app:User did not entered any new data
+2022-01-15 15:16:08,039:app:User click to update teacher with id 43
+2022-01-15 15:19:26,182:app:Route create new teacher is rendered
+2022-01-15 15:19:29,810:app:Route teacher.html is rendered.
+2022-01-15 15:19:31,951:app:User click to update teacher with id 43
+2022-01-15 15:19:35,699:app:User click to update teacher
+2022-01-15 15:19:35,709:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:19:35,710:app:User did not entered any new data
+2022-01-15 15:19:35,814:app:User click to update teacher with id 43
+2022-01-15 15:20:14,637:app:Route teacher.html is rendered.
+2022-01-15 15:20:20,648:app:User click to update teacher with id 43
+2022-01-15 15:20:24,908:app:User click to update teacher
+2022-01-15 15:20:24,932:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:20:24,932:app:User did not entered any new data
+2022-01-15 15:20:25,029:app:User click to update teacher with id 43
+2022-01-15 15:21:11,310:app:Route create new teacher is rendered
+2022-01-15 15:21:12,796:app:Route teacher.html is rendered.
+2022-01-15 15:21:14,998:app:User click to update teacher with id 43
+2022-01-15 15:21:19,244:app:User click to update teacher
+2022-01-15 15:21:19,281:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:21:19,282:app:User did not entered any new data
+2022-01-15 15:21:19,348:app:User click to update teacher with id 43
+2022-01-15 15:21:33,095:app:Route teacher.html is rendered.
+2022-01-15 15:21:34,386:app:Route teacher.html is rendered.
+2022-01-15 15:21:36,536:app:User click to update teacher with id 43
+2022-01-15 15:21:40,335:app:User click to update teacher
+2022-01-15 15:21:40,365:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:21:40,365:app:User did not entered any new data
+2022-01-15 15:21:40,446:app:User click to update teacher with id 43
+2022-01-15 15:24:31,385:app:Route teacher.html is rendered.
+2022-01-15 15:24:34,008:app:User click to update teacher with id 43
+2022-01-15 15:24:37,284:app:User click to update teacher
+2022-01-15 15:24:37,317:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:24:37,317:app:User did not entered any new data
+2022-01-15 15:24:37,406:app:User click to update teacher with id 43
+2022-01-15 15:25:13,273:app:Route teacher.html is rendered.
+2022-01-15 15:25:13,345:app:Route create new teacher is rendered
+2022-01-15 15:25:15,482:app:User click to update teacher with id 43
+2022-01-15 15:25:19,507:app:User click to update teacher
+2022-01-15 15:25:19,541:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:25:19,542:app:User did not entered any new data
+2022-01-15 15:25:19,625:app:User click to update teacher with id 43
+2022-01-15 15:26:04,772:app:Route teacher.html is rendered.
+2022-01-15 15:26:06,914:app:User click to update teacher with id 43
+2022-01-15 15:26:10,477:app:User click to update teacher
+2022-01-15 15:26:10,525:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:26:10,525:app:User did not entered any new data
+2022-01-15 15:26:10,608:app:User click to update teacher with id 43
+2022-01-15 15:28:09,045:app:Route teacher.html is rendered.
+2022-01-15 15:28:11,785:app:User click to update teacher with id 43
+2022-01-15 15:28:16,315:app:User click to update teacher
+2022-01-15 15:28:16,341:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:28:16,342:app:User did not entered any new data
+2022-01-15 15:28:16,418:app:User click to update teacher with id 43
+2022-01-15 15:29:13,482:app:Route teacher.html is rendered.
+2022-01-15 15:29:15,226:app:Route teacher.html is rendered.
+2022-01-15 15:29:17,529:app:User click to update teacher with id 43
+2022-01-15 15:29:22,063:app:User click to update teacher
+2022-01-15 15:29:22,097:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:29:22,097:app:User did not entered any new data
+2022-01-15 15:29:22,185:app:User click to update teacher with id 43
+2022-01-15 15:30:45,276:app:Route teacher.html is rendered.
+2022-01-15 15:30:47,569:app:User click to update teacher with id 43
+2022-01-15 15:30:52,086:app:User click to update teacher
+2022-01-15 15:30:52,110:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:30:52,111:app:User did not entered any new data
+2022-01-15 15:30:52,209:app:User click to update teacher with id 43
+2022-01-15 15:31:22,963:app:User click to update teacher with id 43
+2022-01-15 15:31:26,527:app:User click to update teacher
+2022-01-15 15:31:26,574:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:31:26,574:app:User did not entered any new data
+2022-01-15 15:31:26,657:app:User click to update teacher with id 43
+2022-01-15 15:31:48,472:app:User click to update teacher with id 43
+2022-01-15 15:31:49,519:app:User click to update teacher with id 43
+2022-01-15 15:31:52,824:app:User click to update teacher
+2022-01-15 15:31:52,871:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:31:52,871:app:User did not entered any new data
+2022-01-15 15:31:52,966:app:User click to update teacher with id 43
+2022-01-15 15:32:10,925:app:User click to update teacher with id 43
+2022-01-15 15:32:11,882:app:User click to update teacher with id 43
+2022-01-15 15:32:14,894:app:User click to update teacher
+2022-01-15 15:32:14,927:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:32:14,927:app:User did not entered any new data
+2022-01-15 15:32:14,978:app:User click to update teacher with id 43
+2022-01-15 15:32:52,914:app:User click to update teacher with id 43
+2022-01-15 15:32:53,509:app:User click to update teacher with id 43
+2022-01-15 15:32:57,383:app:User click to update teacher
+2022-01-15 15:32:57,419:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:32:57,421:app:User did not entered any new data
+2022-01-15 15:32:57,498:app:User click to update teacher with id 43
+2022-01-15 15:33:09,351:app:Route teacher.html is rendered.
+2022-01-15 15:33:12,244:app:User click to update teacher with id 43
+2022-01-15 15:33:16,818:app:User click to update teacher
+2022-01-15 15:33:16,853:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:33:16,853:app:User did not entered any new data
+2022-01-15 15:33:16,936:app:User click to update teacher with id 43
+2022-01-15 15:34:01,310:app:User click to update teacher with id 43
+2022-01-15 15:34:02,388:app:User click to update teacher with id 43
+2022-01-15 15:34:06,154:app:User click to update teacher
+2022-01-15 15:34:06,182:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:34:06,182:app:User did not entered any new data
+2022-01-15 15:34:06,268:app:User click to update teacher with id 43
+2022-01-15 15:34:49,521:app:User click to update teacher with id 43
+2022-01-15 15:34:56,347:app:User click to update teacher
+2022-01-15 15:34:56,377:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:34:56,377:app:User did not entered any new data
+2022-01-15 15:34:56,477:app:User click to update teacher with id 43
+2022-01-15 15:35:28,062:app:Route teacher.html is rendered.
+2022-01-15 15:35:31,442:app:User click to update teacher with id 4
+2022-01-15 15:35:35,229:app:User click to update teacher
+2022-01-15 15:35:35,240:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 2}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:35:35,240:app:User did not entered any new data
+2022-01-15 15:35:35,281:app:User click to update teacher with id 4
+2022-01-15 15:35:37,341:app:Route teacher.html is rendered.
+2022-01-15 15:35:39,754:app:User click to update teacher with id 43
+2022-01-15 15:35:45,377:app:User click to update teacher
+2022-01-15 15:35:45,404:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:35:45,405:app:User did not entered any new data
+2022-01-15 15:35:45,472:app:User click to update teacher with id 43
+2022-01-15 15:36:09,917:app:User click to update teacher with id 43
+2022-01-15 15:36:13,555:app:User click to update teacher
+2022-01-15 15:36:13,582:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:36:13,583:app:User did not entered any new data
+2022-01-15 15:36:13,679:app:User click to update teacher with id 43
+2022-01-15 15:39:40,932:app:User click to update teacher with id 43
+2022-01-15 15:39:44,566:app:User click to update teacher
+2022-01-15 15:39:44,604:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:39:44,605:app:User did not entered any new data
+2022-01-15 15:39:44,690:app:User click to update teacher with id 43
+2022-01-15 15:41:22,289:app:User click to update teacher with id 43
+2022-01-15 15:41:27,834:app:User click to update teacher
+2022-01-15 15:41:27,919:app:Teacher was successfully updated.
+2022-01-15 15:41:27,958:app:Route teacher.html is rendered.
+2022-01-15 15:42:51,971:app:User click to update teacher with id 43
+2022-01-15 15:42:55,994:app:User click to update teacher
+2022-01-15 15:42:56,012:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:42:56,012:app:User did not entered any new data
+2022-01-15 15:42:56,098:app:User click to update teacher with id 43
+2022-01-15 15:43:34,076:app:User click to update teacher with id 43
+2022-01-15 15:43:35,264:app:User click to update teacher with id 43
+2022-01-15 15:43:38,727:app:User click to update teacher
+2022-01-15 15:43:38,757:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:43:38,758:app:User did not entered any new data
+2022-01-15 15:43:38,818:app:User click to update teacher with id 43
+2022-01-15 15:45:50,722:app:User click to update teacher with id 43
+2022-01-15 15:45:54,660:app:User click to update teacher
+2022-01-15 15:45:54,702:app:Teacher was successfully updated.
+2022-01-15 15:45:54,733:app:Route teacher.html is rendered.
+2022-01-15 15:45:57,361:app:User click to update teacher with id 43
+2022-01-15 15:46:04,555:app:User click to update teacher
+2022-01-15 15:46:04,584:app:Teacher was successfully updated.
+2022-01-15 15:46:04,607:app:Route teacher.html is rendered.
+2022-01-15 15:46:07,854:app:User click to update teacher with id 43
+2022-01-15 15:46:15,893:app:User click to update teacher
+2022-01-15 15:46:15,927:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 1}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:46:15,927:app:User did not entered any new data
+2022-01-15 15:46:16,015:app:User click to update teacher with id 43
+2022-01-15 15:48:52,560:app:User click to update teacher
+2022-01-15 15:48:52,586:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '1333', 'university_id': 1}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:48:52,587:app:User did not entered any new data
+2022-01-15 15:48:52,684:app:User click to update teacher with id 43
+2022-01-15 15:49:00,359:app:User click to update teacher with id 43
+2022-01-15 15:49:04,877:app:User click to update teacher
+2022-01-15 15:49:04,901:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '1233', 'university_id': 1}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:49:04,902:app:User did not entered any new data
+2022-01-15 15:49:04,981:app:User click to update teacher with id 43
+2022-01-15 15:50:00,610:app:User click to update teacher with id 43
+2022-01-15 15:50:05,467:app:User click to update teacher
+2022-01-15 15:50:05,511:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '1233', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:50:05,512:app:User did not entered any new data
+2022-01-15 15:50:05,592:app:User click to update teacher with id 43
+2022-01-15 15:52:35,669:app:User click to update teacher with id 43
+2022-01-15 15:52:40,002:app:User click to update teacher
+2022-01-15 15:52:40,029:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:52:40,029:app:User did not entered any new data
+2022-01-15 15:52:40,091:app:User click to update teacher with id 43
+2022-01-15 15:52:58,225:app:User click to update teacher with id 43
+2022-01-15 15:53:07,177:app:User click to update teacher
+2022-01-15 15:53:07,201:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:53:07,201:app:User did not entered any new data
+2022-01-15 15:53:07,323:app:User click to update teacher with id 43
+2022-01-15 15:53:20,006:app:User click to update teacher with id 43
+2022-01-15 15:53:31,121:app:User click to update teacher
+2022-01-15 15:53:31,129:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:53:31,129:app:User did not entered any new data
+2022-01-15 15:53:31,232:app:User click to update teacher with id 43
+2022-01-15 15:54:29,579:app:User click to update teacher with id 43
+2022-01-15 15:54:31,019:app:User click to update teacher with id 43
+2022-01-15 15:54:34,792:app:User click to update teacher
+2022-01-15 15:54:34,823:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:54:34,823:app:User did not entered any new data
+2022-01-15 15:54:34,912:app:User click to update teacher with id 43
+2022-01-15 15:55:07,788:app:User click to update teacher with id 43
+2022-01-15 15:55:08,705:app:User click to update teacher with id 43
+2022-01-15 15:55:23,165:app:User click to update teacher
+2022-01-15 15:55:23,199:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:55:23,199:app:User did not entered any new data
+2022-01-15 15:55:23,267:app:User click to update teacher with id 43
+2022-01-15 15:55:48,607:app:User click to update teacher with id 43
+2022-01-15 15:55:56,129:app:User click to update teacher
+2022-01-15 15:55:56,152:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:55:56,152:app:User did not entered any new data
+2022-01-15 15:55:56,228:app:User click to update teacher with id 43
+2022-01-15 15:57:06,073:app:User click to update teacher with id 43
+2022-01-15 15:57:09,440:app:User click to update teacher
+2022-01-15 15:57:09,463:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:57:09,463:app:User did not entered any new data
+2022-01-15 15:57:09,542:app:User click to update teacher with id 43
+2022-01-15 15:57:45,298:app:User click to update teacher with id 43
+2022-01-15 15:57:49,303:app:User click to update teacher
+2022-01-15 15:57:49,323:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:57:49,323:app:User did not entered any new data
+2022-01-15 15:57:49,392:app:User click to update teacher with id 43
+2022-01-15 15:59:44,967:app:User click to update teacher with id 43
+2022-01-15 15:59:48,100:app:User click to update teacher
+2022-01-15 15:59:48,122:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 15:59:48,122:app:User did not entered any new data
+2022-01-15 15:59:48,222:app:User click to update teacher with id 43
+2022-01-15 16:01:03,857:app:User click to update teacher with id 43
+2022-01-15 16:01:05,934:app:Route teacher.html is rendered.
+2022-01-15 16:01:08,290:app:User click to update teacher with id 43
+2022-01-15 16:01:11,919:app:User click to update teacher
+2022-01-15 16:01:11,959:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 16:01:11,962:app:User did not entered any new data
+2022-01-15 16:01:12,037:app:User click to update teacher with id 43
+2022-01-15 16:01:47,850:app:university.page was shown
+2022-01-15 16:01:47,934:app:Got universities from database
+2022-01-15 16:01:51,135:app:Page update_university was show with university id 5
+2022-01-15 16:01:55,729:app:User click to update university
+2022-01-15 16:01:55,760:app:University was updated
+2022-01-15 16:01:55,772:app:university.page was shown
+2022-01-15 16:01:55,813:app:Got universities from database
+2022-01-15 16:01:58,031:app:Route teacher.html is rendered.
+2022-01-15 16:02:01,637:app:university.page was shown
+2022-01-15 16:02:01,771:app:Got universities from database
+2022-01-15 16:02:06,812:app:Page update_university was show with university id 5
+2022-01-15 16:02:12,732:app:User click to update university
+2022-01-15 16:02:12,756:app:University was updated
+2022-01-15 16:02:12,771:app:university.page was shown
+2022-01-15 16:02:12,813:app:Got universities from database
+2022-01-15 16:02:15,222:app:Page update_university was show with university id 1
+2022-01-15 16:02:19,079:app:User click to update university
+2022-01-15 16:02:19,095:app:University was updated
+2022-01-15 16:02:19,107:app:university.page was shown
+2022-01-15 16:02:19,154:app:Got universities from database
+2022-01-15 16:02:20,692:app:Route teacher.html is rendered.
+2022-01-15 16:02:25,244:app:university.page was shown
+2022-01-15 16:02:25,342:app:Got universities from database
+2022-01-15 16:02:27,104:app:Route create new teacher is rendered
+2022-01-15 16:02:28,571:app:Page add_university.html was shown.
+2022-01-15 16:04:23,007:app:Route teacher.html is rendered.
+2022-01-15 16:04:25,174:app:User click to update teacher with id 43
+2022-01-15 16:04:30,004:app:User click to update teacher
+2022-01-15 16:04:30,058:app:Teacher was successfully updated.
+2022-01-15 16:04:30,083:app:Route teacher.html is rendered.
+2022-01-15 16:04:32,649:app:User click to update teacher with id 43
+2022-01-15 16:04:37,472:app:User click to update teacher
+2022-01-15 16:04:37,501:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '2000', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 16:04:37,502:app:User did not entered any new data
+2022-01-15 16:04:37,591:app:User click to update teacher with id 43
+2022-01-15 16:04:41,405:app:User click to update teacher
+2022-01-15 16:04:41,451:app:Teacher was successfully updated.
+2022-01-15 16:04:41,470:app:Route teacher.html is rendered.
+2022-01-15 16:04:43,016:app:User click to update teacher with id 43
+2022-01-15 16:04:46,197:app:User click to update teacher
+2022-01-15 16:04:46,210:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 16:04:46,210:app:User did not entered any new data
+2022-01-15 16:04:46,274:app:User click to update teacher with id 43
+2022-01-15 16:07:00,724:app:User click to update teacher with id 43
+2022-01-15 16:07:04,088:app:User click to update teacher
+2022-01-15 16:07:04,111:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 16:07:04,111:app:User did not entered any new data
+2022-01-15 16:07:04,197:app:User click to update teacher with id 43
+2022-01-15 16:07:19,612:app:User click to update teacher with id 43
+2022-01-15 16:07:22,291:app:User click to update teacher
+2022-01-15 16:07:22,348:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 16:07:22,350:app:User did not entered any new data
+2022-01-15 16:07:22,440:app:User click to update teacher with id 43
+2022-01-15 16:07:55,538:app:User click to update teacher with id 43
+2022-01-15 16:07:59,651:app:User click to update teacher
+2022-01-15 16:07:59,694:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 16:07:59,696:app:User did not entered any new data
+2022-01-15 16:07:59,988:app:User click to update teacher with id 43
+2022-01-15 16:08:10,906:app:User click to update teacher with id 43
+2022-01-15 16:08:14,750:app:User click to update teacher
+2022-01-15 16:08:14,798:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 16:08:14,798:app:User did not entered any new data
+2022-01-15 16:08:14,884:app:User click to update teacher with id 43
+2022-01-15 16:08:26,493:app:User click to update teacher with id 43
+2022-01-15 16:08:27,628:app:User click to update teacher with id 43
+2022-01-15 16:08:31,379:app:User click to update teacher
+2022-01-15 16:08:31,405:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 16:08:31,406:app:User did not entered any new data
+2022-01-15 16:08:31,479:app:User click to update teacher with id 43
+2022-01-15 16:09:08,568:app:User click to update teacher with id 43
+2022-01-15 16:09:13,325:app:User click to update teacher
+2022-01-15 16:09:13,396:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 16:09:13,396:app:User did not entered any new data
+2022-01-15 16:09:13,484:app:User click to update teacher with id 43
+2022-01-15 16:10:35,408:app:User click to update teacher with id 43
+2022-01-15 16:10:38,599:app:User click to update teacher
+2022-01-15 16:10:38,614:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.DataError) (1366, "Incorrect integer value: '' for column 'salary' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '21.09.2001', 'salary': '', 'university_id': 27}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+2022-01-15 16:10:38,614:app:User did not entered any new data
+2022-01-15 16:10:38,671:app:User click to update teacher with id 43
+2022-01-15 16:11:05,258:app:User click to update teacher with id 43
+2022-01-15 16:11:10,049:app:User click to update teacher
+2022-01-15 16:11:46,183:app:User click to update teacher
+2022-01-15 16:11:46,313:app:Teacher was successfully updated.
+2022-01-15 16:11:46,352:app:Route teacher.html is rendered.
+2022-01-15 16:15:22,857:app:Route teacher.html is rendered.
+2022-01-15 16:15:34,077:app:User click delete teacher with id 44.
+2022-01-15 16:15:34,111:app:Teacher with 44 was deleted.
+2022-01-15 16:15:34,185:app:Route teacher.html is rendered.
+2022-01-15 16:16:30,301:app:Route teacher.html is rendered.
+2022-01-15 16:16:33,214:app:User click to update teacher with id 43
+2022-01-15 16:16:36,805:app:User click to update teacher
+2022-01-15 16:16:36,838:app:(raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(pymysql.err.OperationalError) (1292, "Incorrect date value: '' for column 'birth_date' at row 1")
+[SQL: INSERT INTO teacher (name, last_name, birth_date, salary, university_id) VALUES (%(name)s, %(last_name)s, %(birth_date)s, %(salary)s, %(university_id)s)]
+[parameters: {'name': '', 'last_name': '', 'birth_date': '', 'salary': '', 'university_id': 1}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-01-15 16:16:36,839:app:User did not entered any new data
+2022-01-15 16:16:36,895:app:User click to update teacher with id 43
+2022-01-15 16:23:36,035:app:User click to update teacher with id 43
+2022-01-15 16:23:40,446:app:User click to update teacher
+2022-01-15 16:23:40,470:app:Teacher was successfully updated.
+2022-01-15 16:23:40,490:app:Route teacher.html is rendered.
+2022-01-15 16:23:43,874:app:User click to update teacher with id 43
+2022-01-15 16:23:45,565:app:User click to update teacher
+2022-01-15 16:23:45,567:app:User entered incorrect data to form fields.
+2022-01-15 16:23:45,667:app:User click to update teacher with id 43
+2022-01-15 16:23:48,855:app:User click to update teacher
+2022-01-15 16:23:48,891:app:Teacher was successfully updated.
+2022-01-15 16:23:48,909:app:Route teacher.html is rendered.
+2022-01-15 16:23:51,905:app:User click to update teacher with id 43
+2022-01-15 16:23:54,598:app:User click to update teacher
+2022-01-15 16:23:54,599:app:User entered incorrect data to form fields.
+2022-01-15 16:23:54,676:app:User click to update teacher with id 43
+2022-01-15 16:24:04,865:app:User click to update teacher
+2022-01-15 16:24:04,892:app:Teacher was successfully updated.
+2022-01-15 16:24:04,920:app:Route teacher.html is rendered.
+2022-01-15 16:24:07,417:app:User click to update teacher with id 43
+2022-01-15 16:24:12,069:app:User click to update teacher
+2022-01-15 16:24:12,106:app:Teacher was successfully updated.
+2022-01-15 16:24:12,129:app:Route teacher.html is rendered.
+2022-01-15 16:24:32,512:app:User click to update teacher with id 43
+2022-01-15 16:24:35,517:app:User click to update teacher
+2022-01-15 16:24:35,552:app:Teacher was successfully updated.
+2022-01-15 16:24:35,607:app:Route teacher.html is rendered.
+2022-01-15 16:24:37,878:app:User click to update teacher with id 43
+2022-01-15 16:24:41,080:app:User click to update teacher
+2022-01-15 16:24:41,110:app:Teacher was successfully updated.
+2022-01-15 16:24:41,129:app:Route teacher.html is rendered.
+2022-01-15 16:24:43,159:app:User click to update teacher with id 43
+2022-01-15 16:24:50,090:app:User click to update teacher
+2022-01-15 16:24:50,117:app:Teacher was successfully updated.
+2022-01-15 16:24:50,136:app:Route teacher.html is rendered.
+2022-01-15 16:24:52,464:app:User click to update teacher with id 43
+2022-01-15 16:24:55,560:app:User click to update teacher
+2022-01-15 16:24:55,620:app:Teacher was successfully updated.
+2022-01-15 16:24:55,638:app:Route teacher.html is rendered.
+2022-01-15 16:24:57,717:app:User click to update teacher with id 43
+2022-01-15 16:25:02,466:app:User click to update teacher
+2022-01-15 16:25:02,534:app:Teacher was successfully updated.
+2022-01-15 16:25:02,554:app:Route teacher.html is rendered.
+2022-01-15 16:25:04,623:app:User click to update teacher with id 43
+2022-01-15 16:25:06,199:app:User click to update teacher
+2022-01-15 16:25:06,200:app:User entered incorrect data to form fields.
+2022-01-15 16:25:06,241:app:User click to update teacher with id 43
+2022-01-15 16:25:19,147:app:User click to update teacher
+2022-01-15 16:25:19,221:app:Teacher was successfully updated.
+2022-01-15 16:25:19,243:app:Route teacher.html is rendered.
+2022-01-15 16:25:26,352:app:Route create new teacher is rendered
+2022-01-15 16:25:27,778:app:Route teacher.html is rendered.
+2022-01-16 20:18:54,875:app:Route teacher.html is rendered.
+2022-01-16 20:20:34,811:app:User click to search teachers in date intervals
+2022-01-16 20:20:34,833:app:Teachers in interval 2011-01-02 to 2011-01-02 were found.
+2022-01-16 20:20:50,981:app:User click to search teachers in date intervals
+2022-01-16 20:20:50,986:app:Teachers in interval 2011-02-01 to 2011-02-01 were found.
+2022-01-16 20:21:00,436:app:Route teacher.html is rendered.
+2022-01-16 20:21:13,785:app:User click to search teachers in date intervals
+2022-01-16 20:21:13,793:app:Teachers in interval 2012-01-01 to 2012-01-01 were found.
+2022-01-16 20:21:17,662:app:User click delete teacher with id 43.
+2022-01-16 20:21:17,714:app:Teacher with 43 was deleted.
+2022-01-16 20:21:17,860:app:Route teacher.html is rendered.
+2022-01-16 20:21:24,248:app:Route create new teacher is rendered
+2022-01-16 20:21:40,662:app:User click to submit new teacher
+2022-01-16 20:21:40,704:app:Teacher was successfully added.
+2022-01-16 20:21:40,728:app:Route teacher.html is rendered.
+2022-01-16 20:21:44,527:app:university.page was shown
+2022-01-16 20:21:44,711:app:Got universities from database
+2022-01-16 20:21:49,294:app:Page add_university.html was shown.
+2022-01-16 20:21:52,722:app:Route teacher.html is rendered.
+2022-01-16 20:21:54,801:app:Page add_university.html was shown.
+2022-01-16 20:22:07,470:app:User click submit button to create new university.
+2022-01-16 20:22:07,470:app:User entered invalid symbols
+2022-01-16 20:22:07,486:app:Page add_university.html was shown.
+2022-01-16 20:22:12,680:app:university.page was shown
+2022-01-16 20:22:12,733:app:Got universities from database
+2022-01-16 20:22:15,699:app:Page update_university was show with university id 27
+2022-01-16 20:22:17,864:app:User click to update university
+2022-01-16 20:22:17,866:app:User did not write anything to the field form
+2022-01-16 20:22:17,888:app:Page update_university was show with university id 27
+2022-01-16 20:22:21,717:app:User click to update university
+2022-01-16 20:22:21,758:app:University was updated
+2022-01-16 20:22:21,799:app:university.page was shown
+2022-01-16 20:22:21,915:app:Got universities from database
+2022-01-16 20:22:24,867:app:Page update_university was show with university id 27
+2022-01-16 20:22:36,484:app:User click to update university
+2022-01-16 20:22:36,526:app:University was updated
+2022-01-16 20:22:36,568:app:university.page was shown
+2022-01-16 20:22:36,715:app:Got universities from database
+2022-01-16 20:22:41,215:app:Page update_university was show with university id 27
+2022-01-16 20:22:45,582:app:User click to update university
+2022-01-16 20:22:45,596:app:User write incorrect data or any new changes
+2022-01-16 20:22:45,619:app:Page update_university was show with university id 27
+2022-01-16 20:22:47,771:app:Route teacher.html is rendered.
+2022-01-16 20:22:52,562:app:User click to update teacher with id 45
+2022-01-16 20:22:56,338:app:User click to update teacher
+2022-01-16 20:22:56,437:app:Teacher was successfully updated.
+2022-01-16 20:22:56,453:app:Route teacher.html is rendered.
+2022-01-16 20:23:00,784:app:Route create new teacher is rendered
+2022-01-16 20:23:03,461:app:university.page was shown
+2022-01-16 20:23:03,522:app:Got universities from database
+2022-01-16 20:23:07,114:app:Route teacher.html is rendered.
+2022-01-16 20:23:09,395:app:User click to update teacher with id 45
+2022-01-16 20:23:13,693:app:User click to update teacher
+2022-01-16 20:23:13,731:app:Teacher was successfully updated.
+2022-01-16 20:23:13,757:app:Route teacher.html is rendered.
+2022-01-16 20:23:18,105:app:university.page was shown
+2022-01-16 20:23:18,171:app:Got universities from database
+2022-01-16 20:24:47,791:app:Api show all teachers in database.
+2022-01-16 20:25:25,578:app:User make post method  add_teacher in REST-API
+2022-01-16 20:25:32,206:app:User make post method  add_teacher in REST-API
+2022-01-16 20:25:32,238:app:User make new teacher in REST-API
+2022-01-16 20:25:55,523:app:User get teacher with id {teacher_id} in REST-API
+2022-01-16 20:26:05,522:app:User make patch method  update_teacher with id 46 in REST-API
+2022-01-16 20:26:05,578:app:Teacher was updated.
+2022-01-16 20:26:10,354:app:User make patch method  update_teacher with id 46 in REST-API
+2022-01-16 20:26:10,383:app:Teacher was updated.
+2022-01-16 20:26:17,048:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:26:17,101:app:Teacher was deleted.
+2022-01-16 20:26:20,523:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:26:20,538:app:User entered wrong teacher id
+2022-01-16 20:26:30,879:app:Api show all teachers in database.
+2022-01-16 20:26:40,132:app:User make patch method  update_teacher with id 46 in REST-API
+2022-01-16 20:26:40,141:app:User entered wrong teacher id.
+2022-01-16 20:26:46,806:app:Api show all teachers in database.
+2022-01-16 20:30:52,209:app:User make post method  add_teacher in REST-API
+2022-01-16 20:30:52,217:app:User make new teacher in REST-API
+2022-01-16 20:30:52,227:app:User make post method  add_teacher in REST-API
+2022-01-16 20:30:52,232:app:User make post method  add_teacher in REST-API
+2022-01-16 20:30:52,233:app:User did not entered some data
+2022-01-16 20:30:52,237:app:User make post method  add_teacher in REST-API
+2022-01-16 20:30:52,238:app:Can't add teacher to database in REST-API
+2022-01-16 20:30:52,241:app:User make post method  add_teacher in REST-API
+2022-01-16 20:30:52,241:app:
+2022-01-16 20:30:52,244:app:User make post method  add_teacher in REST-API
+2022-01-16 20:30:52,245:app:User entered date in incorrect format.
+2022-01-16 20:30:52,247:app:User make post method  add_teacher in REST-API
+2022-01-16 20:30:52,248:app:User entered salary in incorrect format.
+2022-01-16 20:30:52,256:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:30:52,256:app:Teacher was deleted.
+2022-01-16 20:30:52,261:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:30:52,261:app:User entered wrong teacher id
+2022-01-16 20:30:52,267:app:User make delete method to delete university in REST-API
+2022-01-16 20:30:52,268:app:University was deleted.
+2022-01-16 20:30:52,271:app:User make delete method to delete university in REST-API
+2022-01-16 20:30:52,272:app:User entered wrong university id
+2022-01-16 20:30:52,277:app:User get universities in REST-API
+2022-01-16 20:30:52,284:app:User get university with id 1 in REST-API
+2022-01-16 20:30:52,285:app:User entered wrong id
+2022-01-16 20:30:52,290:app:User get university with id 1 in REST-API
+2022-01-16 20:30:52,290:app:Teacher with id {university_id} was shown.
+2022-01-16 20:30:52,297:app:Api show all teachers in database.
+2022-01-16 20:30:52,305:app:User make post method to create new university in REST-API
+2022-01-16 20:30:52,305:app:University was added
+2022-01-16 20:30:52,309:app:User make post method to create new university in REST-API
+2022-01-16 20:30:52,309:app:User entered wrong data
+2022-01-16 20:30:52,315:app:User get teacher with id {teacher_id} in REST-API
+2022-01-16 20:30:52,324:app:User make post method  search_by_date in REST-API
+2022-01-16 20:30:52,327:app:Teachers between dates were shown
+2022-01-16 20:30:52,333:app:User make post method  search_by_date in REST-API
+2022-01-16 20:30:52,334:app:User did not entered some date
+2022-01-16 20:30:52,337:app:User make post method  search_by_date in REST-API
+2022-01-16 20:30:52,338:app:User entered date in incorrect form.
+2022-01-16 20:30:52,345:app:User make post method  search_by_date in REST-API
+2022-01-16 20:30:52,345:app:User entered date in wrong format should be year-month-day
+2022-01-16 20:30:52,353:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:30:52,353:app:Teacher was updated.
+2022-01-16 20:30:52,366:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:30:52,367:app:User entered incorrect data.
+2022-01-16 20:30:52,371:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:30:52,371:app:User entered wrong teacher id.
+2022-01-16 20:30:52,376:app:User make method patch to update university in REST-API
+2022-01-16 20:30:52,377:app:University was updated.
+2022-01-16 20:30:52,380:app:User make method patch to update university in REST-API
+2022-01-16 20:30:52,381:app:User entered wrong data.
+2022-01-16 20:30:52,389:app:
+2022-01-16 20:30:52,406:app:
+2022-01-16 20:30:52,416:app:
+2022-01-16 20:30:52,429:app:No data was given
+2022-01-16 20:30:52,434:app:Wrong university name
+2022-01-16 20:30:52,434:app:User entered salary with wrong type
+2022-01-16 20:30:52,435:app:User entered date in incorrect format.
+2022-01-16 20:30:52,436:app:User entered symbols in name that are not allowed
+2022-01-16 20:30:52,437:app:User entered symbols in last name that are not allowed
+2022-01-16 20:30:52,440:app:User click to submit new teacher
+2022-01-16 20:30:52,452:app:Teacher was successfully added.
+2022-01-16 20:30:52,474:app:Route teacher.html is rendered.
+2022-01-16 20:30:52,516:app:User click to submit new teacher
+2022-01-16 20:30:52,521:app:Some fields were not entered
+2022-01-16 20:30:52,571:app:Route create new teacher is rendered
+2022-01-16 20:30:52,596:app:User click to submit new teacher
+2022-01-16 20:30:52,604:app:User did not enter some fields
+2022-01-16 20:30:52,650:app:Route create new teacher is rendered
+2022-01-16 20:30:52,669:app:User click delete teacher with id 1.
+2022-01-16 20:30:52,669:app:Teacher with 1 was deleted.
+2022-01-16 20:30:52,676:app:Route teacher.html is rendered.
+2022-01-16 20:30:52,680:app:User click delete teacher with id 1.
+2022-01-16 20:30:52,680:app:Error of deleting this Teacher.
+2022-01-16 20:30:52,690:app:Route teacher.html is rendered.
+2022-01-16 20:30:52,739:app:Route create new teacher is rendered
+2022-01-16 20:30:52,774:app:Route teacher.html is rendered.
+2022-01-16 20:30:52,781:app:Route teacher.html is rendered.
+2022-01-16 20:30:52,793:app:User click to update teacher with id 0
+2022-01-16 20:30:52,818:app:User click to search teachers in date intervals
+2022-01-16 20:30:52,822:app:Teachers in interval 2011-11-01 to 2011-11-01 were found.
+2022-01-16 20:30:52,833:app:User click to search teachers in date intervals
+2022-01-16 20:30:52,833:app:User did not entered all dates in date form.
+2022-01-16 20:30:52,851:app:Route teacher.html is rendered.
+2022-01-16 20:30:52,869:app:User click to update teacher
+2022-01-16 20:30:52,874:app:Teacher was successfully updated.
+2022-01-16 20:30:52,881:app:Route teacher.html is rendered.
+2022-01-16 20:30:52,887:app:User click to update teacher
+2022-01-16 20:30:52,888:app:User entered incorrect data to form fields.
+2022-01-16 20:30:52,943:app:User click to update teacher with id 1
+2022-01-16 20:30:52,976:app:User click to update teacher
+2022-01-16 20:30:52,979:app:User did not entered any new data
+2022-01-16 20:30:53,026:app:User click to update teacher with id 1
+2022-01-16 20:30:53,060:app:Page add_university.html was shown.
+2022-01-16 20:30:53,075:app:User click submit button to create new university.
+2022-01-16 20:30:53,076:app:University was added
+2022-01-16 20:30:53,090:app:university.page was shown
+2022-01-16 20:30:53,094:app:Got universities from database
+2022-01-16 20:30:53,128:app:User click submit button to create new university.
+2022-01-16 20:30:53,129:app:User did not write all fields in field form.
+2022-01-16 20:30:53,136:app:Page add_university.html was shown.
+2022-01-16 20:30:53,151:app:User click submit button to create new university.
+2022-01-16 20:30:53,153:app:User entered invalid symbols
+2022-01-16 20:30:53,162:app:Page add_university.html was shown.
+2022-01-16 20:30:53,178:app:User click submit button to create new university.
+2022-01-16 20:30:53,179:app:Error of adding university to db.
+2022-01-16 20:30:53,185:app:Page add_university.html was shown.
+2022-01-16 20:30:53,195:app:User click to delete university with id 0
+2022-01-16 20:30:53,196:app:University was successfully deleted.
+2022-01-16 20:30:53,205:app:university.page was shown
+2022-01-16 20:30:53,209:app:Got universities from database
+2022-01-16 20:30:53,214:app:User click to delete university with id 0
+2022-01-16 20:30:53,215:app:Can't delete this university from db.
+2022-01-16 20:30:53,238:app:university.page was shown
+2022-01-16 20:30:53,238:app:Got universities from database
+2022-01-16 20:30:53,243:app:university.page was shown
+2022-01-16 20:30:53,244:app:Got universities from database
+2022-01-16 20:30:53,253:app:university.page was shown
+2022-01-16 20:30:53,253:app:Error of reading Universities from db.
+2022-01-16 20:30:53,266:app:Route teacher.html is rendered.
+2022-01-16 20:30:53,278:app:Page update_university was show with university id 1
+2022-01-16 20:30:53,296:app:User click to update university
+2022-01-16 20:30:53,297:app:University was updated
+2022-01-16 20:30:53,303:app:university.page was shown
+2022-01-16 20:30:53,307:app:Got universities from database
+2022-01-16 20:30:53,311:app:User click to update university
+2022-01-16 20:30:53,311:app:User did not write anything to the field form
+2022-01-16 20:30:53,324:app:Page update_university was show with university id 1
+2022-01-16 20:30:53,337:app:User click to update university
+2022-01-16 20:30:53,338:app:User write incorrect data or any new changes
+2022-01-16 20:30:53,345:app:Page update_university was show with university id 1
+2022-01-16 20:30:53,357:app:
+2022-01-16 20:30:53,366:app:
+2022-01-16 20:30:53,374:app:
+2022-01-16 20:30:53,391:app:
+2022-01-16 20:30:53,405:app:
+2022-01-16 20:30:53,413:app:
+2022-01-16 20:30:53,474:app:
+2022-01-16 20:33:32,786:app:User make post method  add_teacher in REST-API
+2022-01-16 20:33:32,793:app:User make new teacher in REST-API
+2022-01-16 20:33:32,805:app:User make post method  add_teacher in REST-API
+2022-01-16 20:33:32,808:app:User make post method  add_teacher in REST-API
+2022-01-16 20:33:32,809:app:User did not entered some data
+2022-01-16 20:33:32,812:app:User make post method  add_teacher in REST-API
+2022-01-16 20:33:32,813:app:Can't add teacher to database in REST-API
+2022-01-16 20:33:32,817:app:User make post method  add_teacher in REST-API
+2022-01-16 20:33:32,817:app:
+2022-01-16 20:33:32,826:app:User make post method  add_teacher in REST-API
+2022-01-16 20:33:32,827:app:User entered date in incorrect format.
+2022-01-16 20:33:32,831:app:User make post method  add_teacher in REST-API
+2022-01-16 20:33:32,831:app:User entered salary in incorrect format.
+2022-01-16 20:33:32,840:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:33:32,841:app:Teacher was deleted.
+2022-01-16 20:33:32,847:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:33:32,848:app:User entered wrong teacher id
+2022-01-16 20:33:32,855:app:User make delete method to delete university in REST-API
+2022-01-16 20:33:32,855:app:University was deleted.
+2022-01-16 20:33:32,860:app:User make delete method to delete university in REST-API
+2022-01-16 20:33:32,860:app:User entered wrong university id
+2022-01-16 20:33:32,867:app:User get universities in REST-API
+2022-01-16 20:33:32,875:app:User get university with id 1 in REST-API
+2022-01-16 20:33:32,875:app:User entered wrong id
+2022-01-16 20:33:32,878:app:User get university with id 1 in REST-API
+2022-01-16 20:33:32,878:app:Teacher with id {university_id} was shown.
+2022-01-16 20:33:32,884:app:Api show all teachers in database.
+2022-01-16 20:33:32,892:app:User make post method to create new university in REST-API
+2022-01-16 20:33:32,893:app:University was added
+2022-01-16 20:33:32,897:app:User make post method to create new university in REST-API
+2022-01-16 20:33:32,898:app:User entered wrong data
+2022-01-16 20:33:32,906:app:User get teacher with id {teacher_id} in REST-API
+2022-01-16 20:33:32,914:app:User make post method  search_by_date in REST-API
+2022-01-16 20:33:32,917:app:Teachers between dates were shown
+2022-01-16 20:33:32,926:app:User make post method  search_by_date in REST-API
+2022-01-16 20:33:32,927:app:User did not entered some date
+2022-01-16 20:33:32,932:app:User make post method  search_by_date in REST-API
+2022-01-16 20:33:32,934:app:User entered date in incorrect form.
+2022-01-16 20:33:32,937:app:User make post method  search_by_date in REST-API
+2022-01-16 20:33:32,938:app:User entered date in wrong format should be year-month-day
+2022-01-16 20:33:32,944:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:33:32,945:app:Teacher was updated.
+2022-01-16 20:33:32,949:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:33:32,949:app:User entered incorrect data.
+2022-01-16 20:33:32,954:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:33:32,954:app:User entered wrong teacher id.
+2022-01-16 20:33:32,960:app:User make method patch to update university in REST-API
+2022-01-16 20:33:32,960:app:University was updated.
+2022-01-16 20:33:32,964:app:User make method patch to update university in REST-API
+2022-01-16 20:33:32,965:app:User entered wrong data.
+2022-01-16 20:33:32,973:app:
+2022-01-16 20:33:32,982:app:
+2022-01-16 20:33:32,993:app:
+2022-01-16 20:33:33,003:app:No data was given
+2022-01-16 20:33:33,008:app:Wrong university name
+2022-01-16 20:33:33,008:app:User entered salary with wrong type
+2022-01-16 20:33:33,009:app:User entered date in incorrect format.
+2022-01-16 20:33:33,010:app:User entered symbols in name that are not allowed
+2022-01-16 20:33:33,011:app:User entered symbols in last name that are not allowed
+2022-01-16 20:33:33,016:app:User click to submit new teacher
+2022-01-16 20:33:33,028:app:Teacher was successfully added.
+2022-01-16 20:33:33,057:app:Route teacher.html is rendered.
+2022-01-16 20:33:33,090:app:User click to submit new teacher
+2022-01-16 20:33:33,094:app:Some fields were not entered
+2022-01-16 20:33:33,137:app:Route create new teacher is rendered
+2022-01-16 20:33:33,162:app:User click to submit new teacher
+2022-01-16 20:33:33,166:app:User did not enter some fields
+2022-01-16 20:33:33,209:app:Route create new teacher is rendered
+2022-01-16 20:33:33,229:app:User click delete teacher with id 1.
+2022-01-16 20:33:33,229:app:Teacher with 1 was deleted.
+2022-01-16 20:33:33,236:app:Route teacher.html is rendered.
+2022-01-16 20:33:33,240:app:User click delete teacher with id 1.
+2022-01-16 20:33:33,241:app:Error of deleting this Teacher.
+2022-01-16 20:33:33,245:app:Route teacher.html is rendered.
+2022-01-16 20:33:33,282:app:Route create new teacher is rendered
+2022-01-16 20:33:33,303:app:Route teacher.html is rendered.
+2022-01-16 20:33:33,307:app:Route teacher.html is rendered.
+2022-01-16 20:33:33,314:app:User click to update teacher with id 0
+2022-01-16 20:33:33,331:app:User click to search teachers in date intervals
+2022-01-16 20:33:33,334:app:Teachers in interval 2011-11-01 to 2011-11-01 were found.
+2022-01-16 20:33:33,338:app:User click to search teachers in date intervals
+2022-01-16 20:33:33,338:app:User did not entered all dates in date form.
+2022-01-16 20:33:33,351:app:Route teacher.html is rendered.
+2022-01-16 20:33:33,363:app:User click to update teacher
+2022-01-16 20:33:33,364:app:Teacher was successfully updated.
+2022-01-16 20:33:33,372:app:Route teacher.html is rendered.
+2022-01-16 20:33:33,376:app:User click to update teacher
+2022-01-16 20:33:33,377:app:User entered incorrect data to form fields.
+2022-01-16 20:33:33,417:app:User click to update teacher with id 1
+2022-01-16 20:33:33,445:app:User click to update teacher
+2022-01-16 20:33:33,446:app:User did not entered any new data
+2022-01-16 20:33:33,491:app:User click to update teacher with id 1
+2022-01-16 20:33:33,521:app:Page add_university.html was shown.
+2022-01-16 20:33:33,539:app:User click submit button to create new university.
+2022-01-16 20:33:33,541:app:University was added
+2022-01-16 20:33:33,546:app:university.page was shown
+2022-01-16 20:33:33,549:app:Got universities from database
+2022-01-16 20:33:33,568:app:User click submit button to create new university.
+2022-01-16 20:33:33,570:app:User did not write all fields in field form.
+2022-01-16 20:33:33,576:app:Page add_university.html was shown.
+2022-01-16 20:33:33,580:app:User click submit button to create new university.
+2022-01-16 20:33:33,581:app:User entered invalid symbols
+2022-01-16 20:33:33,587:app:Page add_university.html was shown.
+2022-01-16 20:33:33,591:app:User click submit button to create new university.
+2022-01-16 20:33:33,592:app:Error of adding university to db.
+2022-01-16 20:33:33,597:app:Page add_university.html was shown.
+2022-01-16 20:33:33,603:app:User click to delete university with id 0
+2022-01-16 20:33:33,608:app:University was successfully deleted.
+2022-01-16 20:33:33,613:app:university.page was shown
+2022-01-16 20:33:33,616:app:Got universities from database
+2022-01-16 20:33:33,629:app:User click to delete university with id 0
+2022-01-16 20:33:33,630:app:Can't delete this university from db.
+2022-01-16 20:33:33,635:app:university.page was shown
+2022-01-16 20:33:33,635:app:Got universities from database
+2022-01-16 20:33:33,648:app:university.page was shown
+2022-01-16 20:33:33,649:app:Got universities from database
+2022-01-16 20:33:33,662:app:university.page was shown
+2022-01-16 20:33:33,663:app:Error of reading Universities from db.
+2022-01-16 20:33:33,686:app:Route teacher.html is rendered.
+2022-01-16 20:33:33,702:app:Page update_university was show with university id 1
+2022-01-16 20:33:33,722:app:User click to update university
+2022-01-16 20:33:33,723:app:University was updated
+2022-01-16 20:33:33,727:app:university.page was shown
+2022-01-16 20:33:33,731:app:Got universities from database
+2022-01-16 20:33:33,747:app:User click to update university
+2022-01-16 20:33:33,748:app:User did not write anything to the field form
+2022-01-16 20:33:33,753:app:Page update_university was show with university id 1
+2022-01-16 20:33:33,770:app:User click to update university
+2022-01-16 20:33:33,772:app:User write incorrect data or any new changes
+2022-01-16 20:33:33,781:app:Page update_university was show with university id 1
+2022-01-16 20:33:33,797:app:
+2022-01-16 20:33:33,804:app:
+2022-01-16 20:33:33,818:app:
+2022-01-16 20:33:33,834:app:
+2022-01-16 20:33:33,849:app:
+2022-01-16 20:33:33,859:app:
+2022-01-16 20:33:33,914:app:
+2022-01-16 20:36:19,816:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:19,826:app:User make new teacher in REST-API
+2022-01-16 20:36:19,839:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:19,844:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:19,845:app:User did not entered some data
+2022-01-16 20:36:19,849:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:19,850:app:Can't add teacher to database in REST-API
+2022-01-16 20:36:19,855:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:19,856:app:
+2022-01-16 20:36:19,860:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:19,861:app:User entered date in incorrect format.
+2022-01-16 20:36:19,865:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:19,868:app:User entered salary in incorrect format.
+2022-01-16 20:36:19,876:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:36:19,879:app:Teacher was deleted.
+2022-01-16 20:36:19,883:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:36:19,884:app:User entered wrong teacher id
+2022-01-16 20:36:19,890:app:User make delete method to delete university in REST-API
+2022-01-16 20:36:19,893:app:University was deleted.
+2022-01-16 20:36:19,897:app:User make delete method to delete university in REST-API
+2022-01-16 20:36:19,898:app:User entered wrong university id
+2022-01-16 20:36:19,907:app:User get universities in REST-API
+2022-01-16 20:36:19,916:app:User get university with id 1 in REST-API
+2022-01-16 20:36:19,916:app:User entered wrong id
+2022-01-16 20:36:19,920:app:User get university with id 1 in REST-API
+2022-01-16 20:36:19,924:app:Teacher with id {university_id} was shown.
+2022-01-16 20:36:19,932:app:Api show all teachers in database.
+2022-01-16 20:36:19,944:app:User make post method to create new university in REST-API
+2022-01-16 20:36:19,946:app:University was added
+2022-01-16 20:36:19,951:app:User make post method to create new university in REST-API
+2022-01-16 20:36:19,952:app:User entered wrong data
+2022-01-16 20:36:19,962:app:User get teacher with id {teacher_id} in REST-API
+2022-01-16 20:36:19,971:app:User make post method  search_by_date in REST-API
+2022-01-16 20:36:19,980:app:Teachers between dates were shown
+2022-01-16 20:36:19,990:app:User make post method  search_by_date in REST-API
+2022-01-16 20:36:19,992:app:User did not entered some date
+2022-01-16 20:36:19,995:app:User make post method  search_by_date in REST-API
+2022-01-16 20:36:19,996:app:User entered date in incorrect form.
+2022-01-16 20:36:19,998:app:User make post method  search_by_date in REST-API
+2022-01-16 20:36:19,999:app:User entered date in wrong format should be year-month-day
+2022-01-16 20:36:20,006:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:36:20,007:app:Teacher was updated.
+2022-01-16 20:36:20,012:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:36:20,013:app:User entered incorrect data.
+2022-01-16 20:36:20,016:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:36:20,016:app:User entered wrong teacher id.
+2022-01-16 20:36:20,022:app:User make method patch to update university in REST-API
+2022-01-16 20:36:20,023:app:University was updated.
+2022-01-16 20:36:20,027:app:User make method patch to update university in REST-API
+2022-01-16 20:36:20,028:app:User entered wrong data.
+2022-01-16 20:36:20,036:app:
+2022-01-16 20:36:20,046:app:
+2022-01-16 20:36:20,059:app:
+2022-01-16 20:36:20,072:app:No data was given
+2022-01-16 20:36:20,077:app:Wrong university name
+2022-01-16 20:36:20,078:app:User entered salary with wrong type
+2022-01-16 20:36:20,079:app:User entered date in incorrect format.
+2022-01-16 20:36:20,082:app:User entered symbols in name that are not allowed
+2022-01-16 20:36:20,083:app:User entered symbols in last name that are not allowed
+2022-01-16 20:36:20,091:app:User click to submit new teacher
+2022-01-16 20:36:20,103:app:Teacher was successfully added.
+2022-01-16 20:36:20,126:app:Route teacher.html is rendered.
+2022-01-16 20:36:20,164:app:User click to submit new teacher
+2022-01-16 20:36:20,168:app:Some fields were not entered
+2022-01-16 20:36:20,229:app:Route create new teacher is rendered
+2022-01-16 20:36:20,264:app:User click to submit new teacher
+2022-01-16 20:36:20,274:app:User did not enter some fields
+2022-01-16 20:36:20,330:app:Route create new teacher is rendered
+2022-01-16 20:36:20,357:app:User click delete teacher with id 1.
+2022-01-16 20:36:20,359:app:Teacher with 1 was deleted.
+2022-01-16 20:36:20,365:app:Route teacher.html is rendered.
+2022-01-16 20:36:20,370:app:User click delete teacher with id 1.
+2022-01-16 20:36:20,370:app:Error of deleting this Teacher.
+2022-01-16 20:36:20,379:app:Route teacher.html is rendered.
+2022-01-16 20:36:20,429:app:Route create new teacher is rendered
+2022-01-16 20:36:20,456:app:Route teacher.html is rendered.
+2022-01-16 20:36:20,463:app:Route teacher.html is rendered.
+2022-01-16 20:36:20,473:app:User click to update teacher with id 0
+2022-01-16 20:36:20,497:app:User click to search teachers in date intervals
+2022-01-16 20:36:20,503:app:Teachers in interval 2011-11-01 to 2011-11-01 were found.
+2022-01-16 20:36:20,508:app:User click to search teachers in date intervals
+2022-01-16 20:36:20,512:app:User did not entered all dates in date form.
+2022-01-16 20:36:20,531:app:Route teacher.html is rendered.
+2022-01-16 20:36:20,547:app:User click to update teacher
+2022-01-16 20:36:20,552:app:Teacher was successfully updated.
+2022-01-16 20:36:20,561:app:Route teacher.html is rendered.
+2022-01-16 20:36:20,568:app:User click to update teacher
+2022-01-16 20:36:20,570:app:User entered incorrect data to form fields.
+2022-01-16 20:36:20,635:app:User click to update teacher with id 1
+2022-01-16 20:36:20,678:app:User click to update teacher
+2022-01-16 20:36:20,680:app:User did not entered any new data
+2022-01-16 20:36:20,759:app:User click to update teacher with id 1
+2022-01-16 20:36:20,783:app:Page add_university.html was shown.
+2022-01-16 20:36:20,794:app:User click submit button to create new university.
+2022-01-16 20:36:20,795:app:University was added
+2022-01-16 20:36:20,800:app:university.page was shown
+2022-01-16 20:36:20,804:app:Got universities from database
+2022-01-16 20:36:20,824:app:User click submit button to create new university.
+2022-01-16 20:36:20,825:app:User did not write all fields in field form.
+2022-01-16 20:36:20,829:app:Page add_university.html was shown.
+2022-01-16 20:36:20,832:app:User click submit button to create new university.
+2022-01-16 20:36:20,833:app:User entered invalid symbols
+2022-01-16 20:36:20,840:app:Page add_university.html was shown.
+2022-01-16 20:36:20,844:app:User click submit button to create new university.
+2022-01-16 20:36:20,845:app:Error of adding university to db.
+2022-01-16 20:36:20,850:app:Page add_university.html was shown.
+2022-01-16 20:36:20,858:app:User click to delete university with id 0
+2022-01-16 20:36:20,858:app:University was successfully deleted.
+2022-01-16 20:36:20,862:app:university.page was shown
+2022-01-16 20:36:20,866:app:Got universities from database
+2022-01-16 20:36:20,871:app:User click to delete university with id 0
+2022-01-16 20:36:20,871:app:Can't delete this university from db.
+2022-01-16 20:36:20,883:app:university.page was shown
+2022-01-16 20:36:20,884:app:Got universities from database
+2022-01-16 20:36:20,895:app:university.page was shown
+2022-01-16 20:36:20,898:app:Got universities from database
+2022-01-16 20:36:20,902:app:university.page was shown
+2022-01-16 20:36:20,903:app:Error of reading Universities from db.
+2022-01-16 20:36:20,923:app:Route teacher.html is rendered.
+2022-01-16 20:36:20,935:app:Page update_university was show with university id 1
+2022-01-16 20:36:20,958:app:User click to update university
+2022-01-16 20:36:20,959:app:University was updated
+2022-01-16 20:36:20,964:app:university.page was shown
+2022-01-16 20:36:20,966:app:Got universities from database
+2022-01-16 20:36:20,973:app:User click to update university
+2022-01-16 20:36:20,975:app:User did not write anything to the field form
+2022-01-16 20:36:20,983:app:Page update_university was show with university id 1
+2022-01-16 20:36:20,997:app:User click to update university
+2022-01-16 20:36:20,998:app:User write incorrect data or any new changes
+2022-01-16 20:36:21,003:app:Page update_university was show with university id 1
+2022-01-16 20:36:21,013:app:
+2022-01-16 20:36:21,021:app:
+2022-01-16 20:36:21,035:app:
+2022-01-16 20:36:21,048:app:
+2022-01-16 20:36:21,056:app:
+2022-01-16 20:36:21,070:app:
+2022-01-16 20:36:21,080:app:
+2022-01-16 20:36:55,828:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:55,832:app:User make new teacher in REST-API
+2022-01-16 20:36:55,839:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:55,844:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:55,845:app:User did not entered some data
+2022-01-16 20:36:55,847:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:55,848:app:Can't add teacher to database in REST-API
+2022-01-16 20:36:55,851:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:55,851:app:
+2022-01-16 20:36:55,854:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:55,855:app:User entered date in incorrect format.
+2022-01-16 20:36:55,859:app:User make post method  add_teacher in REST-API
+2022-01-16 20:36:55,859:app:User entered salary in incorrect format.
+2022-01-16 20:36:55,869:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:36:55,869:app:Teacher was deleted.
+2022-01-16 20:36:55,875:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:36:55,875:app:User entered wrong teacher id
+2022-01-16 20:36:55,885:app:User make delete method to delete university in REST-API
+2022-01-16 20:36:55,885:app:University was deleted.
+2022-01-16 20:36:55,890:app:User make delete method to delete university in REST-API
+2022-01-16 20:36:55,890:app:User entered wrong university id
+2022-01-16 20:36:55,900:app:User get universities in REST-API
+2022-01-16 20:36:55,909:app:User get university with id 1 in REST-API
+2022-01-16 20:36:55,912:app:User entered wrong id
+2022-01-16 20:36:55,916:app:User get university with id 1 in REST-API
+2022-01-16 20:36:55,916:app:Teacher with id {university_id} was shown.
+2022-01-16 20:36:55,925:app:Api show all teachers in database.
+2022-01-16 20:36:55,931:app:User make post method to create new university in REST-API
+2022-01-16 20:36:55,932:app:University was added
+2022-01-16 20:36:55,935:app:User make post method to create new university in REST-API
+2022-01-16 20:36:55,936:app:User entered wrong data
+2022-01-16 20:36:55,943:app:User get teacher with id {teacher_id} in REST-API
+2022-01-16 20:36:55,964:app:User make post method  search_by_date in REST-API
+2022-01-16 20:36:55,967:app:Teachers between dates were shown
+2022-01-16 20:36:55,974:app:User make post method  search_by_date in REST-API
+2022-01-16 20:36:55,975:app:User did not entered some date
+2022-01-16 20:36:55,978:app:User make post method  search_by_date in REST-API
+2022-01-16 20:36:55,978:app:User entered date in incorrect form.
+2022-01-16 20:36:55,981:app:User make post method  search_by_date in REST-API
+2022-01-16 20:36:55,982:app:User entered date in wrong format should be year-month-day
+2022-01-16 20:36:55,994:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:36:55,995:app:Teacher was updated.
+2022-01-16 20:36:55,999:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:36:56,000:app:User entered incorrect data.
+2022-01-16 20:36:56,002:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:36:56,003:app:User entered wrong teacher id.
+2022-01-16 20:36:56,009:app:User make method patch to update university in REST-API
+2022-01-16 20:36:56,009:app:University was updated.
+2022-01-16 20:36:56,013:app:User make method patch to update university in REST-API
+2022-01-16 20:36:56,013:app:User entered wrong data.
+2022-01-16 20:36:56,021:app:
+2022-01-16 20:36:56,033:app:
+2022-01-16 20:36:56,044:app:
+2022-01-16 20:36:56,074:app:No data was given
+2022-01-16 20:36:56,077:app:Wrong university name
+2022-01-16 20:36:56,078:app:User entered salary with wrong type
+2022-01-16 20:36:56,078:app:User entered date in incorrect format.
+2022-01-16 20:36:56,084:app:User entered symbols in name that are not allowed
+2022-01-16 20:36:56,085:app:User entered symbols in last name that are not allowed
+2022-01-16 20:36:56,089:app:User click to submit new teacher
+2022-01-16 20:36:56,098:app:Teacher was successfully added.
+2022-01-16 20:36:56,124:app:Route teacher.html is rendered.
+2022-01-16 20:36:56,155:app:User click to submit new teacher
+2022-01-16 20:36:56,164:app:Some fields were not entered
+2022-01-16 20:36:56,214:app:Route create new teacher is rendered
+2022-01-16 20:36:56,243:app:User click to submit new teacher
+2022-01-16 20:36:56,247:app:User did not enter some fields
+2022-01-16 20:36:56,297:app:Route create new teacher is rendered
+2022-01-16 20:36:56,321:app:User click delete teacher with id 1.
+2022-01-16 20:36:56,322:app:Teacher with 1 was deleted.
+2022-01-16 20:36:56,335:app:Route teacher.html is rendered.
+2022-01-16 20:36:56,341:app:User click delete teacher with id 1.
+2022-01-16 20:36:56,342:app:Error of deleting this Teacher.
+2022-01-16 20:36:56,347:app:Route teacher.html is rendered.
+2022-01-16 20:36:56,395:app:Route create new teacher is rendered
+2022-01-16 20:36:56,424:app:Route teacher.html is rendered.
+2022-01-16 20:36:56,429:app:Route teacher.html is rendered.
+2022-01-16 20:36:56,447:app:User click to update teacher with id 0
+2022-01-16 20:36:56,477:app:User click to search teachers in date intervals
+2022-01-16 20:36:56,482:app:Teachers in interval 2011-11-01 to 2011-11-01 were found.
+2022-01-16 20:36:56,486:app:User click to search teachers in date intervals
+2022-01-16 20:36:56,486:app:User did not entered all dates in date form.
+2022-01-16 20:36:56,499:app:Route teacher.html is rendered.
+2022-01-16 20:36:56,509:app:User click to update teacher
+2022-01-16 20:36:56,510:app:Teacher was successfully updated.
+2022-01-16 20:36:56,516:app:Route teacher.html is rendered.
+2022-01-16 20:36:56,520:app:User click to update teacher
+2022-01-16 20:36:56,521:app:User entered incorrect data to form fields.
+2022-01-16 20:36:56,559:app:User click to update teacher with id 1
+2022-01-16 20:36:56,584:app:User click to update teacher
+2022-01-16 20:36:56,585:app:User did not entered any new data
+2022-01-16 20:36:56,623:app:User click to update teacher with id 1
+2022-01-16 20:36:56,640:app:Page add_university.html was shown.
+2022-01-16 20:36:56,650:app:User click submit button to create new university.
+2022-01-16 20:36:56,651:app:University was added
+2022-01-16 20:36:56,655:app:university.page was shown
+2022-01-16 20:36:56,658:app:Got universities from database
+2022-01-16 20:36:56,674:app:User click submit button to create new university.
+2022-01-16 20:36:56,675:app:User did not write all fields in field form.
+2022-01-16 20:36:56,679:app:Page add_university.html was shown.
+2022-01-16 20:36:56,682:app:User click submit button to create new university.
+2022-01-16 20:36:56,683:app:User entered invalid symbols
+2022-01-16 20:36:56,687:app:Page add_university.html was shown.
+2022-01-16 20:36:56,690:app:User click submit button to create new university.
+2022-01-16 20:36:56,691:app:Error of adding university to db.
+2022-01-16 20:36:56,696:app:Page add_university.html was shown.
+2022-01-16 20:36:56,701:app:User click to delete university with id 0
+2022-01-16 20:36:56,701:app:University was successfully deleted.
+2022-01-16 20:36:56,706:app:university.page was shown
+2022-01-16 20:36:56,708:app:Got universities from database
+2022-01-16 20:36:56,713:app:User click to delete university with id 0
+2022-01-16 20:36:56,713:app:Can't delete this university from db.
+2022-01-16 20:36:56,717:app:university.page was shown
+2022-01-16 20:36:56,718:app:Got universities from database
+2022-01-16 20:36:56,724:app:university.page was shown
+2022-01-16 20:36:56,724:app:Got universities from database
+2022-01-16 20:36:56,729:app:university.page was shown
+2022-01-16 20:36:56,729:app:Error of reading Universities from db.
+2022-01-16 20:36:56,741:app:Route teacher.html is rendered.
+2022-01-16 20:36:56,748:app:Page update_university was show with university id 1
+2022-01-16 20:36:56,765:app:User click to update university
+2022-01-16 20:36:56,766:app:University was updated
+2022-01-16 20:36:56,770:app:university.page was shown
+2022-01-16 20:36:56,775:app:Got universities from database
+2022-01-16 20:36:56,779:app:User click to update university
+2022-01-16 20:36:56,779:app:User did not write anything to the field form
+2022-01-16 20:36:56,783:app:Page update_university was show with university id 1
+2022-01-16 20:36:56,796:app:User click to update university
+2022-01-16 20:36:56,797:app:User write incorrect data or any new changes
+2022-01-16 20:36:56,801:app:Page update_university was show with university id 1
+2022-01-16 20:36:56,809:app:
+2022-01-16 20:36:56,813:app:
+2022-01-16 20:36:56,822:app:
+2022-01-16 20:36:56,838:app:
+2022-01-16 20:36:56,886:app:
+2022-01-16 20:36:56,897:app:
+2022-01-16 20:36:56,902:app:
+2022-01-16 20:37:16,315:app:User make post method  add_teacher in REST-API
+2022-01-16 20:37:16,321:app:User make new teacher in REST-API
+2022-01-16 20:37:16,329:app:User make post method  add_teacher in REST-API
+2022-01-16 20:37:16,334:app:User make post method  add_teacher in REST-API
+2022-01-16 20:37:16,334:app:User did not entered some data
+2022-01-16 20:37:16,338:app:User make post method  add_teacher in REST-API
+2022-01-16 20:37:16,339:app:Can't add teacher to database in REST-API
+2022-01-16 20:37:16,346:app:User make post method  add_teacher in REST-API
+2022-01-16 20:37:16,347:app:
+2022-01-16 20:37:16,351:app:User make post method  add_teacher in REST-API
+2022-01-16 20:37:16,351:app:User entered date in incorrect format.
+2022-01-16 20:37:16,355:app:User make post method  add_teacher in REST-API
+2022-01-16 20:37:16,355:app:User entered salary in incorrect format.
+2022-01-16 20:37:16,364:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:37:16,365:app:Teacher was deleted.
+2022-01-16 20:37:16,369:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:37:16,370:app:User entered wrong teacher id
+2022-01-16 20:37:16,376:app:User make delete method to delete university in REST-API
+2022-01-16 20:37:16,376:app:University was deleted.
+2022-01-16 20:37:16,380:app:User make delete method to delete university in REST-API
+2022-01-16 20:37:16,380:app:User entered wrong university id
+2022-01-16 20:37:16,389:app:User get universities in REST-API
+2022-01-16 20:37:16,410:app:User get university with id 1 in REST-API
+2022-01-16 20:37:16,410:app:User entered wrong id
+2022-01-16 20:37:16,414:app:User get university with id 1 in REST-API
+2022-01-16 20:37:16,415:app:Teacher with id {university_id} was shown.
+2022-01-16 20:37:16,431:app:Api show all teachers in database.
+2022-01-16 20:37:16,447:app:User make post method to create new university in REST-API
+2022-01-16 20:37:16,448:app:University was added
+2022-01-16 20:37:16,452:app:User make post method to create new university in REST-API
+2022-01-16 20:37:16,453:app:User entered wrong data
+2022-01-16 20:37:16,465:app:User get teacher with id {teacher_id} in REST-API
+2022-01-16 20:37:16,478:app:User make post method  search_by_date in REST-API
+2022-01-16 20:37:16,483:app:Teachers between dates were shown
+2022-01-16 20:37:16,491:app:User make post method  search_by_date in REST-API
+2022-01-16 20:37:16,492:app:User did not entered some date
+2022-01-16 20:37:16,495:app:User make post method  search_by_date in REST-API
+2022-01-16 20:37:16,496:app:User entered date in incorrect form.
+2022-01-16 20:37:16,500:app:User make post method  search_by_date in REST-API
+2022-01-16 20:37:16,502:app:User entered date in wrong format should be year-month-day
+2022-01-16 20:37:16,509:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:37:16,510:app:Teacher was updated.
+2022-01-16 20:37:16,516:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:37:16,517:app:User entered incorrect data.
+2022-01-16 20:37:16,523:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:37:16,523:app:User entered wrong teacher id.
+2022-01-16 20:37:16,533:app:User make method patch to update university in REST-API
+2022-01-16 20:37:16,535:app:University was updated.
+2022-01-16 20:37:16,540:app:User make method patch to update university in REST-API
+2022-01-16 20:37:16,541:app:User entered wrong data.
+2022-01-16 20:37:16,551:app:
+2022-01-16 20:37:16,559:app:
+2022-01-16 20:37:16,569:app:
+2022-01-16 20:37:16,602:app:No data was given
+2022-01-16 20:37:16,607:app:Wrong university name
+2022-01-16 20:37:16,608:app:User entered salary with wrong type
+2022-01-16 20:37:16,608:app:User entered date in incorrect format.
+2022-01-16 20:37:16,610:app:User entered symbols in name that are not allowed
+2022-01-16 20:37:16,611:app:User entered symbols in last name that are not allowed
+2022-01-16 20:37:16,615:app:User click to submit new teacher
+2022-01-16 20:37:16,628:app:Teacher was successfully added.
+2022-01-16 20:37:16,660:app:Route teacher.html is rendered.
+2022-01-16 20:37:16,699:app:User click to submit new teacher
+2022-01-16 20:37:16,703:app:Some fields were not entered
+2022-01-16 20:37:16,759:app:Route create new teacher is rendered
+2022-01-16 20:37:16,789:app:User click to submit new teacher
+2022-01-16 20:37:16,793:app:User did not enter some fields
+2022-01-16 20:37:16,838:app:Route create new teacher is rendered
+2022-01-16 20:37:16,867:app:User click delete teacher with id 1.
+2022-01-16 20:37:16,868:app:Teacher with 1 was deleted.
+2022-01-16 20:37:16,876:app:Route teacher.html is rendered.
+2022-01-16 20:37:16,880:app:User click delete teacher with id 1.
+2022-01-16 20:37:16,884:app:Error of deleting this Teacher.
+2022-01-16 20:37:16,891:app:Route teacher.html is rendered.
+2022-01-16 20:37:16,948:app:Route create new teacher is rendered
+2022-01-16 20:37:16,984:app:Route teacher.html is rendered.
+2022-01-16 20:37:16,991:app:Route teacher.html is rendered.
+2022-01-16 20:37:16,999:app:User click to update teacher with id 0
+2022-01-16 20:37:17,021:app:User click to search teachers in date intervals
+2022-01-16 20:37:17,025:app:Teachers in interval 2011-11-01 to 2011-11-01 were found.
+2022-01-16 20:37:17,029:app:User click to search teachers in date intervals
+2022-01-16 20:37:17,033:app:User did not entered all dates in date form.
+2022-01-16 20:37:17,045:app:Route teacher.html is rendered.
+2022-01-16 20:37:17,060:app:User click to update teacher
+2022-01-16 20:37:17,061:app:Teacher was successfully updated.
+2022-01-16 20:37:17,068:app:Route teacher.html is rendered.
+2022-01-16 20:37:17,075:app:User click to update teacher
+2022-01-16 20:37:17,076:app:User entered incorrect data to form fields.
+2022-01-16 20:37:17,139:app:User click to update teacher with id 1
+2022-01-16 20:37:17,178:app:User click to update teacher
+2022-01-16 20:37:17,179:app:User did not entered any new data
+2022-01-16 20:37:17,242:app:User click to update teacher with id 1
+2022-01-16 20:37:17,265:app:Page add_university.html was shown.
+2022-01-16 20:37:17,279:app:User click submit button to create new university.
+2022-01-16 20:37:17,283:app:University was added
+2022-01-16 20:37:17,288:app:university.page was shown
+2022-01-16 20:37:17,298:app:Got universities from database
+2022-01-16 20:37:17,320:app:User click submit button to create new university.
+2022-01-16 20:37:17,324:app:User did not write all fields in field form.
+2022-01-16 20:37:17,329:app:Page add_university.html was shown.
+2022-01-16 20:37:17,335:app:User click submit button to create new university.
+2022-01-16 20:37:17,336:app:User entered invalid symbols
+2022-01-16 20:37:17,340:app:Page add_university.html was shown.
+2022-01-16 20:37:17,347:app:User click submit button to create new university.
+2022-01-16 20:37:17,350:app:Error of adding university to db.
+2022-01-16 20:37:17,358:app:Page add_university.html was shown.
+2022-01-16 20:37:17,369:app:User click to delete university with id 0
+2022-01-16 20:37:17,369:app:University was successfully deleted.
+2022-01-16 20:37:17,373:app:university.page was shown
+2022-01-16 20:37:17,377:app:Got universities from database
+2022-01-16 20:37:17,382:app:User click to delete university with id 0
+2022-01-16 20:37:17,382:app:Can't delete this university from db.
+2022-01-16 20:37:17,389:app:university.page was shown
+2022-01-16 20:37:17,390:app:Got universities from database
+2022-01-16 20:37:17,397:app:university.page was shown
+2022-01-16 20:37:17,397:app:Got universities from database
+2022-01-16 20:37:17,401:app:university.page was shown
+2022-01-16 20:37:17,402:app:Error of reading Universities from db.
+2022-01-16 20:37:17,416:app:Route teacher.html is rendered.
+2022-01-16 20:37:17,423:app:Page update_university was show with university id 1
+2022-01-16 20:37:17,440:app:User click to update university
+2022-01-16 20:37:17,441:app:University was updated
+2022-01-16 20:37:17,447:app:university.page was shown
+2022-01-16 20:37:17,451:app:Got universities from database
+2022-01-16 20:37:17,455:app:User click to update university
+2022-01-16 20:37:17,455:app:User did not write anything to the field form
+2022-01-16 20:37:17,460:app:Page update_university was show with university id 1
+2022-01-16 20:37:17,472:app:User click to update university
+2022-01-16 20:37:17,473:app:User write incorrect data or any new changes
+2022-01-16 20:37:17,477:app:Page update_university was show with university id 1
+2022-01-16 20:37:17,484:app:
+2022-01-16 20:37:17,491:app:
+2022-01-16 20:37:17,499:app:
+2022-01-16 20:37:17,513:app:
+2022-01-16 20:37:17,562:app:
+2022-01-16 20:37:17,573:app:
+2022-01-16 20:37:17,580:app:
+2022-01-16 20:39:05,937:app:User make post method  add_teacher in REST-API
+2022-01-16 20:39:05,942:app:User make new teacher in REST-API
+2022-01-16 20:39:05,949:app:User make post method  add_teacher in REST-API
+2022-01-16 20:39:05,952:app:User make post method  add_teacher in REST-API
+2022-01-16 20:39:05,953:app:User did not entered some data
+2022-01-16 20:39:05,956:app:User make post method  add_teacher in REST-API
+2022-01-16 20:39:05,957:app:Can't add teacher to database in REST-API
+2022-01-16 20:39:05,960:app:User make post method  add_teacher in REST-API
+2022-01-16 20:39:05,961:app:
+2022-01-16 20:39:05,963:app:User make post method  add_teacher in REST-API
+2022-01-16 20:39:05,964:app:User entered date in incorrect format.
+2022-01-16 20:39:05,967:app:User make post method  add_teacher in REST-API
+2022-01-16 20:39:05,967:app:User entered salary in incorrect format.
+2022-01-16 20:39:05,975:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:39:05,975:app:Teacher was deleted.
+2022-01-16 20:39:05,980:app:User make delete method  delete_teacher in REST-API
+2022-01-16 20:39:05,980:app:User entered wrong teacher id
+2022-01-16 20:39:05,985:app:User make delete method to delete university in REST-API
+2022-01-16 20:39:05,986:app:University was deleted.
+2022-01-16 20:39:05,991:app:User make delete method to delete university in REST-API
+2022-01-16 20:39:05,991:app:User entered wrong university id
+2022-01-16 20:39:05,997:app:User get universities in REST-API
+2022-01-16 20:39:06,003:app:User get university with id 1 in REST-API
+2022-01-16 20:39:06,003:app:User entered wrong id
+2022-01-16 20:39:06,006:app:User get university with id 1 in REST-API
+2022-01-16 20:39:06,007:app:Teacher with id {university_id} was shown.
+2022-01-16 20:39:06,013:app:Api show all teachers in database.
+2022-01-16 20:39:06,018:app:User make post method to create new university in REST-API
+2022-01-16 20:39:06,019:app:University was added
+2022-01-16 20:39:06,024:app:User make post method to create new university in REST-API
+2022-01-16 20:39:06,025:app:User entered wrong data
+2022-01-16 20:39:06,031:app:User get teacher with id {teacher_id} in REST-API
+2022-01-16 20:39:06,040:app:User make post method  search_by_date in REST-API
+2022-01-16 20:39:06,043:app:Teachers between dates were shown
+2022-01-16 20:39:06,049:app:User make post method  search_by_date in REST-API
+2022-01-16 20:39:06,050:app:User did not entered some date
+2022-01-16 20:39:06,052:app:User make post method  search_by_date in REST-API
+2022-01-16 20:39:06,053:app:User entered date in incorrect form.
+2022-01-16 20:39:06,061:app:User make post method  search_by_date in REST-API
+2022-01-16 20:39:06,062:app:User entered date in wrong format should be year-month-day
+2022-01-16 20:39:06,069:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:39:06,070:app:Teacher was updated.
+2022-01-16 20:39:06,077:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:39:06,078:app:User entered incorrect data.
+2022-01-16 20:39:06,081:app:User make patch method  update_teacher with id 1 in REST-API
+2022-01-16 20:39:06,082:app:User entered wrong teacher id.
+2022-01-16 20:39:06,096:app:User make method patch to update university in REST-API
+2022-01-16 20:39:06,096:app:University was updated.
+2022-01-16 20:39:06,101:app:User make method patch to update university in REST-API
+2022-01-16 20:39:06,102:app:User entered wrong data.
+2022-01-16 20:39:06,116:app:
+2022-01-16 20:39:06,133:app:
+2022-01-16 20:39:06,151:app:
+2022-01-16 20:39:06,178:app:
+2022-01-16 20:39:06,180:app:No data was given
+2022-01-16 20:39:06,183:app:Wrong university name
+2022-01-16 20:39:06,183:app:User entered salary with wrong type
+2022-01-16 20:39:06,184:app:User entered date in incorrect format.
+2022-01-16 20:39:06,186:app:User entered symbols in name that are not allowed
+2022-01-16 20:39:06,186:app:User entered symbols in last name that are not allowed
+2022-01-16 20:39:06,190:app:User click to submit new teacher
+2022-01-16 20:39:06,203:app:Teacher was successfully added.
+2022-01-16 20:39:06,232:app:Route teacher.html is rendered.
+2022-01-16 20:39:06,279:app:User click to submit new teacher
+2022-01-16 20:39:06,285:app:Some fields were not entered
+2022-01-16 20:39:06,351:app:Route create new teacher is rendered
+2022-01-16 20:39:06,381:app:User click to submit new teacher
+2022-01-16 20:39:06,385:app:User did not enter some fields
+2022-01-16 20:39:06,430:app:Route create new teacher is rendered
+2022-01-16 20:39:06,459:app:User click delete teacher with id 1.
+2022-01-16 20:39:06,460:app:Teacher with 1 was deleted.
+2022-01-16 20:39:06,467:app:Route teacher.html is rendered.
+2022-01-16 20:39:06,471:app:User click delete teacher with id 1.
+2022-01-16 20:39:06,472:app:Error of deleting this Teacher.
+2022-01-16 20:39:06,479:app:Route teacher.html is rendered.
+2022-01-16 20:39:06,516:app:Route create new teacher is rendered
+2022-01-16 20:39:06,539:app:Route teacher.html is rendered.
+2022-01-16 20:39:06,543:app:Route teacher.html is rendered.
+2022-01-16 20:39:06,550:app:User click to update teacher with id 0
+2022-01-16 20:39:06,569:app:User click to search teachers in date intervals
+2022-01-16 20:39:06,575:app:Teachers in interval 2011-11-01 to 2011-11-01 were found.
+2022-01-16 20:39:06,581:app:User click to search teachers in date intervals
+2022-01-16 20:39:06,581:app:User did not entered all dates in date form.
+2022-01-16 20:39:06,594:app:Route teacher.html is rendered.
+2022-01-16 20:39:06,607:app:User click to update teacher
+2022-01-16 20:39:06,608:app:Teacher was successfully updated.
+2022-01-16 20:39:06,614:app:Route teacher.html is rendered.
+2022-01-16 20:39:06,618:app:User click to update teacher
+2022-01-16 20:39:06,619:app:User entered incorrect data to form fields.
+2022-01-16 20:39:06,665:app:User click to update teacher with id 1
+2022-01-16 20:39:06,694:app:User click to update teacher
+2022-01-16 20:39:06,696:app:User did not entered any new data
+2022-01-16 20:39:06,759:app:User click to update teacher with id 1
+2022-01-16 20:39:06,786:app:Page add_university.html was shown.
+2022-01-16 20:39:06,803:app:User click submit button to create new university.
+2022-01-16 20:39:06,804:app:University was added
+2022-01-16 20:39:06,811:app:university.page was shown
+2022-01-16 20:39:06,814:app:Got universities from database
+2022-01-16 20:39:06,839:app:User click submit button to create new university.
+2022-01-16 20:39:06,840:app:User did not write all fields in field form.
+2022-01-16 20:39:06,846:app:Page add_university.html was shown.
+2022-01-16 20:39:06,850:app:User click submit button to create new university.
+2022-01-16 20:39:06,851:app:User entered invalid symbols
+2022-01-16 20:39:06,861:app:Page add_university.html was shown.
+2022-01-16 20:39:06,866:app:User click submit button to create new university.
+2022-01-16 20:39:06,867:app:Error of adding university to db.
+2022-01-16 20:39:06,874:app:Page add_university.html was shown.
+2022-01-16 20:39:06,885:app:User click to delete university with id 0
+2022-01-16 20:39:06,885:app:University was successfully deleted.
+2022-01-16 20:39:06,890:app:university.page was shown
+2022-01-16 20:39:06,893:app:Got universities from database
+2022-01-16 20:39:06,897:app:User click to delete university with id 0
+2022-01-16 20:39:06,898:app:Can't delete this university from db.
+2022-01-16 20:39:06,904:app:university.page was shown
+2022-01-16 20:39:06,905:app:Got universities from database
+2022-01-16 20:39:06,911:app:university.page was shown
+2022-01-16 20:39:06,912:app:Got universities from database
+2022-01-16 20:39:06,915:app:university.page was shown
+2022-01-16 20:39:06,915:app:Error of reading Universities from db.
+2022-01-16 20:39:06,930:app:Route teacher.html is rendered.
+2022-01-16 20:39:06,937:app:Page update_university was show with university id 1
+2022-01-16 20:39:06,958:app:User click to update university
+2022-01-16 20:39:06,960:app:University was updated
+2022-01-16 20:39:06,966:app:university.page was shown
+2022-01-16 20:39:06,969:app:Got universities from database
+2022-01-16 20:39:06,974:app:User click to update university
+2022-01-16 20:39:06,975:app:User did not write anything to the field form
+2022-01-16 20:39:06,980:app:Page update_university was show with university id 1
+2022-01-16 20:39:06,997:app:User click to update university
+2022-01-16 20:39:06,998:app:User write incorrect data or any new changes
+2022-01-16 20:39:07,003:app:Page update_university was show with university id 1
+2022-01-16 20:39:07,014:app:
+2022-01-16 20:39:07,021:app:
+2022-01-16 20:39:07,036:app:
+2022-01-16 20:39:07,054:app:
+2022-01-16 20:39:07,115:app:
+2022-01-16 20:39:07,126:app:
+2022-01-16 20:39:07,131:app:

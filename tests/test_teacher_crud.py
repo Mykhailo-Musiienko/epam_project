@@ -74,7 +74,7 @@ class TestTeacherCrud(TestCase):
 
     @patch('service.teachers_crud.db.session')
     @patch('service.teachers_crud.get_teacher')
-    def test_update_teacher(self, get_teacher, session) -> None:
+    def test_update_teacher(self,get_teacher, session) -> None:
         """
         Test to update teacher on website.
         :param get_teacher: Mock teacher class.
@@ -82,17 +82,21 @@ class TestTeacherCrud(TestCase):
         :return: None
         """
         # Test if everything is correct
-        get_teacher.return_value = teacher1
+        name = 'teacher1'
+        last_name = 'teacher1'
+        birth_date = datetime.date(2001, 9, 21)
+        salary = 1000
+        university = university1
         session.commit.return_value = 1
-        result = teachers_crud.update_teacher(teacher2, 1)
+        result = teachers_crud.update_teacher(name, last_name, birth_date, salary, university, 1)
         self.assertEqual(result, True)
         # Test if no new data
-        result = teachers_crud.update_teacher(teacher1, 1)
+        result = teachers_crud.update_teacher(name, last_name, birth_date, salary, university, 1)
         self.assertEqual(result, False)
         # Test if exception was raised
         get_teacher.side_effect = Exception
         session.rollback.return_value = 1
-        result = teachers_crud.update_teacher(teacher1, 1)
+        result = teachers_crud.update_teacher(name, last_name, birth_date, salary, university, 1)
         self.assertEqual(result, False)
 
     @patch('service.teachers_crud.db.session')
