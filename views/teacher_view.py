@@ -101,13 +101,12 @@ def update_teacher() -> Response:
     birth_date = request.form.get('birth_date')
     salary = request.form.get('salary')
     university = request.form.get('university')
-    university_db = University.query.filter_by(name=university).first()
-    new_teacher = Teacher(name, last_name, birth_date, salary, university_db)
     if not name and not last_name and not birth_date and not university and not salary:
         flash('Incorrect data, please enter valid data', category='error')
         logger.debug('User entered incorrect data to form fields.')
         return redirect(url_for('get_update_teacher', teacher_id=teacher_id))
-    if teachers_crud.update_teacher(new_teacher, int(teacher_id)):
+    university_db = University.query.filter_by(name=university).first()
+    if teachers_crud.update_teacher(name, last_name, birth_date, salary, university_db, int(teacher_id)):
         flash('Teacher was updated', category='success')
         logger.debug('Teacher was successfully updated.')
         return redirect(url_for('get_all_teachers'))
@@ -127,7 +126,7 @@ def search_by_date() -> Union[Response, str]:
     date_from = request.form.get('date_from')
     date_to = request.form.get('date_to')
     if not date_to or not date_from:
-        flash("Please enter two dates and then click to search",category='error')
+        flash("Please enter two dates and then click to search", category='error')
         logger.debug('User did not entered all dates in date form.')
         return redirect(url_for('get_all_teachers'))
     teachers = Teacher.query.filter(Teacher.birth_date.between(date_from, date_to))
