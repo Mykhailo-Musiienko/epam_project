@@ -28,6 +28,8 @@ def get_all_universities() -> Any:
         average_list = list(Teacher.query.with_entities(
             Teacher.university_id, func.avg(Teacher.salary)).group_by(
             Teacher.university_id).all())
+        for i in range(len(average_list)):
+            print(average_list[i])
     except Exception as ex:
         logger.error(str(ex))
         return []
