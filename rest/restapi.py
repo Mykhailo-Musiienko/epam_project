@@ -49,7 +49,7 @@ def read_teacher(teacher_id: int) -> Response:
     """
     teacher = teachers_crud.get_teacher(teacher_id)
     if not teacher:
-        return jsonify({'error': {'message': 'No university was found with given id',
+        return jsonify({'error': {'message': 'No teacher was found with given id',
                                   'status': 400}})
     logger.debug("User get teacher with id {teacher_id} in REST-API")
     return teacher_schema.jsonify(teacher).data

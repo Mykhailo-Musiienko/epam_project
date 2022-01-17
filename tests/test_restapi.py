@@ -78,7 +78,7 @@ class TestRestApi(TestCase):
         response = self.app.get('/api/1')
         self.assertEqual(true_response, response.data)
         # Test if no university was found
-        true_response = {'error': {'message': 'No university was found with given id',
+        true_response = {'error': {'message': 'No teacher was found with given id',
                                    'status': 400}}
         t_crud.get_teacher.return_value = None
         response = self.app.get('/api/1')
